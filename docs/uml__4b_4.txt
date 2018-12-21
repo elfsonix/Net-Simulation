@@ -1,0 +1,169 @@
+@startuml
+' TODO
+
+' --------
+
+' ==== < CONFIGURATION > ====
+
+hide empty members
+hide <<function>> circle
+
+' ==== END of < CONFIGURATION > ====
+
+package "Factory Package" {
+
+	class NodeCollection<Node> << (T,olive) >> {
+	}
+
+	Ramps .. NodeCollection
+	Workers .. NodeCollection
+	Storehouses .. NodeCollection
+
+	class Factory {
+	}
+	Factory .. Ramps
+	Factory .. Workers
+	Factory .. Storehouses
+
+}
+' == END of package "Factory"
+
+package "Report Generation" {
+
+	interface IReportNotifier <<interface>> {
+	}
+
+	class SpecificTurnsReportNotifier {
+	}
+	SpecificTurnsReportNotifier .. IReportNotifier
+
+	class IntervalReportNotifier {
+	}
+	IntervalReportNotifier .. IReportNotifier 
+
+	class Reporting <<function>> {
+		generate_structure_report(?)
+		generate_simulation_turn_report(?)
+	}
+
+}
+' == END of package "Report Generation"
+
+class Simulation <<function>> {
+	simulate(?)
+}
+Simulation .. Factory
+Reporting .. Simulation
+IReportNotifier .. Simulation
+
+
+package "Storage" {
+
+	interface IPackageStockpile <<interface>> {
+	} 
+
+	interface IPackageQueue <<interface>> {
+	} 
+	IPackageQueue .. IPackageStockpile
+
+	enum QueueType <<enumeration>> {
+	}
+	QueueType .. IPackageQueue
+
+	class PackageQueue {
+	}
+	PackageQueue .. IPackageQueue
+
+	class Package {
+	}
+
+}
+' == END of package "Storage"
+
+
+package "Nodes" {
+
+	interface IPackageReceiver <<interface>> {
+	}
+
+	enum ReceiverType <<enumeration>> {
+	}
+	IPackageReceiver .. ReceiverType
+
+
+	class ReceiverPreferences {
+	}
+
+
+	class PackageSender {
+	}
+
+	PackageSender .. ReceiverPreferences
+
+	class Ramp {
+	}
+
+	Ramp .. PackageSender
+
+
+	class Worker {
+	}
+
+	Worker .. PackageSender
+	Worker .. IPackageReceiver
+	IPackageQueue .. Worker
+
+	class Storehouse {
+	}
+
+	Storehouse .. IPackageReceiver
+	IPackageStockpile .. Storehouse
+
+	Ramp -[hidden]> Worker
+	Worker -[hidden]> Storehouse
+
+	' == POSITIONING ==
+	PackageSender -[hidden]> IPackageReceiver
+	' == END of POSITIONING ==
+}
+' == END of package "Nodes"
+
+
+' .. HELPERS ----
+
+' .. DATA TYPES --
+together {
+	class Time << (T,orchid) primitive>>
+	class TimeOffset << (T,orchid) primitive>>
+	class ElementID << (T,orchid) primitive>>
+	class ProbabilityGenerator << (T,orchid) primitive>>
+
+	Time -[hidden]> TimeOffset
+	TimeOffset -[hidden]> ElementID
+	ElementID -[hidden]> ProbabilityGenerator
+}
+
+class IO <<function>> {
+	load_factory_structure(?)
+	save_factory_structure(?)
+}
+
+' == END of together
+
+
+' ==== < POSITIONING > ====
+
+IO <-[hidden]- IntervalReportNotifier
+Time <-[hidden]- Package
+
+ReceiverPreferences <-[hidden]- IPackageStockpile
+
+IPackageStockpile -[hidden]-> Storehouse
+
+"Factory Package" +- "Nodes"
+
+IReportNotifier -[hidden]> Reporting
+
+' ==== END of < POSITIONING > ====
+@enduml
+
