@@ -13,17 +13,28 @@ hide <<function>> circle
 package "Factory Package" {
 
 	class NodeCollection<Node> << (T,olive) >> {
+		-nodes: std::list<Node>
 	}
 
-	Ramps .. NodeCollection
-	Workers .. NodeCollection
-	Storehouses .. NodeCollection
+	Ramps ..|> NodeCollection : <<bind>> <Node->Ramp>
+	Workers ..|> NodeCollection : <<bind>> <Node->Worker>
+	Storehouses ..|> NodeCollection : <<bind>> <Node->Storehouse>
 
 	class Factory {
+		-ramps : Ramps
+		-workers: Workers
+		-storehouses: Storehouses
+		+Factory()
+		+~Factory()
+		+add(nodeId : ElementID) : void
+		+isCompatible() : bool {query}
+		+findById(nodeId: ElementID) : iterator
+		+findById(nodeId: ElementID) : const_iterator
+		+removeById() : void
 	}
-	Factory .. Ramps
-	Factory .. Workers
-	Factory .. Storehouses
+	Factory *-- Ramps
+	Factory *-- Workers
+	Factory *-- Storehouses
 
 }
 ' == END of package "Factory"
@@ -52,7 +63,7 @@ package "Report Generation" {
 class Simulation <<function>> {
 	simulate(?)
 }
-Simulation .. Factory
+Simulation ..> Factory : uses
 Reporting .. Simulation
 IReportNotifier .. Simulation
 
@@ -75,6 +86,8 @@ package "Storage" {
 	PackageQueue .. IPackageQueue
 
 	class Package {
+	+{static}maxID : ElementID
+	+product_id : ElementID
 	}
 
 }
@@ -101,12 +114,20 @@ package "Nodes" {
 	PackageSender .. ReceiverPreferences
 
 	class Ramp {
+ 	+ Ramp()
+	+~Ramp()
+	+ generatePackage() : void
 	}
 
 	Ramp .. PackageSender
 
 
 	class Worker {
+	+ Worker()
+	+~Worker()
+	+ processPackage() : void
+	+ receiveProduct()
+	+ package_queue : std::unique_ptr <Package>
 	}
 
 	Worker .. PackageSender
@@ -114,6 +135,10 @@ package "Nodes" {
 	IPackageQueue .. Worker
 
 	class Storehouse {
+	+ Storehouse()
+	+~Storehouse() <Package>
+	+ receiveProduct()
+	+ package_queue : std::unique_ptr
 	}
 
 	Storehouse .. IPackageReceiver
@@ -166,4 +191,3 @@ IReportNotifier -[hidden]> Reporting
 
 ' ==== END of < POSITIONING > ====
 @enduml
-
