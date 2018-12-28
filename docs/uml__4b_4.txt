@@ -57,24 +57,36 @@ Reporting .. Simulation
 IReportNotifier .. Simulation
 
 
+' ==🐱‍👤💫KASIA
 package "Storage" {
 
 	interface IPackageStockpile <<interface>> {
+           + placeProductInStockpile()
+           + products_cbegin : const_iterator
+           + products_cend : const_iterator
+           + products_begin : iterator
+           + products_end : iterator
 	} 
 
 	interface IPackageQueue <<interface>> {
+           + returnQueueType() : QueueType
+           + deleteProduct()
 	} 
-	IPackageQueue .. IPackageStockpile
+	IPackageQueue --|> IPackageStockpile
 
 	enum QueueType <<enumeration>> {
+           LIFO
+           FIFO
 	}
-	QueueType .. IPackageQueue
+	QueueType --* IPackageQueue
 
 	class PackageQueue {
+           + createQueue() : QueueType
 	}
-	PackageQueue .. IPackageQueue
+	PackageQueue --|> IPackageQueue
 
 	class Package {
+           + {static} maxID : int
 	}
 
 }
@@ -84,40 +96,57 @@ package "Storage" {
 package "Nodes" {
 
 	interface IPackageReceiver <<interface>> {
+           + specifyReceiver() : tuple<ReceiverType, ID>
+           + receiveProduct()
+           + products_cbegin : const_iterator
+           + products_cend : const_iterator
+           + products_begin : iterator
+           + products_end : iterator           
 	}
 
 	enum ReceiverType <<enumeration>> {
+           Worker
+           Storehouse
 	}
-	IPackageReceiver .. ReceiverType
+	IPackageReceiver *-- ReceiverType
 
 
 	class ReceiverPreferences {
+           + propabilityTable : map<IPackageReceiver*, double> 
+           + chooseReceiver() : IPackageReceiver*
+           + addReceiver(IPackageReceiver)
+           + deleteReceiver(IPackageReceiver)   
+  
 	}
 
 
 	class PackageSender {
+           + receiverPreferences : ReceiverPreferences
+           - sendProduct() 
+           + addToBuffer()
+           - buffer : optional
 	}
 
-	PackageSender .. ReceiverPreferences
+	PackageSender --|> ReceiverPreferences
 
 	class Ramp {
 	}
 
-	Ramp .. PackageSender
+	Ramp --|> PackageSender
 
 
 	class Worker {
 	}
 
-	Worker .. PackageSender
-	Worker .. IPackageReceiver
-	IPackageQueue .. Worker
+	Worker --|> PackageSender
+	Worker --|> IPackageReceiver
+	IPackageQueue --|> Worker
 
 	class Storehouse {
 	}
 
-	Storehouse .. IPackageReceiver
-	IPackageStockpile .. Storehouse
+	Storehouse --|> IPackageReceiver
+	IPackageStockpile --o Storehouse
 
 	Ramp -[hidden]> Worker
 	Worker -[hidden]> Storehouse
@@ -127,6 +156,7 @@ package "Nodes" {
 	' == END of POSITIONING ==
 }
 ' == END of package "Nodes"
+' == END OF KASIA
 
 
 ' .. HELPERS ----
