@@ -57,20 +57,23 @@ Reporting .. Simulation
 IReportNotifier .. Simulation
 
 
-' ==🐱‍👤💫KASIA
+' ==???????KASIA
 package "Storage" {
 
 	interface IPackageStockpile <<interface>> {
-           + placeProductInStockpile()
-           + products_cbegin : const_iterator
-           + products_cend : const_iterator
-           + products_begin : iterator
-           + products_end : iterator
+           - _queue : deque<Package>
+           + IPackageStockpile()
+           + {abstract} putProductInQueue(package : Package)
+           + cbegin() :std::deque<Package>::const_iterator
+           + cend() : std::deque<Package>::const_iterator
+           + begin() : std::deque<Package>::const_iterator
+           + end() : std::deque<Package>::const_iterator
 	} 
 
 	interface IPackageQueue <<interface>> {
-           + returnQueueType() : QueueType
-           + deleteProduct()
+           + IPackageQueue()
+           + {abstract} popProduct() : Package
+           + {abstract} returnQueueType() : QueueType
 	} 
 	IPackageQueue --|> IPackageStockpile
 
@@ -78,15 +81,21 @@ package "Storage" {
            LIFO
            FIFO
 	}
-	QueueType --* IPackageQueue
+	QueueType --- IPackageQueue
 
 	class PackageQueue {
-           + createQueue() : QueueType
+           - _queueType : QueueType 
+           - _queue : deque<Package>
+           + PackageQueue(QueueType queue)
+           + putProductInQueue(Package package) override 
+           + popProduct() override : Package
+           + returnQueueType() : QueueType
 	}
 	PackageQueue --|> IPackageQueue
 
 	class Package {
-           + {static} maxID : int
+          + {static}maxID : ElementID
+	  + product_id : ElementID
 	}
 
 }
@@ -96,24 +105,25 @@ package "Storage" {
 package "Nodes" {
 
 	interface IPackageReceiver <<interface>> {
-           + specifyReceiver() : tuple<ReceiverType, ID>
+           + identifyReceiver() : tuple<ReceiverType, ElementID>
            + receiveProduct()
-           + products_cbegin : const_iterator
-           + products_cend : const_iterator
-           + products_begin : iterator
-           + products_end : iterator           
+           + cbegin : const_iterator
+           + cend : const_iterator
+           + begin : iterator
+           + end : iterator           
 	}
 
 	enum ReceiverType <<enumeration>> {
-           Worker
-           Storehouse
+           WORKER
+           STOREHOUSE
 	}
-	IPackageReceiver *-- ReceiverType
+	IPackageReceiver --- ReceiverType
 
 
 	class ReceiverPreferences {
-           + propabilityTable : map<IPackageReceiver*, double> 
-           + chooseReceiver() : IPackageReceiver*
+           + ReceiverPreferences(function<> draw)
+           + probabilityTable : map<IPackageReceiver*, double> 
+           + drawReceiver() : IPackageReceiver*
            + addReceiver(IPackageReceiver)
            + deleteReceiver(IPackageReceiver)   
   
@@ -122,12 +132,12 @@ package "Nodes" {
 
 	class PackageSender {
            + receiverPreferences : ReceiverPreferences
-           - sendProduct() 
-           + addToBuffer()
+           - passPackageToReceiver() 
+           + addToBuffer() ??? 
            - buffer : optional
 	}
 
-	PackageSender --|> ReceiverPreferences
+	PackageSender *-- ReceiverPreferences
 
 	class Ramp {
 	}
@@ -140,7 +150,7 @@ package "Nodes" {
 
 	Worker --|> PackageSender
 	Worker --|> IPackageReceiver
-	IPackageQueue --|> Worker
+	IPackageQueue <|-- Worker
 
 	class Storehouse {
 	}
@@ -196,4 +206,3 @@ IReportNotifier -[hidden]> Reporting
 
 ' ==== END of < POSITIONING > ====
 @enduml
-
