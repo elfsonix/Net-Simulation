@@ -80,6 +80,33 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/Factory.hpp">
+			<Option target="Symulacja_sieci"/>
+		</Unit>
+		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/NodeCollection.hpp">
+			<Option target="Symulacja_sieci"/>
+		</Unit>
+		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/Package.hpp">
+			<Option target="Symulacja_sieci"/>
+		</Unit>
+		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/Ramp.hpp">
+			<Option target="Symulacja_sieci"/>
+		</Unit>
+		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/Ramps.hpp">
+			<Option target="Symulacja_sieci"/>
+		</Unit>
+		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/Storehouse.hpp">
+			<Option target="Symulacja_sieci"/>
+		</Unit>
+		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/Storehouses.hpp">
+			<Option target="Symulacja_sieci"/>
+		</Unit>
+		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/Worker.hpp">
+			<Option target="Symulacja_sieci"/>
+		</Unit>
+		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/Workers.hpp">
+			<Option target="Symulacja_sieci"/>
+		</Unit>
 		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/main.cpp">
 			<Option target="Symulacja_sieci"/>
 		</Unit>
