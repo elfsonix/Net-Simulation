@@ -13,7 +13,14 @@ hide <<function>> circle
 package "Factory Package" {
 
 	class NodeCollection<Node> << (T,olive) >> {
-		-nodes: std::list<Node>
+		- nodes: std::list<Node>
+		+ getNodes() : std::list<Node>
+		+ cbegin() : std::list<Node>::const_iterator
+		+ cendt() : std::list<Node>::const_iterator
+		+ begin() :std::list<Node>::iterator
+		+ begin() : std::list<Node>::const_iterator
+		+ end() : std::list<Node>::iterator
+		+ end() : std::list<Node>::const_iterator
 	}
 
 	Ramps ..|> NodeCollection : <<bind>> <Node->Ramp>
@@ -21,16 +28,15 @@ package "Factory Package" {
 	Storehouses ..|> NodeCollection : <<bind>> <Node->Storehouse>
 
 	class Factory {
-		-ramps : Ramps
-		-workers: Workers
-		-storehouses: Storehouses
-		+Factory()
-		+~Factory()
+		-_ramps : NodeCollection<Ramp>
+		-_workers: NodeCollection<Worker>
+		-_storehouses: NodeCollection<Storehouse>
+		+Factory(ramps : NodeCollection<Ramp>, workers: 				NodeCollection<Worker>, storehouses: 				NodeCollection<Storehouse>)
 		+add(nodeId : ElementID) : void
 		+isCompatible() : bool {query}
 		+findById(nodeId: ElementID) : iterator
 		+findById(nodeId: ElementID) : const_iterator
-		+removeById() : void
+		+removeById(nodeID : ElementID) : void
 	}
 	Factory *-- Ramps
 	Factory *-- Workers
@@ -86,8 +92,10 @@ package "Storage" {
 	PackageQueue .. IPackageQueue
 
 	class Package {
-	+{static}maxID : ElementID
-	+product_id : ElementID
+	- {static}maxID : ElementID
+	- product_id : ElementID
+	+ Package()
+	+ getProductId() : ElementID
 	}
 
 }
@@ -115,7 +123,6 @@ package "Nodes" {
 
 	class Ramp {
  	+ Ramp()
-	+~Ramp()
 	+ generatePackage() : void
 	}
 
@@ -124,10 +131,9 @@ package "Nodes" {
 
 	class Worker {
 	+ Worker()
-	+~Worker()
 	+ processPackage() : void
-	+ receiveProduct()
-	+ package_queue : std::unique_ptr <Package>
+	+ receiveProduct() : void
+	- _package_queue : std::unique_ptr <Package>
 	}
 
 	Worker .. PackageSender
@@ -136,9 +142,8 @@ package "Nodes" {
 
 	class Storehouse {
 	+ Storehouse()
-	+~Storehouse() <Package>
-	+ receiveProduct()
-	+ package_queue : std::unique_ptr
+	+ receiveProduct() : void
+	- _package_queue : std::unique_ptr
 	}
 
 	Storehouse .. IPackageReceiver

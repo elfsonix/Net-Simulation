@@ -28,6 +28,6 @@ public:
     void add(nodeID : ElementID);
     iterator findById(nodeId: ElementID);
     const_iterator findById(nodeId: ElementID);
-    void removeById();
+    void removeById(nodeID : ElementID);
     bool isCompatible();
 };
