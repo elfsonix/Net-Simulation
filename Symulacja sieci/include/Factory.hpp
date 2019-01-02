@@ -8,9 +8,9 @@
 #endif //SYMULACJA_SIECI_FACTORY_HPP
 
 #include "NodeCollection.hpp"
-#include "../Node Package/Worker.hpp"
-#include "../Node Package/Ramp.hpp"
-#include "../Node Package/Storehouse.hpp"
+#include "Worker.hpp"
+#include "Ramp.hpp"
+#include "Storehouse.hpp"
 
 
 class Factory {

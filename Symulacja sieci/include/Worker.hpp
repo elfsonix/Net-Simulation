@@ -7,7 +7,7 @@
 
 #endif //SYMULACJA_SIECI_WORKER_HPP
 
-#include "../Storage Package/Package.hpp"
+#include "Package.hpp"
 #include <memory>
 
 class Worker : public PackageSender {
