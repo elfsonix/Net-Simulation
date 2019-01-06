@@ -67,8 +67,3 @@ IPackageReceiver* ReceiverPreferences::drawReceiver(){
         it--;
     }
 }
-
-const_iterator ReceiverPreferences::cbegin() const { return _probabilityTable.cbegin(); }
-const_iterator ReceiverPreferences::cend() const { return _probabilityTable.cend(); }
-iterator ReceiverPreferences::begin()  { return _probabilityTable.begin(); }
-iterator ReceiverPreferences::end()  { return _probabilityTable.end(); }

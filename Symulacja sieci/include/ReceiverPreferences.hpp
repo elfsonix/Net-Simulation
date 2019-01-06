@@ -20,12 +20,11 @@ using vector_p = std::vector<std::pair<IPackageReceiver*, double>>;
 using const_iterator = preferences_t::const_iterator;
 using iterator = preferences_t::iterator;
 
-
+extern float const SUM_OF_PROBABILITIES = 1.0;
 class ReceiverPreferences {
 private:
     preferences_t _probabilityTable;
     std::function<std::vector<double>()> _drawnNumberVector;
-    float SUM_OF_PROBABILITIES = 1.0;
 
     //funkcje pomocnicze dla konstruktora - zwraca wektor par (wskaźnik na odbiorcę, prawdopodobieństwa)
     vector_p convertToVector(std::vector<IPackageReceiver*> packageVector, std::vector<double> doubleVector);
@@ -33,8 +32,7 @@ private:
 
 public:
     ReceiverPreferences(std::vector<IPackageReceiver*> packageVector,
-                        std::function<std::vector<double>()> drawnNumberVector){
-        _drawnNumberVector = drawnNumberVector;
+                        std::function<std::vector<double>()> drawnNumberVector): _drawnNumberVector(drawnNumberVector){
 
         std::vector<double> doubleVector = _drawnNumberVector();
         vector_p v = convertToVector(packageVector, doubleVector);
@@ -42,7 +40,7 @@ public:
     }
 
     ReceiverPreferences(const ReceiverPreferences &receiverPreferencesToCopy) : _probabilityTable(receiverPreferencesToCopy._probabilityTable),
-                        _drawnNumberVector(receiverPreferencesToCopy._drawnNumberVector), SUM_OF_PROBABILITIES(receiverPreferencesToCopy.SUM_OF_PROBABILITIES)
+                        _drawnNumberVector(receiverPreferencesToCopy._drawnNumberVector)
     {}
     //returnes values for the map - probability distribution
     std::vector<double> distribution();
@@ -57,10 +55,10 @@ public:
     void deleteReceiver(IPackageReceiver* receiver);
 
     //metody tylko do odczytu
-    const_iterator cbegin() const;
-    const_iterator cend() const;
-    iterator begin();
-    iterator end();
+    const_iterator cbegin() const { return _probabilityTable.cbegin(); }
+    const_iterator cend() const { return _probabilityTable.cend(); }
+    iterator begin() { return _probabilityTable.begin(); }
+    iterator end() { return _probabilityTable.end(); }
 
 };
 

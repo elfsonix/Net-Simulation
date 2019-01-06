@@ -9,11 +9,8 @@
 #include "IReportNotifier.hpp"
 #include "Factory.hpp"
 
-int simulate(IReportNotifier* reportNotifier, Factory factory, int numberOfRounds, int numberOfRoundsAfterWhichGenerateReport) {
-
-    return 0;
-}
-
+int simulate(IReportNotifier* reportNotifier, Factory factory, int numberOfRounds, 
+        int numberOfRoundsAfterWhichGenerateReport);
 
 
 #endif //NETSIM_SIMULATION_H
