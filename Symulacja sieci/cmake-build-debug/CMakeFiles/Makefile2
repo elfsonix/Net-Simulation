@@ -49,54 +49,340 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci"
+CMAKE_SOURCE_DIR = "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug"
 
 #=============================================================================
-# Target rules for target CMakeFiles/Symulacja_sieci.dir
+# Target rules for target CMakeFiles/konfig_run.dir
 
 # All Build rule for target.
-CMakeFiles/Symulacja_sieci.dir/all:
-	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/depend
-	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target Symulacja_sieci"
-.PHONY : CMakeFiles/Symulacja_sieci.dir/all
+CMakeFiles/konfig_run.dir/all: googletest-master/googlemock/CMakeFiles/gmock.dir/all
+CMakeFiles/konfig_run.dir/all: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/depend
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=14,15 "Built target konfig_run"
+.PHONY : CMakeFiles/konfig_run.dir/all
 
 # Include target in all.
-all: CMakeFiles/Symulacja_sieci.dir/all
+all: CMakeFiles/konfig_run.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Symulacja_sieci.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Symulacja_sieci.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 0
-.PHONY : CMakeFiles/Symulacja_sieci.dir/rule
+CMakeFiles/konfig_run.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 6
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/konfig_run.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles/konfig_run.dir/rule
 
 # Convenience name for target.
-Symulacja_sieci: CMakeFiles/Symulacja_sieci.dir/rule
+konfig_run: CMakeFiles/konfig_run.dir/rule
 
-.PHONY : Symulacja_sieci
-
-# clean rule for target.
-CMakeFiles/Symulacja_sieci.dir/clean:
-	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/clean
-.PHONY : CMakeFiles/Symulacja_sieci.dir/clean
+.PHONY : konfig_run
 
 # clean rule for target.
-clean: CMakeFiles/Symulacja_sieci.dir/clean
+CMakeFiles/konfig_run.dir/clean:
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/clean
+.PHONY : CMakeFiles/konfig_run.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/konfig_run.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/konfig_test.dir
+
+# All Build rule for target.
+CMakeFiles/konfig_test.dir/all: googletest-master/googlemock/CMakeFiles/gmock.dir/all
+CMakeFiles/konfig_test.dir/all: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/depend
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=16,17,18,19 "Built target konfig_test"
+.PHONY : CMakeFiles/konfig_test.dir/all
+
+# Include target in all.
+all: CMakeFiles/konfig_test.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/konfig_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 8
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/konfig_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles/konfig_test.dir/rule
+
+# Convenience name for target.
+konfig_test: CMakeFiles/konfig_test.dir/rule
+
+.PHONY : konfig_test
+
+# clean rule for target.
+CMakeFiles/konfig_test.dir/clean:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/clean
+.PHONY : CMakeFiles/konfig_test.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/konfig_test.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/NetSim.dir
+
+# All Build rule for target.
+CMakeFiles/NetSim.dir/all: googletest-master/googlemock/CMakeFiles/gmock.dir/all
+CMakeFiles/NetSim.dir/all: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/depend
+	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4,5 "Built target NetSim"
+.PHONY : CMakeFiles/NetSim.dir/all
+
+# Include target in all.
+all: CMakeFiles/NetSim.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/NetSim.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 9
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/NetSim.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 0
+.PHONY : CMakeFiles/NetSim.dir/rule
+
+# Convenience name for target.
+NetSim: CMakeFiles/NetSim.dir/rule
+
+.PHONY : NetSim
+
+# clean rule for target.
+CMakeFiles/NetSim.dir/clean:
+	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/clean
+.PHONY : CMakeFiles/NetSim.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/NetSim.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory googletest-master
+
+# Convenience name for "all" pass in the directory.
+googletest-master/all: googletest-master/googlemock/all
+
+.PHONY : googletest-master/all
+
+# Convenience name for "clean" pass in the directory.
+googletest-master/clean: googletest-master/googlemock/clean
+
+.PHONY : googletest-master/clean
+
+# Convenience name for "preinstall" pass in the directory.
+googletest-master/preinstall: googletest-master/googlemock/preinstall
+
+.PHONY : googletest-master/preinstall
+
+#=============================================================================
+# Directory level rules for directory googletest-master/googlemock
+
+# Convenience name for "all" pass in the directory.
+googletest-master/googlemock/all: googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
+googletest-master/googlemock/all: googletest-master/googlemock/CMakeFiles/gmock.dir/all
+googletest-master/googlemock/all: googletest-master/googlemock/gtest/all
+
+.PHONY : googletest-master/googlemock/all
+
+# Convenience name for "clean" pass in the directory.
+googletest-master/googlemock/clean: googletest-master/googlemock/CMakeFiles/gmock_main.dir/clean
+googletest-master/googlemock/clean: googletest-master/googlemock/CMakeFiles/gmock.dir/clean
+googletest-master/googlemock/clean: googletest-master/googlemock/gtest/clean
+
+.PHONY : googletest-master/googlemock/clean
+
+# Convenience name for "preinstall" pass in the directory.
+googletest-master/googlemock/preinstall: googletest-master/googlemock/gtest/preinstall
+
+.PHONY : googletest-master/googlemock/preinstall
+
+#=============================================================================
+# Target rules for target googletest-master/googlemock/CMakeFiles/gmock_main.dir
+
+# All Build rule for target.
+googletest-master/googlemock/CMakeFiles/gmock_main.dir/all: googletest-master/googlemock/CMakeFiles/gmock.dir/all
+googletest-master/googlemock/CMakeFiles/gmock_main.dir/all: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f googletest-master\googlemock\CMakeFiles\gmock_main.dir\build.make googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend
+	$(MAKE) -f googletest-master\googlemock\CMakeFiles\gmock_main.dir\build.make googletest-master/googlemock/CMakeFiles/gmock_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=8,9 "Built target gmock_main"
+.PHONY : googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
+
+# Include target in all.
+all: googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+googletest-master/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 6
+	$(MAKE) -f CMakeFiles\Makefile2 googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 0
+.PHONY : googletest-master/googlemock/CMakeFiles/gmock_main.dir/rule
+
+# Convenience name for target.
+gmock_main: googletest-master/googlemock/CMakeFiles/gmock_main.dir/rule
+
+.PHONY : gmock_main
+
+# clean rule for target.
+googletest-master/googlemock/CMakeFiles/gmock_main.dir/clean:
+	$(MAKE) -f googletest-master\googlemock\CMakeFiles\gmock_main.dir\build.make googletest-master/googlemock/CMakeFiles/gmock_main.dir/clean
+.PHONY : googletest-master/googlemock/CMakeFiles/gmock_main.dir/clean
+
+# clean rule for target.
+clean: googletest-master/googlemock/CMakeFiles/gmock_main.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target googletest-master/googlemock/CMakeFiles/gmock.dir
+
+# All Build rule for target.
+googletest-master/googlemock/CMakeFiles/gmock.dir/all: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f googletest-master\googlemock\CMakeFiles\gmock.dir\build.make googletest-master/googlemock/CMakeFiles/gmock.dir/depend
+	$(MAKE) -f googletest-master\googlemock\CMakeFiles\gmock.dir\build.make googletest-master/googlemock/CMakeFiles/gmock.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=6,7 "Built target gmock"
+.PHONY : googletest-master/googlemock/CMakeFiles/gmock.dir/all
+
+# Include target in all.
+all: googletest-master/googlemock/CMakeFiles/gmock.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+googletest-master/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 4
+	$(MAKE) -f CMakeFiles\Makefile2 googletest-master/googlemock/CMakeFiles/gmock.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 0
+.PHONY : googletest-master/googlemock/CMakeFiles/gmock.dir/rule
+
+# Convenience name for target.
+gmock: googletest-master/googlemock/CMakeFiles/gmock.dir/rule
+
+.PHONY : gmock
+
+# clean rule for target.
+googletest-master/googlemock/CMakeFiles/gmock.dir/clean:
+	$(MAKE) -f googletest-master\googlemock\CMakeFiles\gmock.dir\build.make googletest-master/googlemock/CMakeFiles/gmock.dir/clean
+.PHONY : googletest-master/googlemock/CMakeFiles/gmock.dir/clean
+
+# clean rule for target.
+clean: googletest-master/googlemock/CMakeFiles/gmock.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory googletest-master/googlemock/gtest
+
+# Convenience name for "all" pass in the directory.
+googletest-master/googlemock/gtest/all: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+googletest-master/googlemock/gtest/all: googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+
+.PHONY : googletest-master/googlemock/gtest/all
+
+# Convenience name for "clean" pass in the directory.
+googletest-master/googlemock/gtest/clean: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/clean
+googletest-master/googlemock/gtest/clean: googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+
+.PHONY : googletest-master/googlemock/gtest/clean
+
+# Convenience name for "preinstall" pass in the directory.
+googletest-master/googlemock/gtest/preinstall:
+
+.PHONY : googletest-master/googlemock/gtest/preinstall
+
+#=============================================================================
+# Target rules for target googletest-master/googlemock/gtest/CMakeFiles/gtest.dir
+
+# All Build rule for target.
+googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f googletest-master\googlemock\gtest\CMakeFiles\gtest.dir\build.make googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f googletest-master\googlemock\gtest\CMakeFiles\gtest.dir\build.make googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=10,11 "Built target gtest"
+.PHONY : googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+
+# Include target in all.
+all: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 2
+	$(MAKE) -f CMakeFiles\Makefile2 googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 0
+.PHONY : googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/rule
+
+.PHONY : gtest
+
+# clean rule for target.
+googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f googletest-master\googlemock\gtest\CMakeFiles\gtest.dir\build.make googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/clean
+.PHONY : googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+# clean rule for target.
+clean: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir
+
+# All Build rule for target.
+googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+	$(MAKE) -f googletest-master\googlemock\gtest\CMakeFiles\gtest_main.dir\build.make googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f googletest-master\googlemock\gtest\CMakeFiles\gtest_main.dir\build.make googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=12,13 "Built target gtest_main"
+.PHONY : googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+
+# Include target in all.
+all: googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 4
+	$(MAKE) -f CMakeFiles\Makefile2 googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 0
+.PHONY : googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/rule
+
+.PHONY : gtest_main
+
+# clean rule for target.
+googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f googletest-master\googlemock\gtest\CMakeFiles\gtest_main.dir\build.make googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+.PHONY : googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
+
+# clean rule for target.
+clean: googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/clean
 
 .PHONY : clean
 
