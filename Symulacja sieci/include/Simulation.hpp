@@ -6,9 +6,10 @@
 #define NETSIM_SIMULATION_H
 
 #include <ostream>
-#include "IReportNotifier"
+#include "IReportNotifier.hpp"
+#include "Factory.hpp"
 
-int simulate(IReportNotifier* reportNotifier) {
+int simulate(IReportNotifier* reportNotifier, Factory factory, int numberOfRounds, int numberOfRoundsAfterWhichGenerateReport) {
 
     return 0;
 }
