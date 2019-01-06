@@ -1,4 +1,4 @@
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
 // Created by Sonia on 2018-12-30.
 //
 
@@ -25,4 +25,9 @@ public:
     typename std::list<Node>::const_iterator begin() const { return _nodes.cbegin(); }
     typename std::list<Node>::iterator end() { return _nodes.end(); }
     typename std::list<Node>::const_iterator end() const { return _nodes.cend(); }
+    void add(const Node& node);
+    iterator findById(nodeId: ElementID) const;
+    const_iterator findById(ElementID nodeId) const;
+    void removeById(ElemntID nodeID);
 };
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

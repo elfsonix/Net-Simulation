@@ -1,4 +1,4 @@
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
 // Created by Sonia on 2018-12-30.
 //
 
@@ -11,6 +11,7 @@
 #include "Worker.hpp"
 #include "Ramp.hpp"
 #include "Storehouse.hpp"
+#include <list>
 
 
 class Factory {
@@ -25,9 +26,11 @@ public:
         _ramps = ramps;
     }
 
-    void add(nodeID : ElementID);
-    iterator findById(nodeId: ElementID);
-    const_iterator findById(nodeId: ElementID);
-    void removeById(nodeID : ElementID);
-    bool isCompatible();
+    void add_worker(const Worker& worker);
+    void add_ramp(const Ramp& ramp);
+    void add_storehouse(const Storehouse& storehouse);
+    bool isCompatible() const;
+    const_iterator findById(ElementID nodeId) const;
+    void removeById(ElementID nodeID);
 };
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

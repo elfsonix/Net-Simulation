@@ -1,4 +1,4 @@
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
 // Created by Sonia on 2018-12-30.
 //
 
@@ -10,10 +10,17 @@
 #include "Package.hpp"
 #include <memory>
 
-class Storehouse {
+class Storehouse : public IPackageReceiver, public IPackageStockpile {
 private:
     std::unique_ptr<Package> _package_queue;
+    ElementID _nodeId;
 public:
-    Storehouse(){}
-    void receiveProduct();
+    Storehouse(std::unique_ptr package_stockpile, ElementID nodeId) : IPackageReceiver(), IPackageStockpile(){}
+    void receivePackage(const Package& package);
+    tuple<> identifyReceiver() const;
+    std::deque<Package>::const_iterator  cbegin() const;
+    deque<Package>::const_iterator cend() const;
+    deque<Package>::iterator begin() const;
+    deque<Package>::iterator end() const;
 };
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

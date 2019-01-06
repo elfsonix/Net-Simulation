@@ -1,4 +1,4 @@
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
 // Created by Sonia on 2018-12-30.
 //
 
@@ -18,7 +18,8 @@ public:
         _product_id = maxID;
         maxID++;
     }
-    ElementID getProductId() {
+    ElementID getProductId() const {
         return _product_id;
     }
 };
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
