@@ -133,7 +133,7 @@ package "Nodes" {
 	class PackageSender {
            + receiverPreferences : ReceiverPreferences
            - passPackageToReceiver() 
-           + addToBuffer() ??? 
+           + addToBuffer() : void
            - buffer : optional
 	}
 
