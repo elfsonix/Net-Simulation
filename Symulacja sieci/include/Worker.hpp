@@ -9,6 +9,8 @@
 
 #include "Package.hpp"
 #include <memory>
+#include <deque>
+#include <tuple>
 
 class Worker : public PackageSender, public IPackageReceiver, public IPackageQueue {
 private:
@@ -18,11 +20,11 @@ public:
     Worker(std::unique_ptr<Package> package_queue, ElementID nodeId) : PackageSender(), IPackageReceiver(), IPackageQueue() {}
     void processPackage();
     void receivePackage(const Package& package);
-    tuple<> identifyReceiver() const;
+    std::tuple<ReceiverType, ElementID> identifyReceiver() const;
     std::deque<Package>::const_iterator  cbegin() const;
-    deque<Package>::const_iterator cend() const;
-    deque<Package>::iterator begin() const;
-    deque<Package>::iterator end() const;
+    std::deque<Package>::const_iterator cend() const;
+    std::deque<Package>::iterator begin() const;
+    std::deque<Package>::iterator end() const;
     Package popPackage();
     QueueType returnQueueType() const;
 

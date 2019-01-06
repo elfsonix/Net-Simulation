@@ -1,3 +1,0 @@
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/rebuild_cache.dir
