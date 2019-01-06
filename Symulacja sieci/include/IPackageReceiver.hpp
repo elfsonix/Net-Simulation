@@ -25,7 +25,7 @@ public:
     virtual deque_it end() = 0;
 
     virtual std::tuple<ReceiverType, ElementID> identifyReceiver() = 0;
-    virtual Package receiveProduct() = 0;
+    virtual Package receivePackage() = 0;
 
 
 };

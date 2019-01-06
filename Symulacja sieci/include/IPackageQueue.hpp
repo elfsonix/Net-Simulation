@@ -14,7 +14,7 @@ class IPackageQueue : public IPackageStockpile{
 public:
 
     IPackageQueue() {};    //default constructor
-    virtual Package popProduct()= 0;
+    virtual Package popPackage()= 0;
     virtual QueueType returnQueueType() = 0;
 
 };

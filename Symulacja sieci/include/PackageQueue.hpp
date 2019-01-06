@@ -21,9 +21,9 @@ public:
         //_queueType = queueType;
     }
 
-   Package popProduct() override;
+   Package popPackage() override;
 
-    void putProductInQueue(Package package) override;
+    void putPackageInQueue(Package package) override;
 
     QueueType returnQueueType() override;
 };

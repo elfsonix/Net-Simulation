@@ -10,8 +10,8 @@
 
 class PackageSender{
 private:
-    void passProductToReceiver();
-    std::experimental::optional<Package> bufferOfProductsReady;
+    void passPackageToReceiver();
+    std::experimental::optional<Package> bufferOfPackagesReady;
 
 public:
     ReceiverPreferences receiverPreferences;
