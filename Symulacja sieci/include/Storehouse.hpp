@@ -9,6 +9,8 @@
 
 #include "Package.hpp"
 #include <memory>
+#include <deque>
+#include <tuple>
 
 class Storehouse : public IPackageReceiver, public IPackageStockpile {
 private:
@@ -19,8 +21,8 @@ public:
     void receivePackage(const Package& package);
     tuple<> identifyReceiver() const;
     std::deque<Package>::const_iterator  cbegin() const;
-    deque<Package>::const_iterator cend() const;
-    deque<Package>::iterator begin() const;
-    deque<Package>::iterator end() const;
+    std::deque<Package>::const_iterator cend() const;
+    std::deque<Package>::iterator begin() const;
+    std::deque<Package>::iterator end() const;
 };
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
