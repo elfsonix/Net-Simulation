@@ -63,16 +63,10 @@ set(CMAKE_C_CL_SHOWINCLUDES_PREFIX "")
 if(CMAKE_C_CL_SHOWINCLUDES_PREFIX)
   set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_C_CL_SHOWINCLUDES_PREFIX}")
 endif()
-
-
-
-
-
-<<<<<<< HEAD:Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
-=======
+
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "mingw32;gcc;moldname;mingwex;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "C:/MinGW/lib/gcc/mingw32/6.3.0;C:/MinGW/lib/gcc;C:/MinGW/mingw32/lib;C:/MinGW/lib")
->>>>>>> remotes/origin/release/Kasia-develop:Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake
+
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -100,6 +89,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -154,6 +154,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named Symulacja_sieci
+
+# Build rule for target.
+Symulacja_sieci: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Symulacja_sieci
+.PHONY : Symulacja_sieci
+
+# fast build rule for target.
+Symulacja_sieci/fast:
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/build
+.PHONY : Symulacja_sieci/fast
 
 #=============================================================================
 # Target rules for targets named konfig_run
@@ -252,6 +265,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/main.cpp.obj
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/main.cpp.obj
 	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/main.cpp.obj
 .PHONY : main.cpp.obj
@@ -262,6 +276,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/main.cpp.i
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/main.cpp.i
 	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/main.cpp.i
 .PHONY : main.cpp.i
@@ -272,6 +287,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/main.cpp.s
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/main.cpp.s
 	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/main.cpp.s
 .PHONY : main.cpp.s
@@ -444,13 +460,14 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... install/local
+	@echo ... install
+	@echo ... edit_cache
+	@echo ... Symulacja_sieci
 	@echo ... rebuild_cache
 	@echo ... konfig_run
 	@echo ... konfig_test
 	@echo ... NetSim
-	@echo ... install/local
-	@echo ... install
-	@echo ... edit_cache
 	@echo ... list_install_components
 	@echo ... install/strip
 	@echo ... gmock_main
