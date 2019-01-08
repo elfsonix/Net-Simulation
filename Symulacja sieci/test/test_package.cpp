@@ -15,21 +15,26 @@ TEST(PackageTest, PackageClass){
 }
 
 TEST(PackageTest, PackageQueueClass1){
-    PackageQueue packageQueueLIFO = PackageQueue(QueueType::LIFO);
-    PackageQueue packageQueueFIFO = PackageQueue(QueueType::FIFO);
     Package pack1 = Package();
     Package pack2 = Package();
-
+    std::deque<Package> que;
+    que.push_back(pack1);
+    que.push_back(pack2);
+    PackageQueue packageQueueLIFO = PackageQueue(QueueType::LIFO, que);
+    PackageQueue packageQueueFIFO = PackageQueue(QueueType::FIFO, que);
     ASSERT_EQ(QueueType::FIFO, packageQueueFIFO.returnQueueType());
     ASSERT_EQ(QueueType::LIFO, packageQueueLIFO.returnQueueType());
 
 }
 
 TEST(PackageTest, PackageQueueClass2){
-    PackageQueue packageQueueLIFO = PackageQueue(QueueType::LIFO);
-    PackageQueue packageQueueFIFO = PackageQueue(QueueType::FIFO);
     Package pack1 = Package();
     Package pack2 = Package();
+    std::deque<Package> que;
+    que.push_back(pack1);
+    que.push_back(pack2);
+    PackageQueue packageQueueLIFO = PackageQueue(QueueType::LIFO, que);
+    PackageQueue packageQueueFIFO = PackageQueue(QueueType::FIFO, que);
 
     packageQueueFIFO.putProductInQueue(pack1);
     packageQueueFIFO.putProductInQueue(pack2);
