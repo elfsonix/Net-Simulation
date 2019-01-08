@@ -140,7 +140,11 @@ CMAKE_INSTALL_MANDIR:PATH=
 //C header files for non-gcc (/usr/include)
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
+<<<<<<< HEAD
 >>>>>>> remotes/origin/release/Kasia-develop
+=======
+>>>>>>> Kasia-develop
+>>>>>>> develop
 //Install path prefix, prepended onto install directories.
 CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/NetSim
 

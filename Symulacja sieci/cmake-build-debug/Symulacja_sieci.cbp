@@ -104,7 +104,11 @@
 		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/main.cpp">
 =======
 		<Unit filename="C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/main.cpp">
+<<<<<<< HEAD
 >>>>>>> remotes/origin/release/Kasia-develop
+=======
+>>>>>>> Kasia-develop
+>>>>>>> develop
 			<Option target="Symulacja_sieci"/>
 		</Unit>
 		<Unit filename="C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/CMakeLists.txt">

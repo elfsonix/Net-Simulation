@@ -14,7 +14,11 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 The C compiler identification is GNU, found in "C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.exe"
 =======
 The C compiler identification is GNU, found in "C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.exe"
+<<<<<<< HEAD
 >>>>>>> remotes/origin/release/Kasia-develop
+=======
+>>>>>>> Kasia-develop
+>>>>>>> develop
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/MinGW/bin/g++.exe 
@@ -31,7 +35,11 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 The CXX compiler identification is GNU, found in "C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.exe"
 =======
 The CXX compiler identification is GNU, found in "C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.exe"
+<<<<<<< HEAD
 >>>>>>> remotes/origin/release/Kasia-develop
+=======
+>>>>>>> Kasia-develop
+>>>>>>> develop
 
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/CMakeTmp
@@ -116,7 +124,11 @@ COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7ca75.exe' '-mtune=generic' '-march=i586'
  c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/collect2.exe -plugin c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll -plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\Kasia\AppData\Local\Temp\ccxZf8Y5.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -Bdynamic -o cmTC_7ca75.exe c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../.. --whole-archive CMakeFiles\cmTC_7ca75.dir/objects.a --no-whole-archive --out-implib libcmTC_7ca75.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/6.3.0/crtend.o
 COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7ca75.exe' '-mtune=generic' '-march=i586'
 mingw32-make.exe[1]: Leaving directory 'C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/CMakeTmp'
+<<<<<<< HEAD
 >>>>>>> remotes/origin/release/Kasia-develop
+=======
+>>>>>>> Kasia-develop
+>>>>>>> develop
 
 
 Parsed C implicit link information from above output:
@@ -189,7 +201,11 @@ Parsed C implicit link information from above output:
     arg [c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=c:/mingw/bin/../libexec/gcc/mingw32/6.3.0/lto-wrapper.exe] ==> ignore
     arg [-plugin-opt=-fresolution=C:\Users\Kasia\AppData\Local\Temp\ccxZf8Y5.res] ==> ignore
+<<<<<<< HEAD
 >>>>>>> remotes/origin/release/Kasia-develop
+=======
+>>>>>>> Kasia-develop
+>>>>>>> develop
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -236,7 +252,11 @@ Parsed C implicit link information from above output:
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
     arg [libcmTC_7ca75.dll.a] ==> ignore
+<<<<<<< HEAD
 >>>>>>> remotes/origin/release/Kasia-develop
+=======
+>>>>>>> Kasia-develop
+>>>>>>> develop
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -300,7 +320,11 @@ Linking C executable cmTC_3be75.exe
 C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_3be75.dir/objects.a @CMakeFiles\cmTC_3be75.dir\objects1.rsp
 C:\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_3be75.dir/objects.a -Wl,--no-whole-archive  -o cmTC_3be75.exe -Wl,--out-implib,libcmTC_3be75.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_3be75.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/CMakeTmp'
+<<<<<<< HEAD
 >>>>>>> remotes/origin/release/Kasia-develop
+=======
+>>>>>>> Kasia-develop
+>>>>>>> develop
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -336,7 +360,11 @@ Linking C executable cmTC_43b68.exe
 C:\MinGW\bin\ar.exe cr CMakeFiles\cmTC_43b68.dir/objects.a @CMakeFiles\cmTC_43b68.dir\objects1.rsp
 C:\MinGW\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_43b68.dir/objects.a -Wl,--no-whole-archive  -o cmTC_43b68.exe -Wl,--out-implib,libcmTC_43b68.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_43b68.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/CMakeTmp'
+<<<<<<< HEAD
 >>>>>>> remotes/origin/release/Kasia-develop
+=======
+>>>>>>> Kasia-develop
+>>>>>>> develop
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -813,4 +841,8 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/Kasia/Documents/GitHub/agh_air_
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
+<<<<<<< HEAD
 >>>>>>> remotes/origin/release/Kasia-develop
+=======
+>>>>>>> Kasia-develop
+>>>>>>> develop

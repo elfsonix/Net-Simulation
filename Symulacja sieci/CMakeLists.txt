@@ -23,4 +23,8 @@ add_executable(konfig_test ${SOURCE_FILES} ${TEST_SOURCES})
 
 
 add_executable(NetSim main.cpp include/IPackageReceiver.hpp include/PackageQueue.hpp include/QueueType.hpp include/IPackageQueue.hpp include/IPackageStockpile.hpp include/Package.hpp include/PackageSender.hpp include/ReceiverPreferences.hpp include/Worker.hpp include/Simulation.hpp src/ReceiverPreferences.cpp src/PackageQueue.cpp src/PackageSender.cpp)
+<<<<<<< HEAD
 >>>>>>> remotes/origin/release/Kasia-develop
+=======
+>>>>>>> Kasia-develop
+>>>>>>> develop
