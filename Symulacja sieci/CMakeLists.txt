@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.13)
+﻿cmake_minimum_required(VERSION 3.13)
 project(NetSim)
 include_directories(include                     #nasz folder include
         googletest-master/googlemock/include    #foldery google test
@@ -10,6 +10,9 @@ set(TEST_SOURCES
 #dodaje bibliotekę Google Test, kompiluje ją z użyciem CMakeLists.txt z folderu googletest-master
 add_subdirectory(googletest-master)
 link_libraries(gmock)
+
+
+add_executable(Symulacja_sieci main.cpp "include/NodeCollection.hpp" "include/Factory.hpp" "include/Worker.hpp" "include/Ramp.hpp" "include/Storehouse.hpp" "include/Package.hpp")
 
 #Tworzy konfigurację o nazwie konfig_run (nazwę możemy dowolnie zmienić)
 # do której dołącza plik main.cpp z funkcją main()

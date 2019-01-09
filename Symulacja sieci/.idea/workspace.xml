@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated>
-      <config projectName="NetSim" targetName="gmock_main" />
-      <config projectName="NetSim" targetName="konfig_test" />
-      <config projectName="NetSim" targetName="gtest_main" />
-      <config projectName="NetSim" targetName="konfig_run" />
-      <config projectName="NetSim" targetName="gtest" />
-      <config projectName="NetSim" targetName="NetSim" />
-      <config projectName="NetSim" targetName="gmock" />
-    </generated>
+    <generated />
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -17,6 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     <list default="true" id="2e22d74b-5688-49cf-907a-98630e1d1623" name="Default Changelist" comment="Poprawy nazw zmiennych" />
 =======
@@ -33,6 +26,40 @@
       <change beforePath="$PROJECT_DIR$/include/IPackageStockpile.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/IPackageStockpile.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PackageSender.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PackageSender.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_package.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_package.cpp" afterDir="false" />
+=======
+    <list default="true" id="2c8c642e-4498-4096-af07-528f2b928636" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_run.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_run.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_run.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_run.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_run.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_run.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_run.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_run.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_run.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_run.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_test.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_test.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_test.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_test.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_test.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/konfig_test.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/NetSim.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/NetSim.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Symulacja_sieci.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Symulacja_sieci.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+>>>>>>> develop
     </list>
 >>>>>>> Stashed changes
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -43,6 +70,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -95,11 +123,20 @@
             <state relative-caret-position="150">
               <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
 >>>>>>> Stashed changes
+=======
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+>>>>>>> develop
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/include/ReceiverType.hpp">
           <provider selected="true" editor-type-id="text-editor" />
@@ -184,16 +221,17 @@
                 <element signature="e#103#119#0" expanded="true" />
               </folding>
 >>>>>>> Stashed changes
+=======
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+>>>>>>> develop
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>prod</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -202,6 +240,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/ReceiverType.h" />
         <option value="$PROJECT_DIR$/include/QueueType.h" />
         <option value="$PROJECT_DIR$/test/main_test.cpp" />
@@ -242,15 +281,18 @@
         <option value="$PROJECT_DIR$/test/test_package.cpp" />
         <option value="$PROJECT_DIR$/src/PackageSender.cpp" />
 >>>>>>> Stashed changes
+=======
+        <option value="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" />
+>>>>>>> develop
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-18" />
-    <option name="y" value="-18" />
+    <option name="x" value="-14" />
     <option name="width" value="1953" />
     <option name="height" value="1035" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -315,6 +357,10 @@
       <visibility group="Run configurations" flag="false" />
       <visibility group="npm scripts" flag="false" />
     </myKeys>
+=======
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+>>>>>>> develop
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -328,80 +374,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Google Test.PackageTest.PackageQueueClass2">
-    <configuration name="All in konfig_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" nameIsGenerated="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="konfig_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="konfig_test" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PackageTest.PackageClass" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="konfig_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="konfig_test" TEST_CLASS="PackageTest" TEST_METHOD="PackageClass" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PackageTest.PackageQueueClass" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="konfig_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="konfig_test" TEST_CLASS="PackageTest" TEST_METHOD="PackageQueueClass" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PackageTest.PackageQueueClass1" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="konfig_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="konfig_test" TEST_CLASS="PackageTest" TEST_METHOD="PackageQueueClass1" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PackageTest.PackageQueueClass2" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="konfig_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="konfig_test" TEST_CLASS="PackageTest" TEST_METHOD="PackageQueueClass2" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NetSim" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="NetSim" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="NetSim">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="konfig_run" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="konfig_run" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="konfig_run">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="konfig_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="konfig_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="konfig_test">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.konfig_run" />
-      <item itemvalue="Application.konfig_test" />
-      <item itemvalue="Application.NetSim" />
-      <item itemvalue="Google Test.All in konfig_test" />
-      <item itemvalue="Google Test.PackageTest.PackageClass" />
-      <item itemvalue="Google Test.PackageTest.PackageQueueClass" />
-      <item itemvalue="Google Test.PackageTest.PackageQueueClass1" />
-      <item itemvalue="Google Test.PackageTest.PackageQueueClass2" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Google Test.PackageTest.PackageQueueClass2" />
-        <item itemvalue="Google Test.PackageTest.PackageQueueClass1" />
-        <item itemvalue="Google Test.PackageTest.PackageClass" />
-        <item itemvalue="Google Test.PackageTest.PackageQueueClass" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2e22d74b-5688-49cf-907a-98630e1d1623" name="Default Changelist" comment="" />
-      <created>1546002831806</created>
+      <changelist id="2c8c642e-4498-4096-af07-528f2b928636" name="Default Changelist" comment="" />
+      <created>1546960251535</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1546002831806</updated>
       <workItem from="1546002835273" duration="1266000" />
       <workItem from="1546258903379" duration="1413000" />
@@ -421,80 +403,69 @@
       <workItem from="1546807989312" duration="433000" />
       <workItem from="1546809167586" duration="427000" />
       <workItem from="1546814854325" duration="568000" />
+=======
+      <updated>1546960251535</updated>
+      <workItem from="1546960256721" duration="94000" />
+>>>>>>> develop
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="PackageTest_PackageQueueClass1 - 2018.12.31 at 19h 21m 19s.xml">
-      <configuration name="PackageTest.PackageQueueClass1" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PackageTest_PackageQueueClass1 - 2018.12.31 at 19h 21m 49s.xml">
-      <configuration name="PackageTest.PackageQueueClass1" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PackageTest_PackageQueueClass2 - 2018.12.31 at 19h 21m 59s.xml">
-      <configuration name="PackageTest.PackageQueueClass2" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PackageTest_PackageQueueClass2 - 2018.12.31 at 19h 27m 29s.xml">
-      <configuration name="PackageTest.PackageQueueClass2" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PackageTest_PackageQueueClass2 - 2018.12.31 at 19h 31m 15s.xml">
-      <configuration name="PackageTest.PackageQueueClass2" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PackageTest_PackageQueueClass2 - 2018.12.31 at 19h 42m 17s.xml">
-      <configuration name="PackageTest.PackageQueueClass2" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PackageTest_PackageClass - 2019.01.05 at 12h 16m 52s.xml">
-      <configuration name="PackageTest.PackageClass" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PackageTest_PackageClass - 2019.01.05 at 12h 17m 05s.xml">
-      <configuration name="PackageTest.PackageClass" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PackageTest_PackageQueueClass1 - 2019.01.05 at 12h 17m 19s.xml">
-      <configuration name="PackageTest.PackageQueueClass1" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="PackageTest_PackageQueueClass2 - 2019.01.05 at 12h 17m 24s.xml">
-      <configuration name="PackageTest.PackageQueueClass2" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="41240000" />
 =======
     <option name="totallyTimeSpent" value="40266000" />
 >>>>>>> Stashed changes
+=======
+    <option name="totallyTimeSpent" value="94000" />
+>>>>>>> develop
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1228" height="783" extended-state="6" />
     <layout>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20648465" />
 =======
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
 >>>>>>> Stashed changes
+=======
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+>>>>>>> develop
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="CMake" visible="true" weight="0.32874617" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32874617" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.21712539" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.2232416" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.2767584" />
       <window_info anchor="bottom" id="CMake" order="11" />
       <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32874617" />
+=======
+      <window_info anchor="right" id="Database" />
+>>>>>>> develop
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -681,13 +652,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
+=======
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+>>>>>>> develop
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Worker.hpp">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="284">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
         </state>
       </provider>
     </entry>

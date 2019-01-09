@@ -6,6 +6,7 @@
 #define SYMULACJA_SIECI_WORKER_HPP
 
 #endif //SYMULACJA_SIECI_WORKER_HPP
+<<<<<<< HEAD
 
 
 #include <memory>
@@ -14,6 +15,13 @@
 #include "PackageSender.hpp"
 #include "IPackageReceiver.hpp"
 
+=======
+
+#include "Package.hpp"
+#include <memory>
+#include <deque>
+#include <tuple>
+>>>>>>> develop
 
 class Worker : public PackageSender, public IPackageReceiver, public IPackageQueue {
 private:

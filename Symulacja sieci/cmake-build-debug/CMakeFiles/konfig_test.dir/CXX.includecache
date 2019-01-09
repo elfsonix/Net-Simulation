@@ -292,6 +292,19 @@ QueueType.hpp
 Package.hpp
 ../include/Package.hpp
 
+<<<<<<< HEAD
+=======
+../include/IPackageReceiver.hpp
+tuple
+-
+deque
+-
+ReceiverType.hpp
+../include/ReceiverType.hpp
+Package.hpp
+../include/Package.hpp
+
+>>>>>>> develop
 ../include/IPackageStockpile.hpp
 QueueType.hpp
 ../include/QueueType.hpp
@@ -316,9 +329,57 @@ stdexcept
 
 ../include/QueueType.hpp
 
+<<<<<<< HEAD
+=======
+../include/ReceiverPreferences.hpp
+map
+-
+functional
+-
+cstdlib
+-
+stdexcept
+-
+random
+-
+iostream
+-
+IPackageQueue.hpp
+../include/IPackageQueue.hpp
+IPackageReceiver.hpp
+../include/IPackageReceiver.hpp
+
+../include/ReceiverType.hpp
+
+../include/Worker.hpp
+Package.hpp
+../include/Package.hpp
+memory
+-
+deque
+-
+tuple
+-
+
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/main_test.cpp
+gtest/gtest.h
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
+
+>>>>>>> develop
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_package.cpp
 gtest/gtest.h
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
 PackageQueue.hpp
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/PackageQueue.hpp
 
+<<<<<<< HEAD
+=======
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_receiver.cpp
+Worker.hpp
+-
+gtest/gtest.h
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
+ReceiverPreferences.hpp
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/ReceiverPreferences.hpp
+
+>>>>>>> develop

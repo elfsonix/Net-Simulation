@@ -66,6 +66,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/Symulacja_sieci.dir/DependInfo.cmake"
   "CMakeFiles/konfig_run.dir/DependInfo.cmake"
   "CMakeFiles/konfig_test.dir/DependInfo.cmake"
   "CMakeFiles/NetSim.dir/DependInfo.cmake"
