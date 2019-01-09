@@ -24,7 +24,7 @@ public:
 
     void putPackageInQueue(Package package) override;
 
-    QueueType returnQueueType() override;
+    QueueType returnQueueType() const override;
 };
 
 

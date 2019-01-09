@@ -7,7 +7,7 @@
 
 #endif //SYMULACJA_SIECI_STOREHOUSE_HPP
 
-#include "Package.hpp"
+
 #include "IPackageReceiver.hpp"
 #include "IPackageStockpile.hpp"
 #include <memory>
@@ -32,6 +32,7 @@ public:
     dequeCit cend() const override;
     dequeIt begin() const override;
     dequeIt end() const override;
+    void putPackageInQueue(Package package);
 };
 
 

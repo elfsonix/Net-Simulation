@@ -35,6 +35,7 @@ public:
     dequeIt end() const override;
     Package popPackage() override;
     QueueType returnQueueType() const override;
+    void putPackageInQueue(Package package) override {};
 
 };
 
