@@ -6,6 +6,6 @@
 #include "PackageSender.hpp"
 
 void PackageSender::putPackageInBuffer(Package package){
-    bufferOfPackagesReady = std::make_optional(package);
-    passPackageToReceiver();
+    bufferOfProductsReady = std::experimental::make_optional(package);
+    passProductToReceiver();
 } 
