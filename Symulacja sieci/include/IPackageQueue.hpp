@@ -7,7 +7,6 @@
 
 #include "IPackageStockpile.hpp"
 #include "QueueType.hpp"
-#include "Package.hpp"
 
 class IPackageQueue : public IPackageStockpile{
 

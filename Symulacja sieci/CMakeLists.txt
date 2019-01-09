@@ -11,9 +11,9 @@ set(TEST_SOURCES
 add_subdirectory(googletest-master)
 link_libraries(gmock)
 
-<<<<<<< HEAD
+
 add_executable(Symulacja_sieci main.cpp "include/NodeCollection.hpp" "include/Factory.hpp" "include/Worker.hpp" "include/Ramp.hpp" "include/Storehouse.hpp" "include/Package.hpp")
-=======
+
 #Tworzy konfigurację o nazwie konfig_run (nazwę możemy dowolnie zmienić)
 # do której dołącza plik main.cpp z funkcją main()
 add_executable(konfig_run ${SOURCE_FILES} main.cpp)
@@ -22,5 +22,5 @@ add_executable(konfig_run ${SOURCE_FILES} main.cpp)
 add_executable(konfig_test ${SOURCE_FILES} ${TEST_SOURCES})
 
 
-add_executable(NetSim main.cpp include/IPackageReceiver.hpp include/PackageQueue.hpp include/QueueType.hpp include/IPackageQueue.hpp include/IPackageStockpile.hpp include/Package.hpp include/PackageSender.hpp include/ReceiverPreferences.hpp include/Worker.hpp include/Simulation.hpp src/ReceiverPreferences.cpp src/PackageQueue.cpp src/PackageSender.cpp)
->>>>>>> Kasia-develop
+add_executable(NetSim main.cpp "include/IPackageReceiver.hpp" "include/PackageQueue.hpp" "include/QueueType.hpp" "include/IPackageQueue.hpp" "include/IPackageStockpile.hpp" "include/PackageSender.hpp" "include/ReceiverPreferences.hpp" "include/Simulation.hpp")
+

@@ -8,7 +8,6 @@
 #include <tuple>
 #include <deque>
 #include "ReceiverType.hpp"
-#include "Package.hpp"
 
 using deque_cit = std::deque<Package>::const_iterator;
 using deque_it = std::deque<Package>::iterator;

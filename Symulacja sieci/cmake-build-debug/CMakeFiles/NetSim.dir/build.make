@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci"
+CMAKE_SOURCE_DIR = "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/NetSim.dir/depend.make
@@ -59,80 +59,32 @@ include CMakeFiles/NetSim.dir/flags.make
 CMakeFiles/NetSim.dir/main.cpp.obj: CMakeFiles/NetSim.dir/flags.make
 CMakeFiles/NetSim.dir/main.cpp.obj: CMakeFiles/NetSim.dir/includes_CXX.rsp
 CMakeFiles/NetSim.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/NetSim.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim.dir\main.cpp.obj -c "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/NetSim.dir/main.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim.dir\main.cpp.obj -c "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\main.cpp"
 
 CMakeFiles/NetSim.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NetSim.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\main.cpp" > CMakeFiles\NetSim.dir\main.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\main.cpp" > CMakeFiles\NetSim.dir\main.cpp.i
 
 CMakeFiles/NetSim.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\main.cpp" -o CMakeFiles\NetSim.dir\main.cpp.s
-
-CMakeFiles/NetSim.dir/src/ReceiverPreferences.cpp.obj: CMakeFiles/NetSim.dir/flags.make
-CMakeFiles/NetSim.dir/src/ReceiverPreferences.cpp.obj: CMakeFiles/NetSim.dir/includes_CXX.rsp
-CMakeFiles/NetSim.dir/src/ReceiverPreferences.cpp.obj: ../src/ReceiverPreferences.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NetSim.dir/src/ReceiverPreferences.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim.dir\src\ReceiverPreferences.cpp.obj -c "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\ReceiverPreferences.cpp"
-
-CMakeFiles/NetSim.dir/src/ReceiverPreferences.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NetSim.dir/src/ReceiverPreferences.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\ReceiverPreferences.cpp" > CMakeFiles\NetSim.dir\src\ReceiverPreferences.cpp.i
-
-CMakeFiles/NetSim.dir/src/ReceiverPreferences.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim.dir/src/ReceiverPreferences.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\ReceiverPreferences.cpp" -o CMakeFiles\NetSim.dir\src\ReceiverPreferences.cpp.s
-
-CMakeFiles/NetSim.dir/src/PackageQueue.cpp.obj: CMakeFiles/NetSim.dir/flags.make
-CMakeFiles/NetSim.dir/src/PackageQueue.cpp.obj: CMakeFiles/NetSim.dir/includes_CXX.rsp
-CMakeFiles/NetSim.dir/src/PackageQueue.cpp.obj: ../src/PackageQueue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NetSim.dir/src/PackageQueue.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim.dir\src\PackageQueue.cpp.obj -c "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\PackageQueue.cpp"
-
-CMakeFiles/NetSim.dir/src/PackageQueue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NetSim.dir/src/PackageQueue.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\PackageQueue.cpp" > CMakeFiles\NetSim.dir\src\PackageQueue.cpp.i
-
-CMakeFiles/NetSim.dir/src/PackageQueue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim.dir/src/PackageQueue.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\PackageQueue.cpp" -o CMakeFiles\NetSim.dir\src\PackageQueue.cpp.s
-
-CMakeFiles/NetSim.dir/src/PackageSender.cpp.obj: CMakeFiles/NetSim.dir/flags.make
-CMakeFiles/NetSim.dir/src/PackageSender.cpp.obj: CMakeFiles/NetSim.dir/includes_CXX.rsp
-CMakeFiles/NetSim.dir/src/PackageSender.cpp.obj: ../src/PackageSender.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/NetSim.dir/src/PackageSender.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim.dir\src\PackageSender.cpp.obj -c "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\PackageSender.cpp"
-
-CMakeFiles/NetSim.dir/src/PackageSender.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NetSim.dir/src/PackageSender.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\PackageSender.cpp" > CMakeFiles\NetSim.dir\src\PackageSender.cpp.i
-
-CMakeFiles/NetSim.dir/src/PackageSender.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim.dir/src/PackageSender.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\PackageSender.cpp" -o CMakeFiles\NetSim.dir\src\PackageSender.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\main.cpp" -o CMakeFiles\NetSim.dir\main.cpp.s
 
 # Object files for target NetSim
 NetSim_OBJECTS = \
-"CMakeFiles/NetSim.dir/main.cpp.obj" \
-"CMakeFiles/NetSim.dir/src/ReceiverPreferences.cpp.obj" \
-"CMakeFiles/NetSim.dir/src/PackageQueue.cpp.obj" \
-"CMakeFiles/NetSim.dir/src/PackageSender.cpp.obj"
+"CMakeFiles/NetSim.dir/main.cpp.obj"
 
 # External object files for target NetSim
 NetSim_EXTERNAL_OBJECTS =
 
 NetSim.exe: CMakeFiles/NetSim.dir/main.cpp.obj
-NetSim.exe: CMakeFiles/NetSim.dir/src/ReceiverPreferences.cpp.obj
-NetSim.exe: CMakeFiles/NetSim.dir/src/PackageQueue.cpp.obj
-NetSim.exe: CMakeFiles/NetSim.dir/src/PackageSender.cpp.obj
 NetSim.exe: CMakeFiles/NetSim.dir/build.make
 NetSim.exe: googletest-master/googlemock/libgmockd.a
 NetSim.exe: googletest-master/googlemock/gtest/libgtestd.a
 NetSim.exe: CMakeFiles/NetSim.dir/linklibs.rsp
 NetSim.exe: CMakeFiles/NetSim.dir/objects1.rsp
 NetSim.exe: CMakeFiles/NetSim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable NetSim.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable NetSim.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\NetSim.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -145,6 +97,6 @@ CMakeFiles/NetSim.dir/clean:
 .PHONY : CMakeFiles/NetSim.dir/clean
 
 CMakeFiles/NetSim.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles\NetSim.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles\NetSim.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/NetSim.dir/depend
 
