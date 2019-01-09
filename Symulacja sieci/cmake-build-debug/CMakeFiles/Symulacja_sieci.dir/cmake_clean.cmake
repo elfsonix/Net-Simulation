@@ -1,8 +1,14 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Symulacja_sieci.dir/main.cpp.obj"
+<<<<<<< HEAD
   "Symulacja_sieci.pdb"
   "Symulacja_sieci.exe"
   "Symulacja_sieci.exe.manifest"
+=======
+  "======Symulacja_sieci.pdb"
+  "======Symulacja_sieci.exe"
+  "======Symulacja_sieci.exe.manifest"
+>>>>>>> develop
   "libSymulacja_sieci.dll.a"
 )
 

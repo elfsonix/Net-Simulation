@@ -289,6 +289,11 @@ IPackageStockpile.hpp
 ../include/IPackageStockpile.hpp
 QueueType.hpp
 ../include/QueueType.hpp
+<<<<<<< HEAD
+=======
+Package.hpp
+../include/Package.hpp
+>>>>>>> develop
 
 ../include/IPackageReceiver.hpp
 tuple
@@ -297,6 +302,11 @@ deque
 -
 ReceiverType.hpp
 ../include/ReceiverType.hpp
+<<<<<<< HEAD
+=======
+Package.hpp
+../include/Package.hpp
+>>>>>>> develop
 
 ../include/IPackageStockpile.hpp
 QueueType.hpp
@@ -308,6 +318,21 @@ deque
 
 ../include/Package.hpp
 
+<<<<<<< HEAD
+=======
+../include/PackageQueue.hpp
+queue
+-
+QueueType.hpp
+../include/QueueType.hpp
+IPackageQueue.hpp
+../include/IPackageQueue.hpp
+Package.hpp
+../include/Package.hpp
+stdexcept
+-
+
+>>>>>>> develop
 ../include/QueueType.hpp
 
 ../include/ReceiverPreferences.hpp
@@ -330,9 +355,39 @@ IPackageReceiver.hpp
 
 ../include/ReceiverType.hpp
 
+<<<<<<< HEAD
 C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_receiver.cpp
 gtest/gtest.h
 C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
 ReceiverPreferences.hpp
 C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/ReceiverPreferences.hpp
+=======
+../include/Worker.hpp
+Package.hpp
+../include/Package.hpp
+memory
+-
+deque
+-
+tuple
+-
+
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/main_test.cpp
+gtest/gtest.h
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
+
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_package.cpp
+gtest/gtest.h
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
+PackageQueue.hpp
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/PackageQueue.hpp
+
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_receiver.cpp
+Worker.hpp
+-
+gtest/gtest.h
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
+ReceiverPreferences.hpp
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/ReceiverPreferences.hpp
+>>>>>>> develop
 
