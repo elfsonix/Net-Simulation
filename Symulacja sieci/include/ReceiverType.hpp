@@ -2,8 +2,8 @@
 // Created by Kasia on 2018-12-28.
 //
 
-#ifndef NETSIM_RECEIVERTYPE_H
-#define NETSIM_RECEIVERTYPE_H
+#ifndef SYMULACJA_SIECI_RECEIVERTYPE_HPP
+#define SYMULACJA_SIECI_RECEIVERTYPE_HPP
 
 enum class ReceiverType{
     WORKER, STOREHOUSE,

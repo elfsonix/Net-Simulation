@@ -3,8 +3,8 @@
 //
 
 #include "gtest/gtest.h"
-#include "PackageQueue.hpp"
-/*
+#include "Package.hpp"
+
 TEST(PackageTest, PackageClass){
     Package pack1 = Package();
     Package pack2 = Package();
@@ -12,7 +12,7 @@ TEST(PackageTest, PackageClass){
     EXPECT_EQ(pack2.getID(), 2);
 
 }
-
+/* CZY TO PONIEŻEJ TO W OGÓLE W TYM TEŚCIE A NIE W PACKAGEQUEUEtest?
 TEST(PackageTest, PackageQueueClass1){
     PackageQueue packageQueueLIFO = PackageQueue(QueueType::LIFO);
     PackageQueue packageQueueFIFO = PackageQueue(QueueType::FIFO);

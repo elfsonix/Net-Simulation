@@ -10,25 +10,34 @@
 #include <list>
 #include "Package.hpp"
 
-using iterator = typename std::list <Node>::iterator;
-using const_iterator = typename std::list<Node>::const_iterator;
 
 template <typename Node> class NodeCollection {
 private:
     std::list<Node> _nodes;
 public:
+    using iterator = typename std::list <Node>::iterator;
+    using constIterator = typename std::list<Node>::const_iterator;
     std::list<Node> getNodes() {
         return _nodes;
     }
-    typename std::list<Node>::const_iterator cbegin() const { return _nodes.cbegin(); }
-    typename std::list<Node>::const_iterator cend() const { return _nodes.cend(); }
-    typename std::list<Node>::iterator begin() { return _nodes.begin(); }
-    typename std::list<Node>::const_iterator begin() const { return _nodes.cbegin(); }
-    typename std::list<Node>::iterator end() { return _nodes.end(); }
-    typename std::list<Node>::const_iterator end() const { return _nodes.cend(); }
-    void add(const Node& node);
-    iterator findById(ElementID nodeId) const;
-    const_iterator findById(ElementID nodeId) const;
-    void removeById(ElemntID nodeID);
+    constIterator cbegin() const { return _nodes.cbegin(); }
+    constIterator cend() const { return _nodes.cend(); }
+    iterator begin() { return _nodes.begin(); }
+    constIterator begin() const { return _nodes.cbegin(); }
+    iterator end() { return _nodes.end(); }
+    constIterator end() const { return _nodes.cend(); }
+    void add(const Node& node) {
+
+    }
+
+    iterator findById(ElementID nodeId) const {
+        return 1;
+    }
+    constIterator cfindById(ElementID nodeId) const {
+        return 1;
+    }
+    void removeById(ElementID nodeID) {
+
+    }
 };
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
