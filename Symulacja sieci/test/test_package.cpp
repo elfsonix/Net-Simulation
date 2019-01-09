@@ -4,8 +4,7 @@
 
 #include "gtest/gtest.h"
 #include "PackageQueue.hpp"
-//#include "src/PackageQueue.cpp"
-
+/*
 TEST(PackageTest, PackageClass){
     Package pack1 = Package();
     Package pack2 = Package();
@@ -46,4 +45,4 @@ TEST(PackageTest, PackageQueueClass2){
     EXPECT_EQ(packageQueueLIFO.popProduct().getID(), pack2.getID());
     EXPECT_EQ(packageQueueLIFO.popProduct().getID(), pack1.getID());
 
-}
+}*/

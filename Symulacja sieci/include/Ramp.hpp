@@ -8,6 +8,7 @@
 #endif //SYMULACJA_SIECI_RAMP_HPP
 
 #include "Package.hpp"
+#include "PackageSender.hpp"
 
 class Ramp : public PackageSender {
 private:
