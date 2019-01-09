@@ -89,7 +89,11 @@ CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: ../googletest-master/googl
 CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: ../googletest-master/googletest/include/gtest/internal/gtest-string.h
 CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: ../googletest-master/googletest/include/gtest/internal/gtest-tuple.h
 CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: ../googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: ../include/IPackageQueue.hpp
+CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: ../include/IPackageStockpile.hpp
 CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: ../include/Package.hpp
+CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: ../include/PackageQueue.hpp
+CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: ../include/QueueType.hpp
 CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: ../test/test_package.cpp
 
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../googletest-master/googletest/include/gtest/gtest-death-test.h

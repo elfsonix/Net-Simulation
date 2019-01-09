@@ -15,10 +15,10 @@ CMakeFiles/konfig_test.dir/src/Factory.cpp.obj
  ../include/ReceiverType.hpp
  ../include/Storehouse.hpp
  ../include/Worker.hpp
- C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Factory.cpp
+ C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Factory.cpp
 CMakeFiles/konfig_test.dir/src/Package.cpp.obj
  ../include/Package.hpp
- C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Package.cpp
+ C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Package.cpp
 CMakeFiles/konfig_test.dir/src/Ramp.cpp.obj
  ../include/IPackageQueue.hpp
  ../include/IPackageReceiver.hpp
@@ -29,9 +29,9 @@ CMakeFiles/konfig_test.dir/src/Ramp.cpp.obj
  ../include/Ramp.hpp
  ../include/ReceiverPreferences.hpp
  ../include/ReceiverType.hpp
- C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Ramp.cpp
+ C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Ramp.cpp
 CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj
- C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Storehouse.cpp
+ C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Storehouse.cpp
 CMakeFiles/konfig_test.dir/src/Worker.cpp.obj
  ../include/IPackageQueue.hpp
  ../include/IPackageReceiver.hpp
@@ -42,7 +42,7 @@ CMakeFiles/konfig_test.dir/src/Worker.cpp.obj
  ../include/ReceiverPreferences.hpp
  ../include/ReceiverType.hpp
  ../include/Worker.hpp
- C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Worker.cpp
+ C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Worker.cpp
 CMakeFiles/konfig_test.dir/test/main_test.cpp.obj
  ../googletest-master/googletest/include/gtest/gtest-death-test.h
  ../googletest-master/googletest/include/gtest/gtest-message.h
@@ -66,7 +66,7 @@ CMakeFiles/konfig_test.dir/test/main_test.cpp.obj
  ../googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../googletest-master/googletest/include/gtest/internal/gtest-tuple.h
  ../googletest-master/googletest/include/gtest/internal/gtest-type-util.h
- C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/main_test.cpp
+ C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/main_test.cpp
 CMakeFiles/konfig_test.dir/test/test_package.cpp.obj
  ../googletest-master/googletest/include/gtest/gtest-death-test.h
  ../googletest-master/googletest/include/gtest/gtest-message.h
@@ -90,8 +90,12 @@ CMakeFiles/konfig_test.dir/test/test_package.cpp.obj
  ../googletest-master/googletest/include/gtest/internal/gtest-string.h
  ../googletest-master/googletest/include/gtest/internal/gtest-tuple.h
  ../googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+ ../include/IPackageQueue.hpp
+ ../include/IPackageStockpile.hpp
  ../include/Package.hpp
- C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_package.cpp
+ ../include/PackageQueue.hpp
+ ../include/QueueType.hpp
+ C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_package.cpp
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj
  ../googletest-master/googletest/include/gtest/gtest-death-test.h
  ../googletest-master/googletest/include/gtest/gtest-message.h
@@ -122,4 +126,4 @@ CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj
  ../include/QueueType.hpp
  ../include/ReceiverPreferences.hpp
  ../include/ReceiverType.hpp
- C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_receiver.cpp
+ C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_receiver.cpp

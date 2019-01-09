@@ -1,8 +1,9 @@
+
 //
 // Created by Sonia on 2019-01-09.
 //
 //
-/*
+
 #include "Factory.hpp"
 
 void Factory::addRamp(const Ramp &ramp) {
@@ -35,4 +36,4 @@ std::list<Ramp>::const_iterator Factory::findRampById(ElementID nodeId) const {
 
 void Factory::removeById(ElementID nodeID) {
 
-}*/
+}

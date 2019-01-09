@@ -1,3 +1,4 @@
+/*
 //
 // Created by Kasia on 2018-12-31.
 //
@@ -12,7 +13,7 @@ TEST(PackageTest, PackageClass){
     EXPECT_EQ(pack2.getPackageID(), 2);
 
 }
-/* CZY TO PONIEŻEJ TO W OGÓLE W TYM TEŚCIE A NIE W PACKAGEQUEUEtest?
+
 TEST(PackageTest, PackageQueueClass1){
     Package pack1 = Package();
     Package pack2 = Package();
@@ -45,4 +46,4 @@ TEST(PackageTest, PackageQueueClass2){
     EXPECT_EQ(packageQueueLIFO.popPackage().getPackageID(), pack2.getPackageID());
     EXPECT_EQ(packageQueueLIFO.popPackage().getPackageID(), pack1.getPackageID());
 
-}
+}*/
