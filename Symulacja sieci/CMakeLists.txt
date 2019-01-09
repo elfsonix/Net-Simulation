@@ -5,7 +5,7 @@ include_directories(include                     #nasz folder include
         googletest-master/googletest/include)
 set(CMAKE_CXX_STANDARD 17)
 set(TEST_SOURCES
-        test/main_test.cpp test/test_package.cpp test/test_receiver.cpp) #plik z funkcją main() do testów
+        test/main_test.cpp test/test_package.cpp test/test_receiver.cpp src/Package.cpp src/Factory.cpp src/Storehouse.cpp src/Worker.cpp src/Ramp.cpp) #plik z funkcją main() do testów
 
 #dodaje bibliotekę Google Test, kompiluje ją z użyciem CMakeLists.txt z folderu googletest-master
 add_subdirectory(googletest-master)

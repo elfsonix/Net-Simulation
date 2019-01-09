@@ -2,8 +2,8 @@
 // Created by Kasia on 2018-12-31.
 //
 
-#ifndef NETSIM_RECEIVERPREFERENCES_H
-#define NETSIM_RECEIVERPREFERENCES_H
+#ifndef SYMULACJA_SIECI_RECEIVERPREFERENCES_HPP
+#define SYMULACJA_SIECI_RECEIVERPREFERENCES_HPP
 
 #include <map>
 #include <functional>
@@ -20,7 +20,7 @@ using vector_p = std::vector<std::pair<IPackageReceiver*, double>>;
 using const_iterator = preferences_t::const_iterator;
 using iterator = preferences_t::iterator;
 
-extern float const SUM_OF_PROBABILITIES = 1.0;
+//extern float const SUM_OF_PROBABILITIES = 1.0;
 class ReceiverPreferences {
 private:
     preferences_t _probabilityTable;

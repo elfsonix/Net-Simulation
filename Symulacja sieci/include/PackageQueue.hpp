@@ -2,8 +2,8 @@
 // Created by Kasia on 2018-12-31.
 //
 
-#ifndef NETSIM_PACKAGEQUEUE_H
-#define NETSIM_PACKAGEQUEUE_H
+#ifndef SYMULACJA_SIECI_PACKAGEQUEUE_HPP
+#define SYMULACJA_SIECI_PACKAGEQUEUE_HPP
 
 #include <queue>
 #include "QueueType.hpp"
