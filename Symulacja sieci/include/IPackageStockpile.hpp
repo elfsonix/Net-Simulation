@@ -19,10 +19,10 @@ public:
     virtual void putPackageInQueue(Package package) = 0;      //metoda do umieszczenia produktu na składowisku
 
     //metody tylko do odczytu
-    virtual deque_cit cbegin() const  = 0;
-    virtual deque_cit cend() const  = 0;
-    virtual deque_it begin() = 0;
-    virtual deque_it end() = 0;
+    virtual deque_cit cbegin() const;
+    virtual deque_cit cend() const;
+    virtual deque_it begin();
+    virtual deque_it end();
 
 };
 

@@ -7,5 +7,5 @@
 
 void PackageSender::putPackageInBuffer(Package package){
     bufferOfProductsReady = std::experimental::make_optional(package);
-    passProductToReceiver();
+    passPackageToReceiver();
 } 
