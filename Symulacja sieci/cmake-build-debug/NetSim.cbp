@@ -503,7 +503,6 @@
 		</Unit>
 		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/include/Package.hpp">
 			<Option target="Symulacja_sieci"/>
-			<Option target="NetSim"/>
 		</Unit>
 		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/include/PackageQueue.hpp">
 			<Option target="NetSim"/>
@@ -528,20 +527,10 @@
 		</Unit>
 		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/include/Worker.hpp">
 			<Option target="Symulacja_sieci"/>
-			<Option target="NetSim"/>
 		</Unit>
 		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/main.cpp">
 			<Option target="Symulacja_sieci"/>
 			<Option target="konfig_run"/>
-			<Option target="NetSim"/>
-		</Unit>
-		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageQueue.cpp">
-			<Option target="NetSim"/>
-		</Unit>
-		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageSender.cpp">
-			<Option target="NetSim"/>
-		</Unit>
-		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/ReceiverPreferences.cpp">
 			<Option target="NetSim"/>
 		</Unit>
 		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/main_test.cpp">

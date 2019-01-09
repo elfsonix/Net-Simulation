@@ -7,7 +7,6 @@
 
 #endif //SYMULACJA_SIECI_WORKER_HPP
 
-#include "Package.hpp"
 #include "PackageSender.hpp"
 #include "IPackageReceiver.hpp"
 #include "IPackageQueue.hpp"

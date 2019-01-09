@@ -7,7 +7,8 @@
 
 #endif //SYMULACJA_SIECI_NODECOLLECTION_HPP
 
-#include "list"
+#include <list>
+#include "Package.hpp"
 
 using iterator = typename std::list <Node>::iterator;
 using const_iterator = typename std::list<Node>::const_iterator;
@@ -26,7 +27,7 @@ public:
     typename std::list<Node>::iterator end() { return _nodes.end(); }
     typename std::list<Node>::const_iterator end() const { return _nodes.cend(); }
     void add(const Node& node);
-    iterator findById(nodeId: ElementID) const;
+    iterator findById(ElementID nodeId) const;
     const_iterator findById(ElementID nodeId) const;
     void removeById(ElemntID nodeID);
 };

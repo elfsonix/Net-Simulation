@@ -292,87 +292,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/PackageQueue.obj: src/PackageQueue.cpp.obj
-
-.PHONY : src/PackageQueue.obj
-
-# target to build an object file
-src/PackageQueue.cpp.obj:
-	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/PackageQueue.cpp.obj
-.PHONY : src/PackageQueue.cpp.obj
-
-src/PackageQueue.i: src/PackageQueue.cpp.i
-
-.PHONY : src/PackageQueue.i
-
-# target to preprocess a source file
-src/PackageQueue.cpp.i:
-	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/PackageQueue.cpp.i
-.PHONY : src/PackageQueue.cpp.i
-
-src/PackageQueue.s: src/PackageQueue.cpp.s
-
-.PHONY : src/PackageQueue.s
-
-# target to generate assembly for a file
-src/PackageQueue.cpp.s:
-	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/PackageQueue.cpp.s
-.PHONY : src/PackageQueue.cpp.s
-
-src/PackageSender.obj: src/PackageSender.cpp.obj
-
-.PHONY : src/PackageSender.obj
-
-# target to build an object file
-src/PackageSender.cpp.obj:
-	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/PackageSender.cpp.obj
-.PHONY : src/PackageSender.cpp.obj
-
-src/PackageSender.i: src/PackageSender.cpp.i
-
-.PHONY : src/PackageSender.i
-
-# target to preprocess a source file
-src/PackageSender.cpp.i:
-	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/PackageSender.cpp.i
-.PHONY : src/PackageSender.cpp.i
-
-src/PackageSender.s: src/PackageSender.cpp.s
-
-.PHONY : src/PackageSender.s
-
-# target to generate assembly for a file
-src/PackageSender.cpp.s:
-	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/PackageSender.cpp.s
-.PHONY : src/PackageSender.cpp.s
-
-src/ReceiverPreferences.obj: src/ReceiverPreferences.cpp.obj
-
-.PHONY : src/ReceiverPreferences.obj
-
-# target to build an object file
-src/ReceiverPreferences.cpp.obj:
-	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/ReceiverPreferences.cpp.obj
-.PHONY : src/ReceiverPreferences.cpp.obj
-
-src/ReceiverPreferences.i: src/ReceiverPreferences.cpp.i
-
-.PHONY : src/ReceiverPreferences.i
-
-# target to preprocess a source file
-src/ReceiverPreferences.cpp.i:
-	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/ReceiverPreferences.cpp.i
-.PHONY : src/ReceiverPreferences.cpp.i
-
-src/ReceiverPreferences.s: src/ReceiverPreferences.cpp.s
-
-.PHONY : src/ReceiverPreferences.s
-
-# target to generate assembly for a file
-src/ReceiverPreferences.cpp.s:
-	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/ReceiverPreferences.cpp.s
-.PHONY : src/ReceiverPreferences.cpp.s
-
 test/main_test.obj: test/main_test.cpp.obj
 
 .PHONY : test/main_test.obj
@@ -477,15 +396,6 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... src/PackageQueue.obj
-	@echo ... src/PackageQueue.i
-	@echo ... src/PackageQueue.s
-	@echo ... src/PackageSender.obj
-	@echo ... src/PackageSender.i
-	@echo ... src/PackageSender.s
-	@echo ... src/ReceiverPreferences.obj
-	@echo ... src/ReceiverPreferences.i
-	@echo ... src/ReceiverPreferences.s
 	@echo ... test/main_test.obj
 	@echo ... test/main_test.i
 	@echo ... test/main_test.s
