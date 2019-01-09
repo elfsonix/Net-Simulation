@@ -78,6 +78,7 @@ CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj
  ../googletest-master/googletest/include/gtest/internal/gtest-tuple.h
  ../googletest-master/googletest/include/gtest/internal/gtest-type-util.h
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  ../include/IPackageQueue.hpp
  ../include/IPackageReceiver.hpp
@@ -88,4 +89,6 @@ CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj
  ../include/ReceiverType.hpp
  ../include/Worker.hpp
 >>>>>>> develop
+=======
+>>>>>>> Kasia-develop
  C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_receiver.cpp

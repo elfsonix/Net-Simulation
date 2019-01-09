@@ -10,6 +10,9 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Kasia-develop
 <<<<<<< Updated upstream
     <list default="true" id="2e22d74b-5688-49cf-907a-98630e1d1623" name="Default Changelist" comment="Poprawy nazw zmiennych" />
 =======
@@ -26,6 +29,7 @@
       <change beforePath="$PROJECT_DIR$/include/IPackageStockpile.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/IPackageStockpile.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PackageSender.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PackageSender.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_package.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_package.cpp" afterDir="false" />
+<<<<<<< HEAD
 =======
     <list default="true" id="2c8c642e-4498-4096-af07-528f2b928636" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
@@ -60,6 +64,8 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
 >>>>>>> develop
+=======
+>>>>>>> Kasia-develop
     </list>
 >>>>>>> Stashed changes
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -71,6 +77,9 @@
   </component>
   <component name="FileEditorManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Kasia-develop
 <<<<<<< Updated upstream
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
@@ -123,6 +132,7 @@
             <state relative-caret-position="150">
               <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
 >>>>>>> Stashed changes
+<<<<<<< HEAD
 =======
     <leaf>
       <file pinned="false" current-in-tab="true">
@@ -131,12 +141,17 @@
             <state relative-caret-position="284">
               <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
 >>>>>>> develop
+=======
+>>>>>>> Kasia-develop
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Kasia-develop
 <<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/include/ReceiverType.hpp">
           <provider selected="true" editor-type-id="text-editor" />
@@ -221,12 +236,15 @@
                 <element signature="e#103#119#0" expanded="true" />
               </folding>
 >>>>>>> Stashed changes
+<<<<<<< HEAD
 =======
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" selection-start-line="1" selection-end-line="1" />
 >>>>>>> develop
+=======
+>>>>>>> Kasia-develop
             </state>
           </provider>
         </entry>
@@ -281,9 +299,12 @@
         <option value="$PROJECT_DIR$/test/test_package.cpp" />
         <option value="$PROJECT_DIR$/src/PackageSender.cpp" />
 >>>>>>> Stashed changes
+<<<<<<< HEAD
 =======
         <option value="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" />
 >>>>>>> develop
+=======
+>>>>>>> Kasia-develop
       </list>
     </option>
   </component>
@@ -403,37 +424,52 @@
       <workItem from="1546807989312" duration="433000" />
       <workItem from="1546809167586" duration="427000" />
       <workItem from="1546814854325" duration="568000" />
+<<<<<<< HEAD
 =======
       <updated>1546960251535</updated>
       <workItem from="1546960256721" duration="94000" />
 >>>>>>> develop
+=======
+>>>>>>> Kasia-develop
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Kasia-develop
 <<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="41240000" />
 =======
     <option name="totallyTimeSpent" value="40266000" />
 >>>>>>> Stashed changes
+<<<<<<< HEAD
 =======
     <option name="totallyTimeSpent" value="94000" />
 >>>>>>> develop
+=======
+>>>>>>> Kasia-develop
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1228" height="783" extended-state="6" />
     <layout>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Kasia-develop
 <<<<<<< Updated upstream
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20648465" />
 =======
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
 >>>>>>> Stashed changes
+<<<<<<< HEAD
 =======
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
 >>>>>>> develop
+=======
+>>>>>>> Kasia-develop
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
@@ -454,9 +490,12 @@
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.2767584" />
       <window_info anchor="bottom" id="CMake" order="11" />
       <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32874617" />
+<<<<<<< HEAD
 =======
       <window_info anchor="right" id="Database" />
 >>>>>>> develop
+=======
+>>>>>>> Kasia-develop
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -666,6 +705,76 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/IPackageQueue.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/include/Package.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+=======
+    <entry file="file://$PROJECT_DIR$/include/ReceiverPreferences.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/IPackageStockpile.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/PackageQueue.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
+          <folding>
+            <element signature="e#103#119#0" expanded="true" />
+          </folding>
+>>>>>>> Stashed changes
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/PackageQueue.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
+        <state relative-caret-position="204">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+=======
+        <state relative-caret-position="299">
+          <caret line="43" column="68" lean-forward="true" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
+>>>>>>> Stashed changes
+          <folding>
+            <element signature="e#103#119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PackageSender.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_receiver.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#41#62#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

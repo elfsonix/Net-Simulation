@@ -7,6 +7,7 @@
 
 #endif //SYMULACJA_SIECI_WORKER_HPP
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 #include <memory>
@@ -17,11 +18,17 @@
 
 =======
 
+=======
+
+>>>>>>> Kasia-develop
 #include "Package.hpp"
 #include <memory>
 #include <deque>
 #include <tuple>
+<<<<<<< HEAD
 >>>>>>> develop
+=======
+>>>>>>> Kasia-develop
 
 class Worker : public PackageSender, public IPackageReceiver, public IPackageQueue {
 private:
