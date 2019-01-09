@@ -4,12 +4,12 @@
 
 #include "gtest/gtest.h"
 #include "PackageQueue.hpp"
-/*
+
 TEST(PackageTest, PackageClass){
     Package pack1 = Package();
     Package pack2 = Package();
-    EXPECT_EQ(pack1.getID(), 1);
-    EXPECT_EQ(pack2.getID(), 2);
+    EXPECT_EQ(pack1.getPackageID(), 1);
+    EXPECT_EQ(pack2.getPackageID(), 2);
 
 }
 
@@ -35,14 +35,14 @@ TEST(PackageTest, PackageQueueClass2){
     PackageQueue packageQueueLIFO = PackageQueue(QueueType::LIFO, que);
     PackageQueue packageQueueFIFO = PackageQueue(QueueType::FIFO, que);
 
-    packageQueueFIFO.putProductInQueue(pack1);
-    packageQueueFIFO.putProductInQueue(pack2);
-    packageQueueLIFO.putProductInQueue(pack1);
-    packageQueueLIFO.putProductInQueue(pack2);
+    packageQueueFIFO.putPackageInQueue(pack1);
+    packageQueueFIFO.putPackageInQueue(pack2);
+    packageQueueLIFO.putPackageInQueue(pack1);
+    packageQueueLIFO.putPackageInQueue(pack2);
 
-    EXPECT_EQ(packageQueueFIFO.popProduct().getID(), pack1.getID());
-    EXPECT_EQ(packageQueueFIFO.popProduct().getID(), pack2.getID());
-    EXPECT_EQ(packageQueueLIFO.popProduct().getID(), pack2.getID());
-    EXPECT_EQ(packageQueueLIFO.popProduct().getID(), pack1.getID());
+    EXPECT_EQ(packageQueueFIFO.popPackage().getPackageID(), pack1.getPackageID());
+    EXPECT_EQ(packageQueueFIFO.popPackage().getPackageID(), pack2.getPackageID());
+    EXPECT_EQ(packageQueueLIFO.popPackage().getPackageID(), pack2.getPackageID());
+    EXPECT_EQ(packageQueueLIFO.popPackage().getPackageID(), pack1.getPackageID());
 
-}*/
+}

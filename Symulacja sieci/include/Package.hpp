@@ -12,14 +12,14 @@ using ElementID = int;
 class Package {
 private:
     static ElementID maxID;
-    ElementID _product_id;
+    ElementID _packageID;
 public:
     Package() {
-        _product_id = maxID;
+        _packageID = maxID;
         maxID++;
     }
-    ElementID getProductId() const {
-        return _product_id;
+    ElementID getPackageID() const {
+        return _packageID;
     }
 };
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
