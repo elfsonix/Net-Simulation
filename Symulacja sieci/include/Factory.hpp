@@ -30,7 +30,9 @@ public:
     void add_ramp(const Ramp& ramp);
     void add_storehouse(const Storehouse& storehouse);
     bool isCompatible() const;
-    const_iterator findById(ElementID nodeId) const;
+    std::list<Worker>::const_iterator findWorkerById(ElementID nodeId) const;
+    std::list<Storehouse>::const_iterator findStorehouseById(ElementID nodeId) const;
+    std::list<Ramp>::const_iterator findRampById(ElementID nodeId) const;
     void removeById(ElementID nodeID);
 };
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
