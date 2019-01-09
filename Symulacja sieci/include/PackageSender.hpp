@@ -2,10 +2,9 @@
 // Created by Kasia on 2018-12-31.
 //
 
-#ifndef NETSIM_PACKAGESENDER_H
-#define NETSIM_PACKAGESENDER_H
+#ifndef SYMULACJA_SIECI_PACKAGESENDER_HPP
+#define SYMULACJA_SIECI_PACKAGESENDER_HPP
 #include <optional>
-#include "Package.hpp"
 #include "ReceiverPreferences.hpp"
 
 class PackageSender{

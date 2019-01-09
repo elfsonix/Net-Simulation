@@ -7,14 +7,16 @@
 
 #endif //SYMULACJA_SIECI_RAMP_HPP
 
-#include "Package.hpp"
 #include "PackageSender.hpp"
 
 class Ramp : public PackageSender {
 private:
-    ElementID _nodeId;
+    ElementID _nodeID;
 public:
-    Ramp(ElementID nodeId) : PackageSender();
+    Ramp(ElementID nodeID, const ReceiverPreferences &receiverPreferences) : PackageSender(receiverPreferences) {
+        _nodeID = nodeID;
+    }
     void generatePackage() const;
 };
+
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

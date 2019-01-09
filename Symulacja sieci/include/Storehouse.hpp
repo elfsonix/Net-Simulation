@@ -16,15 +16,23 @@
 
 class Storehouse : public IPackageReceiver, public IPackageStockpile {
 private:
-    std::unique_ptr<Package> _package_queue;
+    std::unique_ptr<Package> _packageQueue;
     ElementID _nodeId;
 public:
-    Storehouse(std::unique_ptr package_stockpile, ElementID nodeId) : IPackageReceiver(), IPackageStockpile(){}
+    Storehouse(std::unique_ptr<Package> packageStockpile, ElementID nodeId) : IPackageReceiver(), IPackageStockpile(){
+        _nodeId = nodeId;
+
+    }
+    ElementID getId() {
+        return _nodeId;
+    }
     void receivePackage(const Package& package) override;
     std::tuple<ReceiverType, ElementID> identifyReceiver() const override;
-    deque_cit  cbegin() const override;
-    deque_cit cend() const override;
-    deque_it begin() const override;
-    deque_it end() const override;
+    dequeCit cbegin() const override;
+    dequeCit cend() const override;
+    dequeIt begin() const override;
+    dequeIt end() const override;
 };
+
+
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
