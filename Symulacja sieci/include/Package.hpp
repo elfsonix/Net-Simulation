@@ -11,6 +11,8 @@ using ElementID = int;
 
 class Package {
 private:
+    ElementID _productID;
+public:
     static ElementID maxID;
     ElementID _packageID;
 public:
@@ -22,4 +24,6 @@ public:
         return _packageID;
     }
 };
+
+
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

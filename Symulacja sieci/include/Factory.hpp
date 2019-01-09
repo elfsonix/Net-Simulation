@@ -12,7 +12,7 @@
 #include "Ramp.hpp"
 #include "Storehouse.hpp"
 #include <list>
-
+#include <utility>
 
 class Factory {
 private:
@@ -21,16 +21,19 @@ private:
     NodeCollection <Storehouse> _storehouses;
 public:
     Factory(NodeCollection<Worker> workers, NodeCollection <Ramp> ramps, NodeCollection <Storehouse> storehouses) {
-        _workers = workers;
-        _storehouses = storehouses;
-        _ramps = ramps;
+        _workers = std::move(workers);
+        _storehouses = std::move(storehouses);
+        _ramps = std::move(ramps);
     }
 
-    void add_worker(const Worker& worker);
-    void add_ramp(const Ramp& ramp);
-    void add_storehouse(const Storehouse& storehouse);
+    void addWorker(const Worker &worker);
+    void addRamp(const Ramp &ramp);
+    void addStorehouse(const Storehouse &storehouse);
     bool isCompatible() const;
-    const_iterator findById(ElementID nodeId) const;
+    std::list<Worker>::const_iterator findWorkerById(ElementID nodeId) const;
+    std::list<Storehouse>::const_iterator findStorehouseById(ElementID nodeId) const;
+    std::list<Ramp>::const_iterator findRampById(ElementID nodeId) const;
     void removeById(ElementID nodeID);
 };
+
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

@@ -24,6 +24,9 @@
       <change beforePath="$PROJECT_DIR$/src/PackageQueue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/PackageQueue.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_package.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_package.cpp" afterDir="false" />
     </list>
+=======
+    <list default="true" id="2e22d74b-5688-49cf-907a-98630e1d1623" name="Default Changelist" comment="Poprawy nazw zmiennych" />
+>>>>>>> Kasia-develop
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +95,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>prod</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -109,6 +118,7 @@
     <option name="x" value="-16" />
     <option name="width" value="1953" />
     <option name="height" value="1035" />
+>>>>>>> Kasia-develop
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -146,6 +156,31 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Naukowe/2018.19/Informatyka/C++/Zadania/solutions/matlab-6" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+<<<<<<< HEAD
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\include" />
+      <recent name="C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\Storage Package" />
+      <recent name="C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\Node Package" />
+      <recent name="C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\Factory Package" />
+    </key>
+=======
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.CVS" />
+  </component>
+  <component name="RunAnythingCache">
+    <myKeys>
+      <visibility group="Gradle tasks" flag="false" />
+      <visibility group="Recent projects" flag="false" />
+      <visibility group="Run configurations" flag="false" />
+      <visibility group="npm scripts" flag="false" />
+    </myKeys>
+>>>>>>> Kasia-develop
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -222,8 +257,8 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2c8c642e-4498-4096-af07-528f2b928636" name="Default Changelist" comment="" />
-      <created>1546960251535</created>
+      <changelist id="2e22d74b-5688-49cf-907a-98630e1d1623" name="Default Changelist" comment="" />
+      <created>1546002831806</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1546960251535</updated>
@@ -232,8 +267,47 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="PackageTest_PackageQueueClass1 - 2018.12.31 at 19h 21m 19s.xml">
+      <configuration name="PackageTest.PackageQueueClass1" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PackageTest_PackageQueueClass1 - 2018.12.31 at 19h 21m 49s.xml">
+      <configuration name="PackageTest.PackageQueueClass1" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PackageTest_PackageQueueClass2 - 2018.12.31 at 19h 21m 59s.xml">
+      <configuration name="PackageTest.PackageQueueClass2" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PackageTest_PackageQueueClass2 - 2018.12.31 at 19h 27m 29s.xml">
+      <configuration name="PackageTest.PackageQueueClass2" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PackageTest_PackageQueueClass2 - 2018.12.31 at 19h 31m 15s.xml">
+      <configuration name="PackageTest.PackageQueueClass2" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PackageTest_PackageQueueClass2 - 2018.12.31 at 19h 42m 17s.xml">
+      <configuration name="PackageTest.PackageQueueClass2" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PackageTest_PackageClass - 2019.01.05 at 12h 16m 52s.xml">
+      <configuration name="PackageTest.PackageClass" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PackageTest_PackageClass - 2019.01.05 at 12h 17m 05s.xml">
+      <configuration name="PackageTest.PackageClass" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PackageTest_PackageQueueClass1 - 2019.01.05 at 12h 17m 19s.xml">
+      <configuration name="PackageTest.PackageQueueClass1" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="PackageTest_PackageQueueClass2 - 2019.01.05 at 12h 17m 24s.xml">
+      <configuration name="PackageTest.PackageQueueClass2" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1478000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24279007" />
+=======
+    <option name="totallyTimeSpent" value="41240000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1228" height="783" extended-state="6" />
@@ -244,9 +318,9 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.37461773" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32874617" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21712539" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2232416" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -263,6 +337,50 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Poprawy nazw zmiennych" />
+    <option name="LAST_COMMIT_MESSAGE" value="Poprawy nazw zmiennych" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake">
@@ -284,8 +402,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="238">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
         </state>
       </provider>
     </entry>

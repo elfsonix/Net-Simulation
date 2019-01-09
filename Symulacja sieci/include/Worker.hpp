@@ -15,26 +15,29 @@
 #include <memory>
 #include <deque>
 #include <tuple>
-<<<<<<< HEAD
->>>>>>> develop
-=======
->>>>>>> Kasia-develop
+#include <optional>
+#include "QueueType.hpp"
 
 class Worker : public PackageSender, public IPackageReceiver, public IPackageQueue {
 private:
-    std::unique_ptr <Package> _package_queue;
-    ElementID _nodeId;
+    std::unique_ptr <Package> _packageQueue;
+    ElementID _nodeID{};
+    std::optional<Package> bufferOfSomething;
 public:
-    Worker(std::unique_ptr<Package> package_queue, ElementID nodeId) : PackageSender(), IPackageReceiver(), IPackageQueue() {}
+    Worker(std::unique_ptr<Package> packageQueue, ElementID nodeID, const ReceiverPreferences &receiverPreferences)
+    : PackageSender(receiverPreferences), IPackageReceiver(), IPackageQueue() {
+        _nodeID = nodeID;
+    }
     void processPackage();
     void receivePackage(const Package& package) override;
     std::tuple<ReceiverType, ElementID> identifyReceiver() const override;
-    deque_cit cbegin() const override;
-    deque_cit cend() const override;
-    deque_it begin() const override;
-    deque_it end() const override;
+    dequeCit cbegin() const override;
+    dequeCit cend() const override;
+    dequeIt begin() const override;
+    dequeIt end() const override;
     Package popPackage() override;
     QueueType returnQueueType() const override;
 
 };
+
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

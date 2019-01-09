@@ -12,7 +12,7 @@ TEST(PackageTest, PackageClass){
     EXPECT_EQ(pack2.getPackageID(), 2);
 
 }
-
+/* CZY TO PONIEŻEJ TO W OGÓLE W TYM TEŚCIE A NIE W PACKAGEQUEUEtest?
 TEST(PackageTest, PackageQueueClass1){
     Package pack1 = Package();
     Package pack2 = Package();

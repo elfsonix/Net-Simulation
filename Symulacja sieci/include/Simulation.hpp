@@ -2,8 +2,8 @@
 // Created by Kasia on 2019-01-05.
 //
 
-#ifndef NETSIM_SIMULATION_H
-#define NETSIM_SIMULATION_H
+#ifndef SYMULACJA_SIECI_SIMULATION_HPP
+#define SYMULACJA_SIECI_SIMULATION_HPP
 
 #include <ostream>
 #include "IReportNotifier.hpp"
