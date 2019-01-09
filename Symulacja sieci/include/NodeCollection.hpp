@@ -8,7 +8,7 @@
 #endif //SYMULACJA_SIECI_NODECOLLECTION_HPP
 
 #include <list>
-#include "Package.hpp"
+
 
 
 template <typename Node> class NodeCollection {
@@ -17,6 +17,7 @@ private:
 public:
     using iterator = typename std::list <Node>::iterator;
     using constIterator = typename std::list<Node>::const_iterator;
+    using ElementID = int;
     std::list<Node> getNodes() {
         return _nodes;
     }

@@ -1,3 +1,3 @@
-"C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\konfig_test.dir/objects.a
+"C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\konfig_test.dir/objects.a
 C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ar.exe cr CMakeFiles\konfig_test.dir/objects.a @CMakeFiles\konfig_test.dir\objects1.rsp
 C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\konfig_test.dir/objects.a -Wl,--no-whole-archive  -o konfig_test.exe -Wl,--out-implib,libkonfig_test.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\konfig_test.dir\linklibs.rsp
