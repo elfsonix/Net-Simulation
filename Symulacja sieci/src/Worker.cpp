@@ -2,7 +2,7 @@
 // Created by Sonia on 2019-01-09.
 //
 #include "Worker.hpp"
-
+/*
 void Worker::receivePackage(const Package &package) {
 
 }
@@ -37,4 +37,4 @@ QueueType Worker::returnQueueType() const {
 
 void Worker::processPackage() {
 
-}
+}*/

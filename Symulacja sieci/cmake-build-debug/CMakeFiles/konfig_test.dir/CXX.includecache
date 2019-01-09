@@ -15,6 +15,8 @@ Ramp.hpp
 ../include/Ramp.hpp
 Storehouse.hpp
 ../include/Storehouse.hpp
+list
+-
 utility
 -
 
@@ -41,6 +43,8 @@ deque
 ../include/NodeCollection.hpp
 list
 -
+Package.hpp
+../include/Package.hpp
 
 ../include/Package.hpp
 
@@ -77,6 +81,8 @@ IPackageReceiver.hpp
 ../include/ReceiverType.hpp
 
 ../include/Storehouse.hpp
+Package.hpp
+../include/Package.hpp
 IPackageReceiver.hpp
 ../include/IPackageReceiver.hpp
 IPackageStockpile.hpp
@@ -106,7 +112,7 @@ optional
 QueueType.hpp
 ../include/QueueType.hpp
 
-C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Factory.cpp
+C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Factory.cpp
 Factory.hpp
-C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Factory.hpp
+C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Factory.hpp
 

@@ -11,6 +11,7 @@
 #include "Worker.hpp"
 #include "Ramp.hpp"
 #include "Storehouse.hpp"
+#include <list>
 #include <utility>
 
 class Factory {
