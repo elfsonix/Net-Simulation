@@ -83,9 +83,5 @@ CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../include/Package.hpp
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../include/QueueType.hpp
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../include/ReceiverPreferences.hpp
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../include/ReceiverType.hpp
-<<<<<<< HEAD
-=======
-CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../include/Worker.hpp
->>>>>>> develop
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../test/test_receiver.cpp
 

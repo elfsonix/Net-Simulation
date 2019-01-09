@@ -1,4 +1,4 @@
-﻿cmake_minimum_required(VERSION 3.13)
+cmake_minimum_required(VERSION 3.13)
 project(NetSim)
 include_directories(include                     #nasz folder include
         googletest-master/googlemock/include    #foldery google test
@@ -22,9 +22,5 @@ add_executable(konfig_run ${SOURCE_FILES} main.cpp)
 add_executable(konfig_test ${SOURCE_FILES} ${TEST_SOURCES})
 
 
-<<<<<<< HEAD
 add_executable(NetSim main.cpp "include/IPackageReceiver.hpp" "include/PackageQueue.hpp" "include/QueueType.hpp" "include/IPackageQueue.hpp" "include/IPackageStockpile.hpp" "include/PackageSender.hpp" "include/ReceiverPreferences.hpp" "include/Simulation.hpp")
 
-=======
-add_executable(NetSim main.cpp include/IPackageReceiver.hpp include/PackageQueue.hpp include/QueueType.hpp include/IPackageQueue.hpp include/IPackageStockpile.hpp include/Package.hpp include/PackageSender.hpp include/ReceiverPreferences.hpp include/Worker.hpp include/Simulation.hpp src/ReceiverPreferences.cpp src/PackageQueue.cpp src/PackageSender.cpp)
->>>>>>> develop

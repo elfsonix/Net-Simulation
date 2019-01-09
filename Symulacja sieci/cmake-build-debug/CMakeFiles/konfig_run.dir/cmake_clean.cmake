@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/konfig_run.dir/main.cpp.obj"
-  "======konfig_run.pdb"
-  "======konfig_run.exe"
-  "======konfig_run.exe.manifest"
+  "konfig_run.pdb"
+  "konfig_run.exe"
+  "konfig_run.exe.manifest"
   "libkonfig_run.dll.a"
 )
 
