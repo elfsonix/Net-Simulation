@@ -14,12 +14,14 @@ private:
     ElementID _productID;
 public:
     static ElementID maxID;
+    ElementID _packageID;
+public:
     Package() {
-        _productID = maxID;
+        _packageID = maxID;
         maxID++;
     }
-    ElementID getID() const {
-        return _productID;
+    ElementID getPackageID() const {
+        return _packageID;
     }
 };
 

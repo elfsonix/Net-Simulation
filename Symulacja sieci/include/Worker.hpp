@@ -6,6 +6,8 @@
 #define SYMULACJA_SIECI_WORKER_HPP
 
 #endif //SYMULACJA_SIECI_WORKER_HPP
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 #include "PackageSender.hpp"
 #include "IPackageReceiver.hpp"
