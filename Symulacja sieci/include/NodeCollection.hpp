@@ -5,8 +5,6 @@
 #ifndef SYMULACJA_SIECI_NODECOLLECTION_HPP
 #define SYMULACJA_SIECI_NODECOLLECTION_HPP
 
-#endif //SYMULACJA_SIECI_NODECOLLECTION_HPP
-
 #include <list>
 #include "Package.hpp"
 
@@ -40,4 +38,6 @@ public:
 
     }
 };
+
+#endif //SYMULACJA_SIECI_NODECOLLECTION_HPP
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

@@ -5,8 +5,6 @@
 #ifndef SYMULACJA_SIECI_FACTORY_HPP
 #define SYMULACJA_SIECI_FACTORY_HPP
 
-#endif //SYMULACJA_SIECI_FACTORY_HPP
-
 #include "NodeCollection.hpp"
 #include "Worker.hpp"
 #include "Ramp.hpp"
@@ -36,4 +34,5 @@ public:
     void removeById(ElementID nodeID);
 };
 
+#endif //SYMULACJA_SIECI_FACTORY_HPP
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
