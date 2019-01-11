@@ -1,4 +1,3 @@
-/*
 //
 // Created by Kasia on 2018-12-31.
 //
@@ -46,4 +45,5 @@ TEST(PackageTest, PackageQueueClass2){
     EXPECT_EQ(packageQueueLIFO.popPackage().getPackageID(), pack2.getPackageID());
     EXPECT_EQ(packageQueueLIFO.popPackage().getPackageID(), pack1.getPackageID());
 
-}*/
+}
+

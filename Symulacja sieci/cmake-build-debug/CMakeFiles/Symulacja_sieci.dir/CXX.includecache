@@ -6,7 +6,33 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/main.cpp
-iostream
+../include/IPackageQueue.hpp
+QueueType.hpp
+../include/QueueType.hpp
+IPackageStockpile.hpp
+../include/IPackageStockpile.hpp
+
+../include/IPackageStockpile.hpp
+Package.hpp
+../include/Package.hpp
+deque
 -
+
+../include/Package.hpp
+
+../include/PackageQueue.hpp
+queue
+-
+QueueType.hpp
+../include/QueueType.hpp
+IPackageQueue.hpp
+../include/IPackageQueue.hpp
+stdexcept
+-
+
+../include/QueueType.hpp
+
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageQueue.cpp
+PackageQueue.hpp
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageQueue.hpp
 

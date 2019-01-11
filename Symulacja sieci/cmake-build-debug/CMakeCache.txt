@@ -213,7 +213,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=NetSim
+CMAKE_PROJECT_NAME:STATIC=Symulacja_sieci
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.9.0
@@ -326,6 +326,18 @@ NetSim_SOURCE_DIR:STATIC=C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsi
 
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=C:/Users/Kasia/AppData/Local/Programs/Python/Python36/python.exe
+
+//Value Computed by CMake
+Symulacja_BINARY_DIR:STATIC=C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug
+
+//Value Computed by CMake
+Symulacja_SOURCE_DIR:STATIC=C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci
+
+//Value Computed by CMake
+Symulacja_sieci_BINARY_DIR:STATIC=C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug
+
+//Value Computed by CMake
+Symulacja_sieci_SOURCE_DIR:STATIC=C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/googletest-master/googlemock

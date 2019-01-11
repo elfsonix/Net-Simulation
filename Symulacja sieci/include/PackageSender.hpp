@@ -19,4 +19,4 @@ public:
     void putPackageInBuffer(Package package);
 
 };
-#endif //NETSIM_PACKAGESENDER_H
+#endif //SYMULACJA_SIECI_PACKAGESENDER_H

@@ -5,6 +5,8 @@
 
 #include "PackageSender.hpp"
 
+void PackageSender::passPackageToReceiver(){}
+
 void PackageSender::putPackageInBuffer(Package package){
     bufferOfPackagesReady = std::make_optional(package);
     passPackageToReceiver();

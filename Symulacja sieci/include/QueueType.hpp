@@ -8,4 +8,4 @@
 enum class QueueType{
     LIFO, FIFO,
 };
-#endif //NETSIM_QUEUETYPE_H
+#endif //SYMULACJA_SIECI_QUEUETYPE_H

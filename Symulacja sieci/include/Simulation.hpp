@@ -2,6 +2,7 @@
 // Created by Kasia on 2019-01-05.
 //
 
+/*
 #ifndef SYMULACJA_SIECI_SIMULATION_HPP
 #define SYMULACJA_SIECI_SIMULATION_HPP
 
@@ -13,4 +14,5 @@ int simulate(IReportNotifier* reportNotifier, Factory factory, int numberOfRound
         int numberOfRoundsAfterWhichGenerateReport);
 
 
-#endif //NETSIM_SIMULATION_H
+#endif //SYMULACJA_SIECI_SIMULATION_H
+*/

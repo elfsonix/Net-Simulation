@@ -20,9 +20,14 @@ Package PackageQueue::popPackage() {
 }
 
 void PackageQueue::putPackageInQueue(Package package) {
-    _queue.push_back(std::move(package));
+    _queue.push_back(package);
 }
 
-QueueType PackageQueue::returnQueueType() {
+/*QueueType PackageQueue::returnQueueType() const {
     return _queueType;
-}
+}*/
+dequeCit PackageQueue::cbegin() const {return _queue.cbegin();}
+dequeCit PackageQueue::cend() const {return _queue.cend();}
+dequeIt PackageQueue::begin() {return _queue.begin();}
+dequeIt PackageQueue::end() {return _queue.end();}
+

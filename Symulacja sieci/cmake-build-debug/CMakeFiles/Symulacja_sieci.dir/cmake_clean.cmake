@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Symulacja_sieci.dir/main.cpp.obj"
+  "CMakeFiles/Symulacja_sieci.dir/src/PackageQueue.cpp.obj"
+  "CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.obj"
+  "CMakeFiles/Symulacja_sieci.dir/src/PackageSender.cpp.obj"
   "Symulacja_sieci.pdb"
   "Symulacja_sieci.exe"
   "Symulacja_sieci.exe.manifest"
