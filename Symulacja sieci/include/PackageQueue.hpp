@@ -11,21 +11,26 @@
 #include <stdexcept>
 
 
-class PackageQueue : IPackageQueue{
+class PackageQueue : public IPackageQueue{
 private:
     QueueType _queueType;
     std::deque<Package> _queue;   //przekazać w konstruktorze?
 public:
-    PackageQueue(QueueType queueType, std::deque<Package> queue) :   _queueType(queueType), _queue(queue){
-        //_queueType = queueType;
+    PackageQueue(QueueType queueType, std::deque<Package> queue) {
+        _queue = std::move(queue);
+        _queueType = queueType;
     }
 
-   Package popPackage() override;
+    Package popPackage(); override;
 
     void putPackageInQueue(const Package& package) override;
 
-    QueueType returnQueueType()const override;
+    QueueType returnQueueType() const override {return _queueType;}
+    dequeCit cbegin() const override;
+    dequeCit cend() const override;
+    dequeIt begin() const override;
+    dequeIt end() const override;
 };
 
 
-#endif //NETSIM_PACKAGEQUEUE_H
+#endif //SYMULACJA_SIECI_PACKAGEQUEUE_HPP

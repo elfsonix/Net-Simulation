@@ -535,6 +535,33 @@ test/test_package.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package.cpp.s
 .PHONY : test/test_package.cpp.s
 
+test/test_package_test.obj: test/test_package_test.cpp.obj
+
+.PHONY : test/test_package_test.obj
+
+# target to build an object file
+test/test_package_test.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj
+.PHONY : test/test_package_test.cpp.obj
+
+test/test_package_test.i: test/test_package_test.cpp.i
+
+.PHONY : test/test_package_test.i
+
+# target to preprocess a source file
+test/test_package_test.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package_test.cpp.i
+.PHONY : test/test_package_test.cpp.i
+
+test/test_package_test.s: test/test_package_test.cpp.s
+
+.PHONY : test/test_package_test.s
+
+# target to generate assembly for a file
+test/test_package_test.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package_test.cpp.s
+.PHONY : test/test_package_test.cpp.s
+
 test/test_ramp.obj: test/test_ramp.cpp.obj
 
 .PHONY : test/test_ramp.obj
@@ -693,6 +720,9 @@ help:
 	@echo ... test/test_package.obj
 	@echo ... test/test_package.i
 	@echo ... test/test_package.s
+	@echo ... test/test_package_test.obj
+	@echo ... test/test_package_test.i
+	@echo ... test/test_package_test.s
 	@echo ... test/test_ramp.obj
 	@echo ... test/test_ramp.i
 	@echo ... test/test_ramp.s

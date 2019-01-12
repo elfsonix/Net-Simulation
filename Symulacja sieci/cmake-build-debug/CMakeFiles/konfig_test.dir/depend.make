@@ -161,6 +161,35 @@ CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: ../googletest-master/googl
 CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: ../include/Package.hpp
 CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: ../test/test_package.cpp
 
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/gtest-death-test.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/gtest-message.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/gtest-param-test.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/gtest-printers.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/gtest-test-part.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/gtest-typed-test.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/gtest.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/gtest_pred_impl.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/gtest_prod.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/internal/custom/gtest-port.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/internal/custom/gtest-printers.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/internal/gtest-death-test-internal.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/internal/gtest-filepath.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/internal/gtest-internal.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/internal/gtest-linked_ptr.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/internal/gtest-param-util-generated.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/internal/gtest-param-util.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/internal/gtest-port-arch.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/internal/gtest-port.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/internal/gtest-string.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/internal/gtest-tuple.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../googletest-master/googletest/include/gtest/internal/gtest-type-util.h
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../include/IPackageQueue.hpp
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../include/IPackageStockpile.hpp
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../include/Package.hpp
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../include/PackageQueue.hpp
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../include/QueueType.hpp
+CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj: ../test/test_package_test.cpp
+
 CMakeFiles/konfig_test.dir/test/test_ramp.cpp.obj: ../googletest-master/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/konfig_test.dir/test/test_ramp.cpp.obj: ../googletest-master/googletest/include/gtest/gtest-message.h
 CMakeFiles/konfig_test.dir/test/test_ramp.cpp.obj: ../googletest-master/googletest/include/gtest/gtest-param-test.h

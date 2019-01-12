@@ -15,7 +15,6 @@ using ElementID = int;
 
 class IPackageReceiver{
 public:
-    IPackageReceiver(){};
 
     //metody tylko do odczytu
     virtual dequeCit cbegin() const = 0;

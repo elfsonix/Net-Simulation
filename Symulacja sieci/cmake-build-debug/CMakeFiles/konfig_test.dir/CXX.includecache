@@ -284,31 +284,9 @@ cxxabi.h
 acxx_demangle.h
 -
 
-../include/Factory.hpp
-NodeCollection.hpp
-../include/NodeCollection.hpp
-Worker.hpp
-../include/Worker.hpp
-Ramp.hpp
-../include/Ramp.hpp
-Storehouse.hpp
-../include/Storehouse.hpp
-list
--
-utility
--
-
 ../include/IPackageQueue.hpp
 IPackageStockpile.hpp
 ../include/IPackageStockpile.hpp
-
-../include/IPackageReceiver.hpp
-tuple
--
-deque
--
-ReceiverType.hpp
-../include/ReceiverType.hpp
 
 ../include/IPackageStockpile.hpp
 QueueType.hpp
@@ -318,137 +296,25 @@ Package.hpp
 deque
 -
 
-../include/NodeCollection.hpp
-list
--
-Package.hpp
 ../include/Package.hpp
 
-../include/Package.hpp
-
-../include/PackageSender.hpp
-optional
+../include/PackageQueue.hpp
+queue
 -
-ReceiverPreferences.hpp
-../include/ReceiverPreferences.hpp
-
+QueueType.hpp
 ../include/QueueType.hpp
-
-../include/Ramp.hpp
-PackageSender.hpp
-../include/PackageSender.hpp
-
-../include/ReceiverPreferences.hpp
-map
--
-functional
--
-cstdlib
--
+IPackageQueue.hpp
+../include/IPackageQueue.hpp
 stdexcept
 -
-random
--
-iostream
--
-IPackageQueue.hpp
-../include/IPackageQueue.hpp
-IPackageReceiver.hpp
-../include/IPackageReceiver.hpp
 
-../include/ReceiverType.hpp
-
-../include/Storehouse.hpp
-Package.hpp
-../include/Package.hpp
-IPackageReceiver.hpp
-../include/IPackageReceiver.hpp
-IPackageStockpile.hpp
-../include/IPackageStockpile.hpp
-memory
--
-deque
--
-tuple
--
-
-../include/Worker.hpp
-PackageSender.hpp
-../include/PackageSender.hpp
-IPackageReceiver.hpp
-../include/IPackageReceiver.hpp
-IPackageQueue.hpp
-../include/IPackageQueue.hpp
-memory
--
-deque
--
-tuple
--
-optional
--
-QueueType.hpp
 ../include/QueueType.hpp
 
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Factory.cpp
-Factory.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Factory.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Package.cpp
-Package.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Package.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Ramp.cpp
-Ramp.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Ramp.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Storehouse.cpp
-Storehouse.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Storehouse.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Worker.cpp
-Worker.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Worker.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_factory.cpp
+C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_package_test.cpp
 gtest/gtest.h
 C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
-Factory.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/Factory.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_node_collection.cpp
-gtest/gtest.h
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
-NodeCollection.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/NodeCollection.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_package.cpp
-gtest/gtest.h
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
+PackageQueue.hpp
+C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/PackageQueue.hpp
 Package.hpp
 C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/Package.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_ramp.cpp
-gtest/gtest.h
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
-Ramp.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/Ramp.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_receiver.cpp
-gtest/gtest.h
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
-ReceiverPreferences.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/ReceiverPreferences.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_storehouse.cpp
-gtest/gtest.h
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
-Storehouse.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/Storehouse.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_worker.cpp
-gtest/gtest.h
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
-Worker.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/Worker.hpp
 
