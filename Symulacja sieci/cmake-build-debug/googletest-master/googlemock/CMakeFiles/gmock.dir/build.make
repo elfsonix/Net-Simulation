@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci"
+CMAKE_SOURCE_DIR = "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include googletest-master/googlemock/CMakeFiles/gmock.dir/depend.make
@@ -59,16 +59,16 @@ include googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make
 googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: googletest-master/googlemock/CMakeFiles/gmock.dir/flags.make
 googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: googletest-master/googlemock/CMakeFiles/gmock.dir/includes_CXX.rsp
 googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: ../googletest-master/googlemock/src/gmock-all.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
-	cd /d C:\Users\Kasia\DOCUME~1\GitHub\AGH_AI~1\SYMULA~1\CMAKE-~1\GOOGLE~1\GOOGLE~1 && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gmock.dir\src\gmock-all.cc.obj -c "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\googletest-master\googlemock\src\gmock-all.cc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj"
+	cd /d C:\Users\Sonia\DOCUME~1\GitHub\AGH_AI~1\SYMULA~1\CMAKE-~1\GOOGLE~1\GOOGLE~1 && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\gmock.dir\src\gmock-all.cc.obj -c "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\googletest-master\googlemock\src\gmock-all.cc"
 
 googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock.dir/src/gmock-all.cc.i"
-	cd /d C:\Users\Kasia\DOCUME~1\GitHub\AGH_AI~1\SYMULA~1\CMAKE-~1\GOOGLE~1\GOOGLE~1 && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\googletest-master\googlemock\src\gmock-all.cc" > CMakeFiles\gmock.dir\src\gmock-all.cc.i
+	cd /d C:\Users\Sonia\DOCUME~1\GitHub\AGH_AI~1\SYMULA~1\CMAKE-~1\GOOGLE~1\GOOGLE~1 && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\googletest-master\googlemock\src\gmock-all.cc" > CMakeFiles\gmock.dir\src\gmock-all.cc.i
 
 googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock.dir/src/gmock-all.cc.s"
-	cd /d C:\Users\Kasia\DOCUME~1\GitHub\AGH_AI~1\SYMULA~1\CMAKE-~1\GOOGLE~1\GOOGLE~1 && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\googletest-master\googlemock\src\gmock-all.cc" -o CMakeFiles\gmock.dir\src\gmock-all.cc.s
+	cd /d C:\Users\Sonia\DOCUME~1\GitHub\AGH_AI~1\SYMULA~1\CMAKE-~1\GOOGLE~1\GOOGLE~1 && C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\googletest-master\googlemock\src\gmock-all.cc" -o CMakeFiles\gmock.dir\src\gmock-all.cc.s
 
 # Object files for target gmock
 gmock_OBJECTS = \
@@ -80,9 +80,9 @@ gmock_EXTERNAL_OBJECTS =
 googletest-master/googlemock/libgmockd.a: googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj
 googletest-master/googlemock/libgmockd.a: googletest-master/googlemock/CMakeFiles/gmock.dir/build.make
 googletest-master/googlemock/libgmockd.a: googletest-master/googlemock/CMakeFiles/gmock.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgmockd.a"
-	cd /d C:\Users\Kasia\DOCUME~1\GitHub\AGH_AI~1\SYMULA~1\CMAKE-~1\GOOGLE~1\GOOGLE~1 && $(CMAKE_COMMAND) -P CMakeFiles\gmock.dir\cmake_clean_target.cmake
-	cd /d C:\Users\Kasia\DOCUME~1\GitHub\AGH_AI~1\SYMULA~1\CMAKE-~1\GOOGLE~1\GOOGLE~1 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gmock.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgmockd.a"
+	cd /d C:\Users\Sonia\DOCUME~1\GitHub\AGH_AI~1\SYMULA~1\CMAKE-~1\GOOGLE~1\GOOGLE~1 && $(CMAKE_COMMAND) -P CMakeFiles\gmock.dir\cmake_clean_target.cmake
+	cd /d C:\Users\Sonia\DOCUME~1\GitHub\AGH_AI~1\SYMULA~1\CMAKE-~1\GOOGLE~1\GOOGLE~1 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gmock.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 googletest-master/googlemock/CMakeFiles/gmock.dir/build: googletest-master/googlemock/libgmockd.a
@@ -90,10 +90,10 @@ googletest-master/googlemock/CMakeFiles/gmock.dir/build: googletest-master/googl
 .PHONY : googletest-master/googlemock/CMakeFiles/gmock.dir/build
 
 googletest-master/googlemock/CMakeFiles/gmock.dir/clean:
-	cd /d C:\Users\Kasia\DOCUME~1\GitHub\AGH_AI~1\SYMULA~1\CMAKE-~1\GOOGLE~1\GOOGLE~1 && $(CMAKE_COMMAND) -P CMakeFiles\gmock.dir\cmake_clean.cmake
+	cd /d C:\Users\Sonia\DOCUME~1\GitHub\AGH_AI~1\SYMULA~1\CMAKE-~1\GOOGLE~1\GOOGLE~1 && $(CMAKE_COMMAND) -P CMakeFiles\gmock.dir\cmake_clean.cmake
 .PHONY : googletest-master/googlemock/CMakeFiles/gmock.dir/clean
 
 googletest-master/googlemock/CMakeFiles/gmock.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\googletest-master\googlemock" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\googletest-master\googlemock" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\googletest-master\googlemock\CMakeFiles\gmock.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\googletest-master\googlemock" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\googletest-master\googlemock" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\googletest-master\googlemock\CMakeFiles\gmock.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : googletest-master/googlemock/CMakeFiles/gmock.dir/depend
 

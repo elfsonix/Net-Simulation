@@ -4,16 +4,9 @@
 
 #include "gtest/gtest.h"
 #include "PackageQueue.hpp"
+#include "Package.hpp"
 
-TEST(PackageTest, PackageClass){
-    Package pack1 = Package();
-    Package pack2 = Package();
-    EXPECT_EQ(pack1.getPackageID(), 1);
-    EXPECT_EQ(pack2.getPackageID(), 2);
-
-}
-
-TEST(PackageTest, PackageQueueClass1){
+TEST(PackageQueue, PackageQueueClass1){
     Package pack1 = Package();
     Package pack2 = Package();
     std::deque<Package> que;
@@ -25,8 +18,8 @@ TEST(PackageTest, PackageQueueClass1){
     ASSERT_EQ(QueueType::LIFO, packageQueueLIFO.returnQueueType());
 
 }
-
-TEST(PackageTest, PackageQueueClass2){
+/*
+TEST(Package, PackageQueueClass2){
     Package pack1 = Package();
     Package pack2 = Package();
     std::deque<Package> que;
@@ -47,3 +40,4 @@ TEST(PackageTest, PackageQueueClass2){
 
 }
 
+*/

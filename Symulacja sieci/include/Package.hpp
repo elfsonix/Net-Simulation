@@ -10,8 +10,8 @@ using ElementID = int;
 class Package {
 private:
     ElementID _packageID;
-public:
     static ElementID maxID;
+public:
     Package() {
         _packageID = maxID;
         maxID++;

@@ -1,5 +1,5 @@
-libdir=C:/Program Files (x86)/NetSim/lib
-includedir=C:/Program Files (x86)/NetSim/include
+libdir=C:/Program Files (x86)/Symulacja_sieci/lib
+includedir=C:/Program Files (x86)/Symulacja_sieci/include
 
 Name: gmock
 Description: GoogleMock (without main() function)
