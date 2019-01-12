@@ -560,7 +560,7 @@
 		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_package.cpp">
 			<Option target="konfig_test"/>
 		</Unit>
-		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_package_test.cpp">
+		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_package_queue.cpp">
 			<Option target="konfig_test"/>
 		</Unit>
 		<Unit filename="C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_ramp.cpp">

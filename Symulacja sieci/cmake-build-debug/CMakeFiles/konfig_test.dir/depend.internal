@@ -8,6 +8,7 @@ CMakeFiles/konfig_test.dir/src/Factory.cpp.obj
  ../include/IPackageStockpile.hpp
  ../include/NodeCollection.hpp
  ../include/Package.hpp
+ ../include/PackageQueue.hpp
  ../include/PackageSender.hpp
  ../include/QueueType.hpp
  ../include/Ramp.hpp
@@ -43,6 +44,7 @@ CMakeFiles/konfig_test.dir/src/Worker.cpp.obj
  ../include/IPackageReceiver.hpp
  ../include/IPackageStockpile.hpp
  ../include/Package.hpp
+ ../include/PackageQueue.hpp
  ../include/PackageSender.hpp
  ../include/QueueType.hpp
  ../include/ReceiverPreferences.hpp
@@ -102,6 +104,7 @@ CMakeFiles/konfig_test.dir/test/test_factory.cpp.obj
  ../include/IPackageStockpile.hpp
  ../include/NodeCollection.hpp
  ../include/Package.hpp
+ ../include/PackageQueue.hpp
  ../include/PackageSender.hpp
  ../include/QueueType.hpp
  ../include/Ramp.hpp
@@ -161,7 +164,7 @@ CMakeFiles/konfig_test.dir/test/test_package.cpp.obj
  ../googletest-master/googletest/include/gtest/internal/gtest-type-util.h
  ../include/Package.hpp
  C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_package.cpp
-CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj
+CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.obj
  ../googletest-master/googletest/include/gtest/gtest-death-test.h
  ../googletest-master/googletest/include/gtest/gtest-message.h
  ../googletest-master/googletest/include/gtest/gtest-param-test.h
@@ -189,7 +192,7 @@ CMakeFiles/konfig_test.dir/test/test_package_test.cpp.obj
  ../include/Package.hpp
  ../include/PackageQueue.hpp
  ../include/QueueType.hpp
- C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_package_test.cpp
+ C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_package_queue.cpp
 CMakeFiles/konfig_test.dir/test/test_ramp.cpp.obj
  ../googletest-master/googletest/include/gtest/gtest-death-test.h
  ../googletest-master/googletest/include/gtest/gtest-message.h
@@ -311,6 +314,7 @@ CMakeFiles/konfig_test.dir/test/test_worker.cpp.obj
  ../include/IPackageReceiver.hpp
  ../include/IPackageStockpile.hpp
  ../include/Package.hpp
+ ../include/PackageQueue.hpp
  ../include/PackageSender.hpp
  ../include/QueueType.hpp
  ../include/ReceiverPreferences.hpp

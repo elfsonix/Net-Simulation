@@ -8,6 +8,7 @@
 #include "PackageSender.hpp"
 #include "IPackageReceiver.hpp"
 #include "IPackageQueue.hpp"
+#include "PackageQueue.hpp"
 #include <memory>
 #include <deque>
 #include <tuple>
@@ -16,34 +17,37 @@
 
 class Worker : public PackageSender, public IPackageReceiver, public IPackageQueue {
 private:
-    std::unique_ptr <Package> _packageQueue;    //lista oczekujących paczek
+    std::unique_ptr <PackageQueue> _packageQueue;    //lista oczekujących paczek
     ElementID _nodeID{};
-    std::optional<Package> _bufferOfProcessedPackage;   //bufor z aktualnie przetwarzaną paczką
     int _processTime;   //ile kolejek zajmuje przetworzenie produktu
+    int _processRound;  //w którym stadium jest przetwarzany produkt
     QueueType _queueType;
 public:
-    Worker(std::unique_ptr<Package> packageQueue,
-            ElementID nodeID,
-            const ReceiverPreferences &receiverPreferences,
-            int processTime, QueueType queueType)
+    std::optional<Package> _bufferOfProcessedPackage;   //bufor z aktualnie przetwarzaną paczką
+    Worker(ElementID nodeID, int processTime, std::unique_ptr<PackageQueue> packageQueue,
+            const ReceiverPreferences &receiverPreferences)
     : PackageSender(receiverPreferences) {
         _nodeID = nodeID;
         _processTime = processTime;
         _packageQueue = std::move(packageQueue);
         _bufferOfProcessedPackage = std::nullopt;
-        _queueType = queueType;
+        _processRound = 0;
+        _queueType = _packageQueue->returnQueueType();
     }
 
-    void putPackageInQueue(const Package& package) override;
+    //Własne
     void processPackage();
+    //Dziedziczone
+    void putPackageInQueue(const Package& package) override;
     void receivePackage(const Package& package) override;
     std::tuple<ReceiverType, ElementID> identifyReceiver() const override;
-    dequeCit cbegin() const override;
+    dequeCit cbegin() const override;   //references a constant value of beginning of _packageQueue
     dequeCit cend() const override;
     dequeIt begin() const override;
     dequeIt end() const override;
     Package popPackage() override;
     QueueType returnQueueType() const override;
+
 
 };
 

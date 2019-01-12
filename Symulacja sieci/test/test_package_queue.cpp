@@ -5,7 +5,7 @@
 #include "gtest/gtest.h"
 #include "PackageQueue.hpp"
 #include "Package.hpp"
-
+/*
 TEST(PackageQueue, isQueueTypeRight){
     Package pack1 = Package();
     Package pack2 = Package();
@@ -18,7 +18,7 @@ TEST(PackageQueue, isQueueTypeRight){
     ASSERT_EQ(QueueType::LIFO, packageQueueLIFO.returnQueueType());
 
 }
-/*
+
 TEST(Package, PackageQueueClass2){
     Package pack1 = Package();
     Package pack2 = Package();

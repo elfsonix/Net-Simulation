@@ -21,7 +21,7 @@ public:
         _queueType = queueType;
     }
 
-    Package popPackage(); override;
+    Package popPackage() override;
 
     void putPackageInQueue(const Package& package) override;
 
@@ -30,6 +30,7 @@ public:
     dequeCit cend() const override;
     dequeIt begin() const override;
     dequeIt end() const override;
+
 };
 
 
