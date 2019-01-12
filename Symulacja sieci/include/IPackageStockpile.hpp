@@ -16,7 +16,7 @@ class IPackageStockpile{
 
 public:
     IPackageStockpile(){};        //default constructor
-    virtual void putPackageInQueue(Package package) = 0;      //metoda do umieszczenia produktu na składowisku
+    virtual void putPackageInQueue(const Package& package) = 0;      //metoda do umieszczenia produktu na składowisku
 
     //metody tylko do odczytu
     virtual dequeCit cbegin() const = 0;

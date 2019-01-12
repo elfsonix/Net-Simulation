@@ -4,7 +4,7 @@
 
 #include "PackageQueue.hpp"
 
-Package PackageQueue::popProduct() {
+Package PackageQueue::popPackage() {
     switch(_queueType){
         case(QueueType::FIFO):
             {Package toReturn = _queue.front();
@@ -19,7 +19,7 @@ Package PackageQueue::popProduct() {
         }
 }
 
-void PackageQueue::putProductInQueue(Package package) {
+void PackageQueue::putPackageInQueue(const Package& package) {
     _queue.push_back(std::move(package));
 }
 
