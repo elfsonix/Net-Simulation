@@ -22,7 +22,7 @@ public:
 
    Package popPackage() override;
 
-    void putPackageInQueue(Package package) override;
+    void putPackageInQueue(const Package& package) override;
 
     QueueType returnQueueType() const override {return _queueType;}
  dequeCit cbegin() const override;

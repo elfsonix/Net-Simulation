@@ -26,4 +26,3 @@ dequeIt Storehouse::begin() {
 dequeIt Storehouse::end() {
     return dequeIt();
 }
-void Storehouse::putPackageInQueue(Package package) {}

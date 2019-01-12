@@ -4,8 +4,9 @@
 
 #ifndef SYMULACJA_SIECI_NODECOLLECTION_HPP
 #define SYMULACJA_SIECI_NODECOLLECTION_HPP
-#include <list>
 
+#include <list>
+#include "Package.hpp"
 
 
 template <typename Node> class NodeCollection {
@@ -14,7 +15,6 @@ private:
 public:
     using iterator = typename std::list <Node>::iterator;
     using constIterator = typename std::list<Node>::const_iterator;
-    using ElementID = int;
     std::list<Node> getNodes() {
         return _nodes;
     }
@@ -38,7 +38,6 @@ public:
 
     }
 };
+
 #endif //SYMULACJA_SIECI_NODECOLLECTION_HPP
-
-
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

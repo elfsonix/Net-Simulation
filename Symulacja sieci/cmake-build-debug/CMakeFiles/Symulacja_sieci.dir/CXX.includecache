@@ -6,6 +6,7 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 ../include/IPackageQueue.hpp
 QueueType.hpp
 ../include/QueueType.hpp
@@ -80,3 +81,5 @@ C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/s
 PackageSender.hpp
 C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageSender.hpp
 
+=======
+>>>>>>> develop

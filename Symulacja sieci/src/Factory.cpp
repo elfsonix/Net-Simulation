@@ -1,9 +1,7 @@
-
 //
 // Created by Sonia on 2019-01-09.
 //
 //
-
 #include "Factory.hpp"
 
 void Factory::addRamp(const Ramp &ramp) {

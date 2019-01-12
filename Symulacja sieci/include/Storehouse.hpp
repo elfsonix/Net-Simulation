@@ -4,6 +4,8 @@
 
 #ifndef SYMULACJA_SIECI_STOREHOUSE_HPP
 #define SYMULACJA_SIECI_STOREHOUSE_HPP
+
+#include "Package.hpp"
 #include "IPackageReceiver.hpp"
 #include "IPackageStockpile.hpp"
 #include <memory>
@@ -23,18 +25,14 @@ public:
     ElementID getId() {
         return _nodeId;
     }
+    void putPackageInQueue(const Package& package) override;
     void receivePackage(const Package& package) override;
     std::tuple<ReceiverType, ElementID> identifyReceiver() const override;
     dequeCit cbegin() const override;
     dequeCit cend() const override;
-    dequeIt begin() override;
-    dequeIt end() override;
-    void putPackageInQueue(Package package) override;
+    dequeIt begin() const override;
+    dequeIt end() const override;
 };
 
-
 #endif //SYMULACJA_SIECI_STOREHOUSE_HPP
-
-
-
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

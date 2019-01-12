@@ -384,6 +384,61 @@ test/main_test.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/main_test.cpp.s
 .PHONY : test/main_test.cpp.s
 
+test/test_factory.obj: test/test_factory.cpp.obj
+
+.PHONY : test/test_factory.obj
+
+# target to build an object file
+test/test_factory.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_factory.cpp.obj
+.PHONY : test/test_factory.cpp.obj
+
+test/test_factory.i: test/test_factory.cpp.i
+
+.PHONY : test/test_factory.i
+
+# target to preprocess a source file
+test/test_factory.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_factory.cpp.i
+.PHONY : test/test_factory.cpp.i
+
+test/test_factory.s: test/test_factory.cpp.s
+
+.PHONY : test/test_factory.s
+
+# target to generate assembly for a file
+test/test_factory.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_factory.cpp.s
+.PHONY : test/test_factory.cpp.s
+
+test/test_node_collection.obj: test/test_node_collection.cpp.obj
+
+.PHONY : test/test_node_collection.obj
+
+# target to build an object file
+test/test_node_collection.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_node_collection.cpp.obj
+.PHONY : test/test_node_collection.cpp.obj
+
+test/test_node_collection.i: test/test_node_collection.cpp.i
+
+.PHONY : test/test_node_collection.i
+
+# target to preprocess a source file
+test/test_node_collection.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_node_collection.cpp.i
+.PHONY : test/test_node_collection.cpp.i
+
+test/test_node_collection.s: test/test_node_collection.cpp.s
+
+.PHONY : test/test_node_collection.s
+
+# target to generate assembly for a file
+test/test_node_collection.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_node_collection.cpp.s
+.PHONY : test/test_node_collection.cpp.s
+
+test/test_package.obj: test/test_package.cpp.obj
 test/test_package_queue.obj: test/test_package_queue.cpp.obj
 
 .PHONY : test/test_package_queue.obj
@@ -411,6 +466,33 @@ test/test_package_queue.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.s
 .PHONY : test/test_package_queue.cpp.s
 
+test/test_ramp.obj: test/test_ramp.cpp.obj
+
+.PHONY : test/test_ramp.obj
+
+# target to build an object file
+test/test_ramp.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_ramp.cpp.obj
+.PHONY : test/test_ramp.cpp.obj
+
+test/test_ramp.i: test/test_ramp.cpp.i
+
+.PHONY : test/test_ramp.i
+
+# target to preprocess a source file
+test/test_ramp.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_ramp.cpp.i
+.PHONY : test/test_ramp.cpp.i
+
+test/test_ramp.s: test/test_ramp.cpp.s
+
+.PHONY : test/test_ramp.s
+
+# target to generate assembly for a file
+test/test_ramp.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_ramp.cpp.s
+.PHONY : test/test_ramp.cpp.s
+
 test/test_receiver.obj: test/test_receiver.cpp.obj
 
 .PHONY : test/test_receiver.obj
@@ -437,6 +519,60 @@ test/test_receiver.s: test/test_receiver.cpp.s
 test/test_receiver.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_receiver.cpp.s
 .PHONY : test/test_receiver.cpp.s
+
+test/test_storehouse.obj: test/test_storehouse.cpp.obj
+
+.PHONY : test/test_storehouse.obj
+
+# target to build an object file
+test/test_storehouse.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_storehouse.cpp.obj
+.PHONY : test/test_storehouse.cpp.obj
+
+test/test_storehouse.i: test/test_storehouse.cpp.i
+
+.PHONY : test/test_storehouse.i
+
+# target to preprocess a source file
+test/test_storehouse.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_storehouse.cpp.i
+.PHONY : test/test_storehouse.cpp.i
+
+test/test_storehouse.s: test/test_storehouse.cpp.s
+
+.PHONY : test/test_storehouse.s
+
+# target to generate assembly for a file
+test/test_storehouse.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_storehouse.cpp.s
+.PHONY : test/test_storehouse.cpp.s
+
+test/test_worker.obj: test/test_worker.cpp.obj
+
+.PHONY : test/test_worker.obj
+
+# target to build an object file
+test/test_worker.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_worker.cpp.obj
+.PHONY : test/test_worker.cpp.obj
+
+test/test_worker.i: test/test_worker.cpp.i
+
+.PHONY : test/test_worker.i
+
+# target to preprocess a source file
+test/test_worker.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_worker.cpp.i
+.PHONY : test/test_worker.cpp.i
+
+test/test_worker.s: test/test_worker.cpp.s
+
+.PHONY : test/test_worker.s
+
+# target to generate assembly for a file
+test/test_worker.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_worker.cpp.s
+.PHONY : test/test_worker.cpp.s
 
 # Help Target
 help:
@@ -472,12 +608,30 @@ help:
 	@echo ... test/main_test.obj
 	@echo ... test/main_test.i
 	@echo ... test/main_test.s
+	@echo ... test/test_factory.obj
+	@echo ... test/test_factory.i
+	@echo ... test/test_factory.s
+	@echo ... test/test_node_collection.obj
+	@echo ... test/test_node_collection.i
+	@echo ... test/test_node_collection.s
+	@echo ... test/test_package.obj
+	@echo ... test/test_package.i
+	@echo ... test/test_package.s
+	@echo ... test/test_ramp.obj
+	@echo ... test/test_ramp.i
+	@echo ... test/test_ramp.s
 	@echo ... test/test_package_queue.obj
 	@echo ... test/test_package_queue.i
 	@echo ... test/test_package_queue.s
 	@echo ... test/test_receiver.obj
 	@echo ... test/test_receiver.i
 	@echo ... test/test_receiver.s
+	@echo ... test/test_storehouse.obj
+	@echo ... test/test_storehouse.i
+	@echo ... test/test_storehouse.s
+	@echo ... test/test_worker.obj
+	@echo ... test/test_worker.i
+	@echo ... test/test_worker.s
 .PHONY : help
 
 
