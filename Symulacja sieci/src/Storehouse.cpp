@@ -1,6 +1,8 @@
 //
 // Created by Sonia on 2019-01-09.
 //
+#include <Storehouse.hpp>
+
 #include "Storehouse.hpp"
 
 void Storehouse::receivePackage(const Package &package) {
@@ -25,4 +27,8 @@ dequeIt Storehouse::begin() const {
 
 dequeIt Storehouse::end() const {
     return dequeIt();
+}
+
+void Storehouse::putPackageInQueue(const Package &package) {
+
 }
