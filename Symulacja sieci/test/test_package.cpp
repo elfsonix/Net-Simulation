@@ -5,7 +5,7 @@
 #include "gtest/gtest.h"
 #include "Package.hpp"
 
-TEST(PackageTest, arePackageIdsDifferent){
+TEST(Package, arePackageIdsDifferent){
     Package pack1 = Package();
     Package pack2 = Package();
     EXPECT_EQ(pack1.getID(), 1);

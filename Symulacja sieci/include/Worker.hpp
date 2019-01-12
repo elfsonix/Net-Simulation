@@ -30,7 +30,7 @@ public:
         _nodeID = nodeID;
         _processTime = processTime;
         _packageQueue = std::move(packageQueue);
-        _bufferOfProcessedPackage = std::nullopt_t;
+        _bufferOfProcessedPackage = std::nullopt;
         _queueType = queueType;
     }
 
