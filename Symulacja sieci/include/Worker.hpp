@@ -46,7 +46,6 @@ public:
     QueueType returnQueueType() const override;
 
 };
-#endif //SYMULACJA_SIECI_WORKER_HPP
 
 #endif //SYMULACJA_SIECI_WORKER_HPP
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

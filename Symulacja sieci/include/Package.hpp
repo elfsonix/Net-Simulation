@@ -10,17 +10,15 @@ using ElementID = int;
 class Package {
 private:
     static ElementID maxID;
-    ElementID _productID;
+    ElementID _packageID;
 public:
     Package() {
         _packageID = maxID;
         maxID++;
     }
-    ElementID getPackageID() const {
+    ElementID getID() const {
         return _packageID;
     }
 };
-#endif //SYMULACJA_SIECI_PACKAGE_HPP
-
 #endif //SYMULACJA_SIECI_PACKAGE_HPP
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

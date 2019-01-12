@@ -276,6 +276,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Factory.obj: src/Factory.cpp.obj
+
+.PHONY : src/Factory.obj
+
+# target to build an object file
+src/Factory.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Factory.cpp.obj
+.PHONY : src/Factory.cpp.obj
+
+src/Factory.i: src/Factory.cpp.i
+
+.PHONY : src/Factory.i
+
+# target to preprocess a source file
+src/Factory.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Factory.cpp.i
+.PHONY : src/Factory.cpp.i
+
+src/Factory.s: src/Factory.cpp.s
+
+.PHONY : src/Factory.s
+
+# target to generate assembly for a file
+src/Factory.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Factory.cpp.s
+.PHONY : src/Factory.cpp.s
+
 src/Package.obj: src/Package.cpp.obj
 
 .PHONY : src/Package.obj
@@ -283,6 +310,7 @@ src/Package.obj: src/Package.cpp.obj
 # target to build an object file
 src/Package.cpp.obj:
 	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.obj
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Package.cpp.obj
 .PHONY : src/Package.cpp.obj
 
 src/Package.i: src/Package.cpp.i
@@ -292,6 +320,7 @@ src/Package.i: src/Package.cpp.i
 # target to preprocess a source file
 src/Package.cpp.i:
 	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.i
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Package.cpp.i
 .PHONY : src/Package.cpp.i
 
 src/Package.s: src/Package.cpp.s
@@ -301,6 +330,7 @@ src/Package.s: src/Package.cpp.s
 # target to generate assembly for a file
 src/Package.cpp.s:
 	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.s
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Package.cpp.s
 .PHONY : src/Package.cpp.s
 
 src/PackageQueue.obj: src/PackageQueue.cpp.obj
@@ -356,6 +386,87 @@ src/PackageSender.s: src/PackageSender.cpp.s
 src/PackageSender.cpp.s:
 	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/PackageSender.cpp.s
 .PHONY : src/PackageSender.cpp.s
+
+src/Ramp.obj: src/Ramp.cpp.obj
+
+.PHONY : src/Ramp.obj
+
+# target to build an object file
+src/Ramp.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Ramp.cpp.obj
+.PHONY : src/Ramp.cpp.obj
+
+src/Ramp.i: src/Ramp.cpp.i
+
+.PHONY : src/Ramp.i
+
+# target to preprocess a source file
+src/Ramp.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Ramp.cpp.i
+.PHONY : src/Ramp.cpp.i
+
+src/Ramp.s: src/Ramp.cpp.s
+
+.PHONY : src/Ramp.s
+
+# target to generate assembly for a file
+src/Ramp.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Ramp.cpp.s
+.PHONY : src/Ramp.cpp.s
+
+src/Storehouse.obj: src/Storehouse.cpp.obj
+
+.PHONY : src/Storehouse.obj
+
+# target to build an object file
+src/Storehouse.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj
+.PHONY : src/Storehouse.cpp.obj
+
+src/Storehouse.i: src/Storehouse.cpp.i
+
+.PHONY : src/Storehouse.i
+
+# target to preprocess a source file
+src/Storehouse.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Storehouse.cpp.i
+.PHONY : src/Storehouse.cpp.i
+
+src/Storehouse.s: src/Storehouse.cpp.s
+
+.PHONY : src/Storehouse.s
+
+# target to generate assembly for a file
+src/Storehouse.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Storehouse.cpp.s
+.PHONY : src/Storehouse.cpp.s
+
+src/Worker.obj: src/Worker.cpp.obj
+
+.PHONY : src/Worker.obj
+
+# target to build an object file
+src/Worker.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Worker.cpp.obj
+.PHONY : src/Worker.cpp.obj
+
+src/Worker.i: src/Worker.cpp.i
+
+.PHONY : src/Worker.i
+
+# target to preprocess a source file
+src/Worker.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Worker.cpp.i
+.PHONY : src/Worker.cpp.i
+
+src/Worker.s: src/Worker.cpp.s
+
+.PHONY : src/Worker.s
+
+# target to generate assembly for a file
+src/Worker.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Worker.cpp.s
+.PHONY : src/Worker.cpp.s
 
 test/main_test.obj: test/main_test.cpp.obj
 
@@ -439,6 +550,32 @@ test/test_node_collection.cpp.s:
 .PHONY : test/test_node_collection.cpp.s
 
 test/test_package.obj: test/test_package.cpp.obj
+
+.PHONY : test/test_package.obj
+
+# target to build an object file
+test/test_package.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package.cpp.obj
+.PHONY : test/test_package.cpp.obj
+
+test/test_package.i: test/test_package.cpp.i
+
+.PHONY : test/test_package.i
+
+# target to preprocess a source file
+test/test_package.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package.cpp.i
+.PHONY : test/test_package.cpp.i
+
+test/test_package.s: test/test_package.cpp.s
+
+.PHONY : test/test_package.s
+
+# target to generate assembly for a file
+test/test_package.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package.cpp.s
+.PHONY : test/test_package.cpp.s
+
 test/test_package_queue.obj: test/test_package_queue.cpp.obj
 
 .PHONY : test/test_package_queue.obj
@@ -596,6 +733,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Factory.obj
+	@echo ... src/Factory.i
+	@echo ... src/Factory.s
 	@echo ... src/Package.obj
 	@echo ... src/Package.i
 	@echo ... src/Package.s
@@ -605,6 +745,15 @@ help:
 	@echo ... src/PackageSender.obj
 	@echo ... src/PackageSender.i
 	@echo ... src/PackageSender.s
+	@echo ... src/Ramp.obj
+	@echo ... src/Ramp.i
+	@echo ... src/Ramp.s
+	@echo ... src/Storehouse.obj
+	@echo ... src/Storehouse.i
+	@echo ... src/Storehouse.s
+	@echo ... src/Worker.obj
+	@echo ... src/Worker.i
+	@echo ... src/Worker.s
 	@echo ... test/main_test.obj
 	@echo ... test/main_test.i
 	@echo ... test/main_test.s
@@ -617,12 +766,12 @@ help:
 	@echo ... test/test_package.obj
 	@echo ... test/test_package.i
 	@echo ... test/test_package.s
-	@echo ... test/test_ramp.obj
-	@echo ... test/test_ramp.i
-	@echo ... test/test_ramp.s
 	@echo ... test/test_package_queue.obj
 	@echo ... test/test_package_queue.i
 	@echo ... test/test_package_queue.s
+	@echo ... test/test_ramp.obj
+	@echo ... test/test_ramp.i
+	@echo ... test/test_ramp.s
 	@echo ... test/test_receiver.obj
 	@echo ... test/test_receiver.i
 	@echo ... test/test_receiver.s
