@@ -1,4 +1,4 @@
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
 // Created by Kasia on 2019-01-01.
 #include <PackageQueue.hpp>
 #include <Storehouse.hpp>
@@ -14,8 +14,8 @@ TEST(TestReceiver, RandomNumbers){
     PackageQueue packageQueueLIFO = PackageQueue(QueueType::LIFO, que);
     std::unique_ptr<Package> ptr1 = std::make_unique<Package>(pack1);
     std::unique_ptr<Package> ptr2 = std::make_unique<Package>(pack2);
-    Storehouse storehouse1 = Storehouse(ptr1, 3);
-    Storehouse storehouse2 = Storehouse(ptr2, 4);
+    Storehouse storehouse1 = Storehouse(std::move(ptr1), 3);
+    Storehouse storehouse2 = Storehouse(std::move(ptr2), 4);
     std::vector<IPackageReceiver*> vec;
     vec.push_back(&storehouse1);
     vec.push_back(&storehouse2);
@@ -38,3 +38,4 @@ TEST(TestReceiver, RandomNumbers){
 
 
 }
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

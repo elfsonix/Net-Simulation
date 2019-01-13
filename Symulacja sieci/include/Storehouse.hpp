@@ -30,8 +30,8 @@ public:
     std::tuple<ReceiverType, ElementID> identifyReceiver() const override;
     dequeCit cbegin() const override;
     dequeCit cend() const override;
-    dequeIt begin() const override;
-    dequeIt end() const override;
+    dequeIt begin() override;
+    dequeIt end() override;
 };
 
 #endif //SYMULACJA_SIECI_STOREHOUSE_HPP
