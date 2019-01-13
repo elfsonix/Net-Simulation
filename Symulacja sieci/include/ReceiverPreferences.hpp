@@ -1,3 +1,5 @@
+#include <utility>
+
 //
 // Created by Kasia on 2018-12-31.
 //
@@ -20,7 +22,8 @@ using vector_p = std::vector<std::pair<IPackageReceiver*, double>>;
 using const_iterator = preferences_t::const_iterator;
 using iterator = preferences_t::iterator;
 
-//extern float const SUM_OF_PROBABILITIES = 1.0;
+float const SUM_OF_PROBABILITIES = 1.0;
+
 class ReceiverPreferences {
 private:
     preferences_t _probabilityTable;
@@ -32,7 +35,8 @@ private:
 
 public:
     ReceiverPreferences(std::vector<IPackageReceiver*> packageVector,
-                        std::function<std::vector<double>()> drawnNumberVector): _drawnNumberVector(drawnNumberVector){
+                        std::function<std::vector<double>()> drawnNumberVector): _drawnNumberVector(
+            std::move(drawnNumberVector)){
 
         std::vector<double> doubleVector = _drawnNumberVector();
         vector_p v = convertToVector(packageVector, doubleVector);
@@ -42,13 +46,13 @@ public:
     ReceiverPreferences(const ReceiverPreferences &receiverPreferencesToCopy) : _probabilityTable(receiverPreferencesToCopy._probabilityTable),
                         _drawnNumberVector(receiverPreferencesToCopy._drawnNumberVector)
     {}
-    //returnes values for the map - probability distribution
+    //returns values for the map - probability distribution
     std::vector<double> distribution();
 
     //generates single random number
     double drawNumber();
 
-    //returnes drawn receiver
+    //returns drawn receiver
     IPackageReceiver* drawReceiver();
 
     void addReceiver(IPackageReceiver* receiver);
