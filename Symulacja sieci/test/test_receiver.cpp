@@ -23,8 +23,8 @@ TEST(TestReceiver, RandomNumbers){
     std::function<double()> function1 = ([](){return 0.35;});
 /*    std::function<std::vector<double>()> probabilities =
             std::function<std::vector<double>()>([](){return std::vector<double>{0.45, 0.55};});*/
-    ReceiverPreferences receiverPreferences2 = ReceiverPreferences(vec, function1);
-    ReceiverPreferences receiverPreferences1 = ReceiverPreferences(vec, function2);
+    ReceiverPreferences receiverPreferences2 = ReceiverPreferences(vec, function2);
+    ReceiverPreferences receiverPreferences1 = ReceiverPreferences(vec, function1);
 
 
 
@@ -33,7 +33,7 @@ TEST(TestReceiver, RandomNumbers){
     IPackageReceiver* drawnReceiver1 = receiverPreferences1.drawReceiver();
 
 
-    EXPECT_EQ(drawnReceiver2, &storehouse2);
+    EXPECT_EQ(drawnReceiver2, &storehouse1);
     EXPECT_EQ(drawnReceiver1, &storehouse2);
 
 

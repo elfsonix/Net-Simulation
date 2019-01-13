@@ -63,15 +63,15 @@ IPackageReceiver* ReceiverPreferences::drawReceiver(){
     vector_p ve = convertToVector(newVector, probabilityDistribution);
     preferences_t mapka = convertToMap(ve);*/
 
-    preferences_t::iterator iter = _probabilityTable.begin();
+    preferences_t::iterator iter = _probabilityTable.end()--;
     double drawn = _drawnProbability();
-    while (iter != _probabilityTable.end())
+    while (iter != _probabilityTable.begin())
     {
         double value = iter->second;
-        if(drawn <= value){
+        if(drawn ???? value){
             return iter->first;
         }
-        ++iter;
+        --iter;
     }
     return iter->first;
 }
