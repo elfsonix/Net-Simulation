@@ -1,4 +1,4 @@
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
 // Created by Sonia on 2019-01-09.
 
 #include "Worker.hpp"
@@ -19,11 +19,11 @@ dequeCit Worker::cend() const {
     return _packageQueue->cend();
 }
 
-dequeIt Worker::begin() const {
+dequeIt Worker::begin() {
     return _packageQueue->begin();
 }
 
-dequeIt Worker::end() const {
+dequeIt Worker::end() {
     return _packageQueue->end();
 }
 
@@ -39,9 +39,9 @@ void Worker::processPackage() {
     if (_processTime>1){
         if(_bufferOfProcessedPackage.has_value()){
             _processRound++;    //przetworzenie
-            if(_processRound = _processTime){   //jeśli to ostatnie przetworzenie - wyślij dalej
+            if((_processRound = _processTime)){   //jeśli to ostatnie przetworzenie - wyślij dalej
                 _processRound = 0;
-                //putPackageInBuffer(_bufferOfProcessedPackage.value());
+                putPackageInBuffer(_bufferOfProcessedPackage.value());
                 _bufferOfProcessedPackage.reset();
             }
         }
@@ -50,9 +50,10 @@ void Worker::processPackage() {
             _processRound = 1;
         }
     }
-    //else putPackageInBuffer(popPackage());  //Przetwarza i od razu wysyła
+    else putPackageInBuffer(popPackage());  //Przetwarza i od razu wysyła
 }
 
 void Worker::putPackageInQueue(const Package &package) {
     _packageQueue->putPackageInQueue(package);
 }
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
