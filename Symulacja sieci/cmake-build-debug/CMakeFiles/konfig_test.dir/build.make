@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci"
+CMAKE_SOURCE_DIR = "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/konfig_test.dir/depend.make
@@ -56,33 +56,89 @@ include CMakeFiles/konfig_test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/konfig_test.dir/flags.make
 
-CMakeFiles/konfig_test.dir/test/main_test.cpp.obj: CMakeFiles/konfig_test.dir/flags.make
-CMakeFiles/konfig_test.dir/test/main_test.cpp.obj: CMakeFiles/konfig_test.dir/includes_CXX.rsp
-CMakeFiles/konfig_test.dir/test/main_test.cpp.obj: ../test/main_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/konfig_test.dir/test/main_test.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\konfig_test.dir\test\main_test.cpp.obj -c "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\main_test.cpp"
+CMakeFiles/konfig_test.dir/src/PackageQueue.cpp.obj: CMakeFiles/konfig_test.dir/flags.make
+CMakeFiles/konfig_test.dir/src/PackageQueue.cpp.obj: CMakeFiles/konfig_test.dir/includes_CXX.rsp
+CMakeFiles/konfig_test.dir/src/PackageQueue.cpp.obj: ../src/PackageQueue.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/konfig_test.dir/src/PackageQueue.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\konfig_test.dir\src\PackageQueue.cpp.obj -c "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\PackageQueue.cpp"
 
-CMakeFiles/konfig_test.dir/test/main_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/konfig_test.dir/test/main_test.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\main_test.cpp" > CMakeFiles\konfig_test.dir\test\main_test.cpp.i
+CMakeFiles/konfig_test.dir/src/PackageQueue.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/konfig_test.dir/src/PackageQueue.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\PackageQueue.cpp" > CMakeFiles\konfig_test.dir\src\PackageQueue.cpp.i
 
-CMakeFiles/konfig_test.dir/test/main_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/konfig_test.dir/test/main_test.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\main_test.cpp" -o CMakeFiles\konfig_test.dir\test\main_test.cpp.s
+CMakeFiles/konfig_test.dir/src/PackageQueue.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/konfig_test.dir/src/PackageQueue.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\PackageQueue.cpp" -o CMakeFiles\konfig_test.dir\src\PackageQueue.cpp.s
+
+CMakeFiles/konfig_test.dir/src/Package.cpp.obj: CMakeFiles/konfig_test.dir/flags.make
+CMakeFiles/konfig_test.dir/src/Package.cpp.obj: CMakeFiles/konfig_test.dir/includes_CXX.rsp
+CMakeFiles/konfig_test.dir/src/Package.cpp.obj: ../src/Package.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/konfig_test.dir/src/Package.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\konfig_test.dir\src\Package.cpp.obj -c "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\Package.cpp"
+
+CMakeFiles/konfig_test.dir/src/Package.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/konfig_test.dir/src/Package.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\Package.cpp" > CMakeFiles\konfig_test.dir\src\Package.cpp.i
+
+CMakeFiles/konfig_test.dir/src/Package.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/konfig_test.dir/src/Package.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\Package.cpp" -o CMakeFiles\konfig_test.dir\src\Package.cpp.s
+
+CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj: CMakeFiles/konfig_test.dir/flags.make
+CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj: CMakeFiles/konfig_test.dir/includes_CXX.rsp
+CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj: ../src/ReceiverPreferences.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\konfig_test.dir\src\ReceiverPreferences.cpp.obj -c "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\ReceiverPreferences.cpp"
+
+CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\ReceiverPreferences.cpp" > CMakeFiles\konfig_test.dir\src\ReceiverPreferences.cpp.i
+
+CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\ReceiverPreferences.cpp" -o CMakeFiles\konfig_test.dir\src\ReceiverPreferences.cpp.s
+
+CMakeFiles/konfig_test.dir/src/PackageSender.cpp.obj: CMakeFiles/konfig_test.dir/flags.make
+CMakeFiles/konfig_test.dir/src/PackageSender.cpp.obj: CMakeFiles/konfig_test.dir/includes_CXX.rsp
+CMakeFiles/konfig_test.dir/src/PackageSender.cpp.obj: ../src/PackageSender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/konfig_test.dir/src/PackageSender.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\konfig_test.dir\src\PackageSender.cpp.obj -c "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\PackageSender.cpp"
+
+CMakeFiles/konfig_test.dir/src/PackageSender.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/konfig_test.dir/src/PackageSender.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\PackageSender.cpp" > CMakeFiles\konfig_test.dir\src\PackageSender.cpp.i
+
+CMakeFiles/konfig_test.dir/src/PackageSender.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/konfig_test.dir/src/PackageSender.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\PackageSender.cpp" -o CMakeFiles\konfig_test.dir\src\PackageSender.cpp.s
+
+CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: CMakeFiles/konfig_test.dir/flags.make
+CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: CMakeFiles/konfig_test.dir/includes_CXX.rsp
+CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../src/Storehouse.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\konfig_test.dir\src\Storehouse.cpp.obj -c "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\Storehouse.cpp"
+
+CMakeFiles/konfig_test.dir/src/Storehouse.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/konfig_test.dir/src/Storehouse.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\Storehouse.cpp" > CMakeFiles\konfig_test.dir\src\Storehouse.cpp.i
+
+CMakeFiles/konfig_test.dir/src/Storehouse.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/konfig_test.dir/src/Storehouse.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\src\Storehouse.cpp" -o CMakeFiles\konfig_test.dir\src\Storehouse.cpp.s
 
 CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.obj: CMakeFiles/konfig_test.dir/flags.make
 CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.obj: CMakeFiles/konfig_test.dir/includes_CXX.rsp
 CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.obj: ../test/test_package_queue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\konfig_test.dir\test\test_package_queue.cpp.obj -c "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\test_package_queue.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\konfig_test.dir\test\test_package_queue.cpp.obj -c "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\test_package_queue.cpp"
 
 CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\test_package_queue.cpp" > CMakeFiles\konfig_test.dir\test\test_package_queue.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\test_package_queue.cpp" > CMakeFiles\konfig_test.dir\test\test_package_queue.cpp.i
 
 CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\test_package_queue.cpp" -o CMakeFiles\konfig_test.dir\test\test_package_queue.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\test_package_queue.cpp" -o CMakeFiles\konfig_test.dir\test\test_package_queue.cpp.s
 
 CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: CMakeFiles/konfig_test.dir/flags.make
 CMakeFiles/konfig_test.dir/test/test_package.cpp.obj: CMakeFiles/konfig_test.dir/includes_CXX.rsp
@@ -101,16 +157,35 @@ CMakeFiles/konfig_test.dir/test/test_package.cpp.s: cmake_force
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: CMakeFiles/konfig_test.dir/flags.make
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: CMakeFiles/konfig_test.dir/includes_CXX.rsp
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../test/test_receiver.cpp
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\konfig_test.dir\test\test_receiver.cpp.obj -c "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\test_receiver.cpp"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\konfig_test.dir\test\test_receiver.cpp.obj -c "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\test_receiver.cpp"
+>>>>>>> Kasia-develop2
 
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/konfig_test.dir/test/test_receiver.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\test_receiver.cpp" > CMakeFiles\konfig_test.dir\test\test_receiver.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\test_receiver.cpp" > CMakeFiles\konfig_test.dir\test\test_receiver.cpp.i
 
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/konfig_test.dir/test/test_receiver.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\test_receiver.cpp" -o CMakeFiles\konfig_test.dir\test\test_receiver.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\test_receiver.cpp" -o CMakeFiles\konfig_test.dir\test\test_receiver.cpp.s
+
+CMakeFiles/konfig_test.dir/test/main_test.cpp.obj: CMakeFiles/konfig_test.dir/flags.make
+CMakeFiles/konfig_test.dir/test/main_test.cpp.obj: CMakeFiles/konfig_test.dir/includes_CXX.rsp
+CMakeFiles/konfig_test.dir/test/main_test.cpp.obj: ../test/main_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/konfig_test.dir/test/main_test.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\konfig_test.dir\test\main_test.cpp.obj -c "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\main_test.cpp"
+
+CMakeFiles/konfig_test.dir/test/main_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/konfig_test.dir/test/main_test.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\main_test.cpp" > CMakeFiles\konfig_test.dir\test\main_test.cpp.i
+
+CMakeFiles/konfig_test.dir/test/main_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/konfig_test.dir/test/main_test.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\test\main_test.cpp" -o CMakeFiles\konfig_test.dir\test\main_test.cpp.s
 
 CMakeFiles/konfig_test.dir/src/Package.cpp.obj: CMakeFiles/konfig_test.dir/flags.make
 CMakeFiles/konfig_test.dir/src/Package.cpp.obj: CMakeFiles/konfig_test.dir/includes_CXX.rsp
@@ -254,8 +329,13 @@ CMakeFiles/konfig_test.dir/test/test_node_collection.cpp.s: cmake_force
 
 # Object files for target konfig_test
 konfig_test_OBJECTS = \
-"CMakeFiles/konfig_test.dir/test/main_test.cpp.obj" \
+"CMakeFiles/konfig_test.dir/src/PackageQueue.cpp.obj" \
+"CMakeFiles/konfig_test.dir/src/Package.cpp.obj" \
+"CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj" \
+"CMakeFiles/konfig_test.dir/src/PackageSender.cpp.obj" \
+"CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj" \
 "CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.obj" \
+<<<<<<< HEAD
 "CMakeFiles/konfig_test.dir/test/test_package.cpp.obj" \
 "CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj" \
 "CMakeFiles/konfig_test.dir/src/Package.cpp.obj" \
@@ -268,14 +348,23 @@ konfig_test_OBJECTS = \
 "CMakeFiles/konfig_test.dir/test/test_storehouse.cpp.obj" \
 "CMakeFiles/konfig_test.dir/test/test_factory.cpp.obj" \
 "CMakeFiles/konfig_test.dir/test/test_node_collection.cpp.obj"
+=======
+"CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj" \
+"CMakeFiles/konfig_test.dir/test/main_test.cpp.obj"
+>>>>>>> Kasia-develop2
 
 # External object files for target konfig_test
 konfig_test_EXTERNAL_OBJECTS =
 
-konfig_test.exe: CMakeFiles/konfig_test.dir/test/main_test.cpp.obj
+konfig_test.exe: CMakeFiles/konfig_test.dir/src/PackageQueue.cpp.obj
+konfig_test.exe: CMakeFiles/konfig_test.dir/src/Package.cpp.obj
+konfig_test.exe: CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj
+konfig_test.exe: CMakeFiles/konfig_test.dir/src/PackageSender.cpp.obj
+konfig_test.exe: CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj
 konfig_test.exe: CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.obj
 konfig_test.exe: CMakeFiles/konfig_test.dir/test/test_package.cpp.obj
 konfig_test.exe: CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj
+<<<<<<< HEAD
 konfig_test.exe: CMakeFiles/konfig_test.dir/src/Package.cpp.obj
 konfig_test.exe: CMakeFiles/konfig_test.dir/src/Factory.cpp.obj
 konfig_test.exe: CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj
@@ -286,13 +375,20 @@ konfig_test.exe: CMakeFiles/konfig_test.dir/test/test_ramp.cpp.obj
 konfig_test.exe: CMakeFiles/konfig_test.dir/test/test_storehouse.cpp.obj
 konfig_test.exe: CMakeFiles/konfig_test.dir/test/test_factory.cpp.obj
 konfig_test.exe: CMakeFiles/konfig_test.dir/test/test_node_collection.cpp.obj
+=======
+konfig_test.exe: CMakeFiles/konfig_test.dir/test/main_test.cpp.obj
+>>>>>>> Kasia-develop2
 konfig_test.exe: CMakeFiles/konfig_test.dir/build.make
 konfig_test.exe: googletest-master/googlemock/libgmockd.a
 konfig_test.exe: googletest-master/googlemock/gtest/libgtestd.a
 konfig_test.exe: CMakeFiles/konfig_test.dir/linklibs.rsp
 konfig_test.exe: CMakeFiles/konfig_test.dir/objects1.rsp
 konfig_test.exe: CMakeFiles/konfig_test.dir/link.txt
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable konfig_test.exe"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable konfig_test.exe"
+>>>>>>> Kasia-develop2
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\konfig_test.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -305,6 +401,6 @@ CMakeFiles/konfig_test.dir/clean:
 .PHONY : CMakeFiles/konfig_test.dir/clean
 
 CMakeFiles/konfig_test.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles\konfig_test.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles\konfig_test.dir\DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/konfig_test.dir/depend
 

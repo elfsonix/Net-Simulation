@@ -1,6 +1,5 @@
-//
-// Created by Kasia on 2018-12-28.
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+// Created by Katarzyna Wątorska
 
 #ifndef SYMULACJA_SIECI_IPACKAGERECEIVER_HPP
 #define SYMULACJA_SIECI_IPACKAGERECEIVER_HPP
@@ -27,6 +26,5 @@ public:
     virtual void receivePackage(const Package& package) = 0;
 
 };
-
-
-#endif //SYMULACJA_SIECI_IPACKAGERECEIVER_H
+#endif
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

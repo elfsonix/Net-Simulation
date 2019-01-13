@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci"
+CMAKE_SOURCE_DIR = "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,31 +58,31 @@ CMAKE_BINARY_DIR = "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -93,7 +93,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -114,20 +114,20 @@ list_install_components/fast: list_install_components
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2018.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"C:\Program Files\JetBrains\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Sonia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -309,7 +309,11 @@ src/Package.obj: src/Package.cpp.obj
 
 # target to build an object file
 src/Package.cpp.obj:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.obj
+=======
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Package.cpp.obj
+>>>>>>> Kasia-develop2
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Package.cpp.obj
 .PHONY : src/Package.cpp.obj
 
@@ -319,7 +323,11 @@ src/Package.i: src/Package.cpp.i
 
 # target to preprocess a source file
 src/Package.cpp.i:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.i
+=======
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Package.cpp.i
+>>>>>>> Kasia-develop2
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Package.cpp.i
 .PHONY : src/Package.cpp.i
 
@@ -329,7 +337,11 @@ src/Package.s: src/Package.cpp.s
 
 # target to generate assembly for a file
 src/Package.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.s
+=======
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Package.cpp.s
+>>>>>>> Kasia-develop2
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Package.cpp.s
 .PHONY : src/Package.cpp.s
 
@@ -339,7 +351,8 @@ src/PackageQueue.obj: src/PackageQueue.cpp.obj
 
 # target to build an object file
 src/PackageQueue.cpp.obj:
-	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/PackageQueue.cpp.obj
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/PackageQueue.cpp.obj
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/PackageQueue.cpp.obj
 .PHONY : src/PackageQueue.cpp.obj
 
 src/PackageQueue.i: src/PackageQueue.cpp.i
@@ -348,7 +361,8 @@ src/PackageQueue.i: src/PackageQueue.cpp.i
 
 # target to preprocess a source file
 src/PackageQueue.cpp.i:
-	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/PackageQueue.cpp.i
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/PackageQueue.cpp.i
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/PackageQueue.cpp.i
 .PHONY : src/PackageQueue.cpp.i
 
 src/PackageQueue.s: src/PackageQueue.cpp.s
@@ -357,7 +371,8 @@ src/PackageQueue.s: src/PackageQueue.cpp.s
 
 # target to generate assembly for a file
 src/PackageQueue.cpp.s:
-	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/PackageQueue.cpp.s
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/PackageQueue.cpp.s
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/PackageQueue.cpp.s
 .PHONY : src/PackageQueue.cpp.s
 
 src/PackageSender.obj: src/PackageSender.cpp.obj
@@ -366,7 +381,8 @@ src/PackageSender.obj: src/PackageSender.cpp.obj
 
 # target to build an object file
 src/PackageSender.cpp.obj:
-	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/PackageSender.cpp.obj
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/PackageSender.cpp.obj
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/PackageSender.cpp.obj
 .PHONY : src/PackageSender.cpp.obj
 
 src/PackageSender.i: src/PackageSender.cpp.i
@@ -375,7 +391,8 @@ src/PackageSender.i: src/PackageSender.cpp.i
 
 # target to preprocess a source file
 src/PackageSender.cpp.i:
-	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/PackageSender.cpp.i
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/PackageSender.cpp.i
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/PackageSender.cpp.i
 .PHONY : src/PackageSender.cpp.i
 
 src/PackageSender.s: src/PackageSender.cpp.s
@@ -384,9 +401,11 @@ src/PackageSender.s: src/PackageSender.cpp.s
 
 # target to generate assembly for a file
 src/PackageSender.cpp.s:
-	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/PackageSender.cpp.s
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/PackageSender.cpp.s
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/PackageSender.cpp.s
 .PHONY : src/PackageSender.cpp.s
 
+<<<<<<< HEAD
 src/Ramp.obj: src/Ramp.cpp.obj
 
 .PHONY : src/Ramp.obj
@@ -413,6 +432,37 @@ src/Ramp.s: src/Ramp.cpp.s
 src/Ramp.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Ramp.cpp.s
 .PHONY : src/Ramp.cpp.s
+=======
+src/ReceiverPreferences.obj: src/ReceiverPreferences.cpp.obj
+
+.PHONY : src/ReceiverPreferences.obj
+
+# target to build an object file
+src/ReceiverPreferences.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.obj
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj
+.PHONY : src/ReceiverPreferences.cpp.obj
+
+src/ReceiverPreferences.i: src/ReceiverPreferences.cpp.i
+
+.PHONY : src/ReceiverPreferences.i
+
+# target to preprocess a source file
+src/ReceiverPreferences.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.i
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.i
+.PHONY : src/ReceiverPreferences.cpp.i
+
+src/ReceiverPreferences.s: src/ReceiverPreferences.cpp.s
+
+.PHONY : src/ReceiverPreferences.s
+
+# target to generate assembly for a file
+src/ReceiverPreferences.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.s
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.s
+.PHONY : src/ReceiverPreferences.cpp.s
+>>>>>>> Kasia-develop2
 
 src/Storehouse.obj: src/Storehouse.cpp.obj
 
@@ -420,6 +470,10 @@ src/Storehouse.obj: src/Storehouse.cpp.obj
 
 # target to build an object file
 src/Storehouse.cpp.obj:
+<<<<<<< HEAD
+=======
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Storehouse.cpp.obj
+>>>>>>> Kasia-develop2
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj
 .PHONY : src/Storehouse.cpp.obj
 
@@ -429,6 +483,10 @@ src/Storehouse.i: src/Storehouse.cpp.i
 
 # target to preprocess a source file
 src/Storehouse.cpp.i:
+<<<<<<< HEAD
+=======
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Storehouse.cpp.i
+>>>>>>> Kasia-develop2
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Storehouse.cpp.i
 .PHONY : src/Storehouse.cpp.i
 
@@ -438,6 +496,7 @@ src/Storehouse.s: src/Storehouse.cpp.s
 
 # target to generate assembly for a file
 src/Storehouse.cpp.s:
+<<<<<<< HEAD
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Storehouse.cpp.s
 .PHONY : src/Storehouse.cpp.s
 
@@ -468,6 +527,12 @@ src/Worker.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Worker.cpp.s
 .PHONY : src/Worker.cpp.s
 
+=======
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Storehouse.cpp.s
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Storehouse.cpp.s
+.PHONY : src/Storehouse.cpp.s
+
+>>>>>>> Kasia-develop2
 test/main_test.obj: test/main_test.cpp.obj
 
 .PHONY : test/main_test.obj
@@ -745,6 +810,7 @@ help:
 	@echo ... src/PackageSender.obj
 	@echo ... src/PackageSender.i
 	@echo ... src/PackageSender.s
+<<<<<<< HEAD
 	@echo ... src/Ramp.obj
 	@echo ... src/Ramp.i
 	@echo ... src/Ramp.s
@@ -754,6 +820,14 @@ help:
 	@echo ... src/Worker.obj
 	@echo ... src/Worker.i
 	@echo ... src/Worker.s
+=======
+	@echo ... src/ReceiverPreferences.obj
+	@echo ... src/ReceiverPreferences.i
+	@echo ... src/ReceiverPreferences.s
+	@echo ... src/Storehouse.obj
+	@echo ... src/Storehouse.i
+	@echo ... src/Storehouse.s
+>>>>>>> Kasia-develop2
 	@echo ... test/main_test.obj
 	@echo ... test/main_test.i
 	@echo ... test/main_test.s
