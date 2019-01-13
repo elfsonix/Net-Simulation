@@ -354,6 +354,26 @@ deque
 tuple
 -
 
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageQueue.cpp
+PackageQueue.hpp
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageQueue.hpp
+
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/ReceiverPreferences.cpp
+ReceiverPreferences.hpp
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/ReceiverPreferences.hpp
+
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/main_test.cpp
+gtest/gtest.h
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
+
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_package_queue.cpp
+gtest/gtest.h
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
+Package.hpp
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/Package.hpp
+PackageQueue.hpp
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/PackageQueue.hpp
+
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_receiver.cpp
 PackageQueue.hpp
 -

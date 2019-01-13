@@ -30,6 +30,16 @@ deque
 
 ../include/Package.hpp
 
+../include/PackageQueue.hpp
+stdexcept
+-
+queue
+-
+QueueType.hpp
+../include/QueueType.hpp
+IPackageQueue.hpp
+../include/IPackageQueue.hpp
+
 ../include/QueueType.hpp
 
 ../include/ReceiverPreferences.hpp
@@ -53,6 +63,10 @@ utility
 -
 
 ../include/ReceiverType.hpp
+
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageQueue.cpp
+PackageQueue.hpp
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageQueue.hpp
 
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/ReceiverPreferences.cpp
 ReceiverPreferences.hpp
