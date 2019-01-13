@@ -35,7 +35,7 @@ preferences_t ReceiverPreferences::convertToMap(vector_p pairVector){
 std::vector<double> ReceiverPreferences::distribution(){
     std::size_t n = _probabilityTable.size();
     float length;
-    length = SUM_OF_PROBABILITIES / (float)n;
+    length = 1 / (float)n; //zamienić 1 na const
 
     // tworzenie dystrybuanty rozkładu dyskretnego
     std::vector<double> probability;
@@ -67,3 +67,6 @@ IPackageReceiver* ReceiverPreferences::drawReceiver(){
         it--;
     }
 }
+
+void ReceiverPreferences::addReceiver(IPackageReceiver* receiver){}
+void ReceiverPreferences::deleteReceiver(IPackageReceiver* receiver){}

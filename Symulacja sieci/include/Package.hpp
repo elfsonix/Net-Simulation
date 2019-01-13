@@ -6,21 +6,17 @@
 #define SYMULACJA_SIECI_PACKAGE_HPP
 
 using ElementID = int;
-
 class Package {
 private:
     ElementID _packageID;
-    static ElementID maxID;
 public:
-    Package() {
-        _packageID = maxID;
-        maxID++;
-    }
-    ElementID getPackageID() const {
-        return _packageID;
-    }
+    static ElementID maxID;
+
+    Package();
+    ~Package();
+    ElementID getPackageID() const;
 };
-#endif //SYMULACJA_SIECI_PACKAGE_HPP
+#endif
 
 
 

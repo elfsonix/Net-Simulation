@@ -4,6 +4,14 @@
 
 #include "PackageQueue.hpp"
 
+PackageQueue::PackageQueue(QueueType queueType, std::deque<Package> queue) : IPackageQueue(){
+    _queueType = queueType;
+    _queue = std::move(queue);
+}
+
+PackageQueue::~PackageQueue(){
+}
+
 Package PackageQueue::popPackage() {
     switch(_queueType){
         case(QueueType::FIFO):
@@ -23,9 +31,9 @@ void PackageQueue::putPackageInQueue(Package package) {
     _queue.push_back(package);
 }
 
-/*QueueType PackageQueue::returnQueueType() const {
+QueueType PackageQueue::returnQueueType() const {
     return _queueType;
-}*/
+}
 dequeCit PackageQueue::cbegin() const {return _queue.cbegin();}
 dequeCit PackageQueue::cend() const {return _queue.cend();}
 dequeIt PackageQueue::begin() {return _queue.begin();}

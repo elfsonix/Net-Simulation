@@ -22,8 +22,6 @@ public:
     virtual dequeCit cend() const = 0;
     virtual dequeIt begin() = 0;
     virtual dequeIt end() = 0;
-
 };
 
-
-#endif //SYMULACJA_SIECI_IPACKAGESTOCKPILE_H
+#endif
