@@ -493,6 +493,14 @@
 			<Option target="konfig_run"/>
 			<Option target="konfig_test"/>
 		</Unit>
+		<Unit filename="C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/ReceiverPreferences.cpp">
+			<Option target="konfig_run"/>
+			<Option target="konfig_test"/>
+		</Unit>
+		<Unit filename="C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Storehouse.cpp">
+			<Option target="konfig_run"/>
+			<Option target="konfig_test"/>
+		</Unit>
 		<Unit filename="C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/main_test.cpp">
 			<Option target="konfig_test"/>
 		</Unit>

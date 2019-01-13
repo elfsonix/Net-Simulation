@@ -21,6 +21,22 @@ CMakeFiles/konfig_test.dir/src/PackageSender.cpp.obj: ../include/ReceiverPrefere
 CMakeFiles/konfig_test.dir/src/PackageSender.cpp.obj: ../include/ReceiverType.hpp
 CMakeFiles/konfig_test.dir/src/PackageSender.cpp.obj: ../src/PackageSender.cpp
 
+CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj: ../include/IPackageQueue.hpp
+CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj: ../include/IPackageReceiver.hpp
+CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj: ../include/IPackageStockpile.hpp
+CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj: ../include/Package.hpp
+CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj: ../include/QueueType.hpp
+CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj: ../include/ReceiverPreferences.hpp
+CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj: ../include/ReceiverType.hpp
+CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj: ../src/ReceiverPreferences.cpp
+
+CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../include/IPackageReceiver.hpp
+CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../include/IPackageStockpile.hpp
+CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../include/Package.hpp
+CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../include/ReceiverType.hpp
+CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../include/Storehouse.hpp
+CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../src/Storehouse.cpp
+
 CMakeFiles/konfig_test.dir/test/main_test.cpp.obj: ../googletest-master/googletest/include/gtest/gtest-death-test.h
 CMakeFiles/konfig_test.dir/test/main_test.cpp.obj: ../googletest-master/googletest/include/gtest/gtest-message.h
 CMakeFiles/konfig_test.dir/test/main_test.cpp.obj: ../googletest-master/googletest/include/gtest/gtest-param-test.h
@@ -100,8 +116,10 @@ CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../include/IPackageQueue.
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../include/IPackageReceiver.hpp
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../include/IPackageStockpile.hpp
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../include/Package.hpp
+CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../include/PackageQueue.hpp
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../include/QueueType.hpp
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../include/ReceiverPreferences.hpp
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../include/ReceiverType.hpp
+CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../include/Storehouse.hpp
 CMakeFiles/konfig_test.dir/test/test_receiver.cpp.obj: ../test/test_receiver.cpp
 

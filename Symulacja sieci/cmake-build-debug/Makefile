@@ -366,6 +366,66 @@ src/PackageSender.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/PackageSender.cpp.s
 .PHONY : src/PackageSender.cpp.s
 
+src/ReceiverPreferences.obj: src/ReceiverPreferences.cpp.obj
+
+.PHONY : src/ReceiverPreferences.obj
+
+# target to build an object file
+src/ReceiverPreferences.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.obj
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj
+.PHONY : src/ReceiverPreferences.cpp.obj
+
+src/ReceiverPreferences.i: src/ReceiverPreferences.cpp.i
+
+.PHONY : src/ReceiverPreferences.i
+
+# target to preprocess a source file
+src/ReceiverPreferences.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.i
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.i
+.PHONY : src/ReceiverPreferences.cpp.i
+
+src/ReceiverPreferences.s: src/ReceiverPreferences.cpp.s
+
+.PHONY : src/ReceiverPreferences.s
+
+# target to generate assembly for a file
+src/ReceiverPreferences.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.s
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.s
+.PHONY : src/ReceiverPreferences.cpp.s
+
+src/Storehouse.obj: src/Storehouse.cpp.obj
+
+.PHONY : src/Storehouse.obj
+
+# target to build an object file
+src/Storehouse.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Storehouse.cpp.obj
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj
+.PHONY : src/Storehouse.cpp.obj
+
+src/Storehouse.i: src/Storehouse.cpp.i
+
+.PHONY : src/Storehouse.i
+
+# target to preprocess a source file
+src/Storehouse.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Storehouse.cpp.i
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Storehouse.cpp.i
+.PHONY : src/Storehouse.cpp.i
+
+src/Storehouse.s: src/Storehouse.cpp.s
+
+.PHONY : src/Storehouse.s
+
+# target to generate assembly for a file
+src/Storehouse.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Storehouse.cpp.s
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Storehouse.cpp.s
+.PHONY : src/Storehouse.cpp.s
+
 test/main_test.obj: test/main_test.cpp.obj
 
 .PHONY : test/main_test.obj
@@ -478,6 +538,12 @@ help:
 	@echo ... src/PackageSender.obj
 	@echo ... src/PackageSender.i
 	@echo ... src/PackageSender.s
+	@echo ... src/ReceiverPreferences.obj
+	@echo ... src/ReceiverPreferences.i
+	@echo ... src/ReceiverPreferences.s
+	@echo ... src/Storehouse.obj
+	@echo ... src/Storehouse.i
+	@echo ... src/Storehouse.s
 	@echo ... test/main_test.obj
 	@echo ... test/main_test.i
 	@echo ... test/main_test.s

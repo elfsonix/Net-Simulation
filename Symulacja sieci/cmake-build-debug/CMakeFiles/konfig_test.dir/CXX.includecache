@@ -308,17 +308,19 @@ deque
 
 ../include/Package.hpp
 
-../include/PackageSender.hpp
-optional
+../include/PackageQueue.hpp
+stdexcept
 -
-ReceiverPreferences.hpp
-../include/ReceiverPreferences.hpp
+queue
+-
+QueueType.hpp
+../include/QueueType.hpp
+IPackageQueue.hpp
+../include/IPackageQueue.hpp
 
 ../include/QueueType.hpp
 
 ../include/ReceiverPreferences.hpp
-utility
--
 map
 -
 functional
@@ -335,14 +337,28 @@ IPackageQueue.hpp
 ../include/IPackageQueue.hpp
 IPackageReceiver.hpp
 ../include/IPackageReceiver.hpp
+utility
+-
 
 ../include/ReceiverType.hpp
 
-C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageSender.cpp
-PackageSender.hpp
-C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageSender.hpp
+../include/Storehouse.hpp
+IPackageReceiver.hpp
+../include/IPackageReceiver.hpp
+IPackageStockpile.hpp
+../include/IPackageStockpile.hpp
+memory
+-
+deque
+-
+tuple
+-
 
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_receiver.cpp
+PackageQueue.hpp
+-
+Storehouse.hpp
+-
 gtest/gtest.h
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
 ReceiverPreferences.hpp

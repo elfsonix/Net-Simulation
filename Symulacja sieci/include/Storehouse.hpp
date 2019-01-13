@@ -15,7 +15,7 @@ private:
     std::unique_ptr<Package> _packageQueue;
     ElementID _nodeId;
 public:
-    Storehouse(std::unique_ptr<Package> packageStockpile, ElementID nodeId) : IPackageReceiver(), IPackageStockpile(){
+    Storehouse(std::unique_ptr<Package>& packageStockpile, ElementID nodeId) : IPackageReceiver(), IPackageStockpile(){
         _nodeId = nodeId;
         _packageQueue = std::move(packageStockpile);
 

@@ -3,3 +3,39 @@
 
 CMakeFiles/konfig_run.dir/main.cpp.obj: ../main.cpp
 
+CMakeFiles/konfig_run.dir/src/Package.cpp.obj: ../include/Package.hpp
+CMakeFiles/konfig_run.dir/src/Package.cpp.obj: ../src/Package.cpp
+
+CMakeFiles/konfig_run.dir/src/PackageQueue.cpp.obj: ../include/IPackageQueue.hpp
+CMakeFiles/konfig_run.dir/src/PackageQueue.cpp.obj: ../include/IPackageStockpile.hpp
+CMakeFiles/konfig_run.dir/src/PackageQueue.cpp.obj: ../include/Package.hpp
+CMakeFiles/konfig_run.dir/src/PackageQueue.cpp.obj: ../include/PackageQueue.hpp
+CMakeFiles/konfig_run.dir/src/PackageQueue.cpp.obj: ../include/QueueType.hpp
+CMakeFiles/konfig_run.dir/src/PackageQueue.cpp.obj: ../src/PackageQueue.cpp
+
+CMakeFiles/konfig_run.dir/src/PackageSender.cpp.obj: ../include/IPackageQueue.hpp
+CMakeFiles/konfig_run.dir/src/PackageSender.cpp.obj: ../include/IPackageReceiver.hpp
+CMakeFiles/konfig_run.dir/src/PackageSender.cpp.obj: ../include/IPackageStockpile.hpp
+CMakeFiles/konfig_run.dir/src/PackageSender.cpp.obj: ../include/Package.hpp
+CMakeFiles/konfig_run.dir/src/PackageSender.cpp.obj: ../include/PackageSender.hpp
+CMakeFiles/konfig_run.dir/src/PackageSender.cpp.obj: ../include/QueueType.hpp
+CMakeFiles/konfig_run.dir/src/PackageSender.cpp.obj: ../include/ReceiverPreferences.hpp
+CMakeFiles/konfig_run.dir/src/PackageSender.cpp.obj: ../include/ReceiverType.hpp
+CMakeFiles/konfig_run.dir/src/PackageSender.cpp.obj: ../src/PackageSender.cpp
+
+CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.obj: ../include/IPackageQueue.hpp
+CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.obj: ../include/IPackageReceiver.hpp
+CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.obj: ../include/IPackageStockpile.hpp
+CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.obj: ../include/Package.hpp
+CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.obj: ../include/QueueType.hpp
+CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.obj: ../include/ReceiverPreferences.hpp
+CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.obj: ../include/ReceiverType.hpp
+CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.obj: ../src/ReceiverPreferences.cpp
+
+CMakeFiles/konfig_run.dir/src/Storehouse.cpp.obj: ../include/IPackageReceiver.hpp
+CMakeFiles/konfig_run.dir/src/Storehouse.cpp.obj: ../include/IPackageStockpile.hpp
+CMakeFiles/konfig_run.dir/src/Storehouse.cpp.obj: ../include/Package.hpp
+CMakeFiles/konfig_run.dir/src/Storehouse.cpp.obj: ../include/ReceiverType.hpp
+CMakeFiles/konfig_run.dir/src/Storehouse.cpp.obj: ../include/Storehouse.hpp
+CMakeFiles/konfig_run.dir/src/Storehouse.cpp.obj: ../src/Storehouse.cpp
+

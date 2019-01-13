@@ -1,6 +1,6 @@
-//
-// Created by Kasia on 2019-01-05.
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+// Created by Katarzyna Wątorska
+
 
 #include "PackageQueue.hpp"
 
@@ -38,4 +38,5 @@ dequeCit PackageQueue::cbegin() const {return _queue.cbegin();}
 dequeCit PackageQueue::cend() const {return _queue.cend();}
 dequeIt PackageQueue::begin() {return _queue.begin();}
 dequeIt PackageQueue::end() {return _queue.end();}
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
 
