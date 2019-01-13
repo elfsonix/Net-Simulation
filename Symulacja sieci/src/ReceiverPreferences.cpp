@@ -1,6 +1,6 @@
-//
-// Created by Kasia on 2019-01-05.
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+// Created by Katarzyna Wątorska
+
 
 #include "ReceiverPreferences.hpp"
 
@@ -16,7 +16,7 @@ vector_p ReceiverPreferences::convertToVector(std::vector<IPackageReceiver*> pac
     catch(std::invalid_argument &ia){
         std::cout<< "Invalid argument: " << ia.what() << std::endl;
     }
-    for(int i = 0; i < lengthDouble; i++){
+    for(std::size_t i = 0; i < lengthDouble; i++){
         auto thing1 = packageVector[i];
         auto thing2 = doubleVector[i];
         returned.push_back(std::make_pair(thing1, thing2));
@@ -33,16 +33,15 @@ preferences_t ReceiverPreferences::convertToMap(vector_p pairVector){
 }
 
 std::vector<double> ReceiverPreferences::distribution(){
-    std::size_t n = _probabilityTable.size();
+    std::size_t n = _tempPackageReceiversVector.size();
     float length;
     length = SUM_OF_PROBABILITIES / (float)n;
 
     // tworzenie dystrybuanty rozkładu dyskretnego
     std::vector<double> probability;
-    for (int i = 1; i < n; i++){
+    for (std::size_t i = 1; i <= n; i++){
         probability.push_back(0 + i * length);
     }
-
     return probability;
 }
 
@@ -54,16 +53,48 @@ double ReceiverPreferences::drawNumber() {
 }
 
 IPackageReceiver* ReceiverPreferences::drawReceiver(){
-    std::vector<double> probabilityDistribution = distribution();
-    preferences_t::iterator it = _probabilityTable.end();
-    double drawn = drawNumber();
-
-    while (it != _probabilityTable.begin())
+/*    std::vector<double> probabilityDistribution = distribution();
+    std::vector<IPackageReceiver*> newVector;
+    preferences_t::iterator it = _probabilityTable.begin();
+    while (it != _probabilityTable.end())
     {
-        double value = it->second;
-        if( drawn < value){
-            return it->first;
-        }
-        it--;
+        newVector.push_back(it->first);
     }
+    vector_p ve = convertToVector(newVector, probabilityDistribution);
+    preferences_t mapka = convertToMap(ve);*/
+
+    preferences_t::iterator iter = _probabilityTable.begin();
+    double drawn = _drawnProbability();
+    while (iter != _probabilityTable.end())
+    {
+        double value = iter->second;
+        if(drawn <= value){
+            return iter->first;
+        }
+        ++iter;
+    }
+    return iter->first;
 }
+
+void ReceiverPreferences::addReceiver(IPackageReceiver* receiver){
+    _probabilityTable.insert(std::make_pair(receiver, 0));
+    std::vector<double> newDistribution = distribution();
+    std::vector<IPackageReceiver*> newVector;
+    preferences_t::iterator it = _probabilityTable.begin();
+    while (it != _probabilityTable.end())
+    {
+        newVector.push_back(it->first);
+    }
+    vector_p vectorToConvert = convertToVector(newVector, newDistribution);
+    preferences_t newMap = convertToMap(vectorToConvert);
+    _probabilityTable = newMap;
+
+}
+void ReceiverPreferences::deleteReceiver(IPackageReceiver* receiver){}
+
+const_iterator ReceiverPreferences::cbegin() const { return _probabilityTable.cbegin(); }
+const_iterator ReceiverPreferences::cend() const { return _probabilityTable.cend(); }
+iterator ReceiverPreferences::begin() { return _probabilityTable.begin(); }
+iterator ReceiverPreferences::end() { return _probabilityTable.end(); }
+
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
