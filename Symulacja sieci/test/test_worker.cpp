@@ -7,9 +7,9 @@
 TEST(Worker, receiveProduct){
     //Przygotowanie środowiska
     Package myPackage = Package();
-    std::vector<IPackageReceiver*> packageVector;
-    std::function<std::vector<double>()> drawnNumberVector;
-    ReceiverPreferences myPref = ReceiverPreferences(packageVector, drawnNumberVector);
+    std::vector<IPackageReceiver*> receivers;
+    std::function<std::vector<double>()> drawnNumberVector = std::function<std::vector<double>()>([](){return std::vector<double> {1};});
+    ReceiverPreferences myPref = ReceiverPreferences(receivers, drawnNumberVector);
     std::deque<Package> queue;
     Worker myWorker = Worker(1,1, std::make_unique<PackageQueue>(QueueType::FIFO, queue), myPref);
     //Test
@@ -38,5 +38,4 @@ TEST(Worker, isProductPassedForward){
     worker1.receivePackage(myPackage);
     worker1.processPackage();
     EXPECT_EQ(myPackage.getID(), worker2.popPackage().getID());
-}
-*/
+}*/

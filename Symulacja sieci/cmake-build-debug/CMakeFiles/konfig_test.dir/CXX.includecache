@@ -284,20 +284,6 @@ cxxabi.h
 acxx_demangle.h
 -
 
-../include/Factory.hpp
-NodeCollection.hpp
-../include/NodeCollection.hpp
-Worker.hpp
-../include/Worker.hpp
-Ramp.hpp
-../include/Ramp.hpp
-Storehouse.hpp
-../include/Storehouse.hpp
-list
--
-utility
--
-
 ../include/IPackageQueue.hpp
 IPackageStockpile.hpp
 ../include/IPackageStockpile.hpp
@@ -317,12 +303,6 @@ Package.hpp
 ../include/Package.hpp
 deque
 -
-
-../include/NodeCollection.hpp
-list
--
-Package.hpp
-../include/Package.hpp
 
 ../include/Package.hpp
 
@@ -344,10 +324,6 @@ ReceiverPreferences.hpp
 
 ../include/QueueType.hpp
 
-../include/Ramp.hpp
-PackageSender.hpp
-../include/PackageSender.hpp
-
 ../include/ReceiverPreferences.hpp
 map
 -
@@ -368,20 +344,6 @@ IPackageReceiver.hpp
 
 ../include/ReceiverType.hpp
 
-../include/Storehouse.hpp
-Package.hpp
-../include/Package.hpp
-IPackageReceiver.hpp
-../include/IPackageReceiver.hpp
-IPackageStockpile.hpp
-../include/IPackageStockpile.hpp
-memory
--
-deque
--
-tuple
--
-
 ../include/Worker.hpp
 PackageSender.hpp
 ../include/PackageSender.hpp
@@ -401,28 +363,6 @@ optional
 -
 QueueType.hpp
 ../include/QueueType.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Factory.cpp
-Factory.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Factory.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Worker.cpp
-Worker.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Worker.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_factory.cpp
-gtest/gtest.h
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
-Factory.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/Factory.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_package_queue.cpp
-gtest/gtest.h
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
-PackageQueue.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/PackageQueue.hpp
-Package.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/Package.hpp
 
 C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_worker.cpp
 gtest/gtest.h
