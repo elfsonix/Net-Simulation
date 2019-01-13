@@ -1,8 +1,16 @@
-//
-// Created by Kasia on 2019-01-05.
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+// Created by Katarzyna Wątorska
+
 
 #include "PackageQueue.hpp"
+
+PackageQueue::PackageQueue(QueueType queueType, std::deque<Package> queue) : IPackageQueue(){
+    _queueType = queueType;
+    _queue = std::move(queue);
+}
+
+PackageQueue::~PackageQueue(){
+}
 
 Package PackageQueue::popPackage() {
     switch(_queueType){
@@ -20,9 +28,15 @@ Package PackageQueue::popPackage() {
 }
 
 void PackageQueue::putPackageInQueue(Package package) {
-    _queue.push_back(std::move(package));
+    _queue.push_back(package);
 }
 
-QueueType PackageQueue::returnQueueType() {
+QueueType PackageQueue::returnQueueType() const {
     return _queueType;
 }
+dequeCit PackageQueue::cbegin() const {return _queue.cbegin();}
+dequeCit PackageQueue::cend() const {return _queue.cend();}
+dequeIt PackageQueue::begin() {return _queue.begin();}
+dequeIt PackageQueue::end() {return _queue.end();}
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+

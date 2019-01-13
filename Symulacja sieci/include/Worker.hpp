@@ -5,10 +5,6 @@
 #ifndef SYMULACJA_SIECI_WORKER_HPP
 #define SYMULACJA_SIECI_WORKER_HPP
 
-#endif //SYMULACJA_SIECI_WORKER_HPP
-<<<<<<< HEAD
-<<<<<<< HEAD
-
 #include "PackageSender.hpp"
 #include "IPackageReceiver.hpp"
 #include "IPackageQueue.hpp"
@@ -25,7 +21,7 @@ private:
     std::optional<Package> bufferOfSomething;
 public:
     Worker(std::unique_ptr<Package> packageQueue, ElementID nodeID, const ReceiverPreferences &receiverPreferences)
-    : PackageSender(receiverPreferences), IPackageReceiver(), IPackageQueue() {
+            : PackageSender(receiverPreferences), IPackageReceiver(), IPackageQueue() {
         _nodeID = nodeID;
     }
     void processPackage();
@@ -33,12 +29,14 @@ public:
     std::tuple<ReceiverType, ElementID> identifyReceiver() const override;
     dequeCit cbegin() const override;
     dequeCit cend() const override;
-    dequeIt begin() const override;
-    dequeIt end() const override;
+    dequeIt begin() override;
+    dequeIt end() override;
     Package popPackage() override;
-    QueueType returnQueueType() const override;
+ QueueType returnQueueType() const override;
     void putPackageInQueue(Package package) override {};
 
 };
+#endif //SYMULACJA_SIECI_WORKER_HPP
+
 
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

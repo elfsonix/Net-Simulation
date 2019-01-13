@@ -19,11 +19,11 @@ dequeCit Worker::cend() const {
     return dequeCit();
 }
 
-dequeIt Worker::begin() const {
+dequeIt Worker::begin() {
     return dequeIt();
 }
 
-dequeIt Worker::end() const {
+dequeIt Worker::end() {
     return dequeIt();
 }
 

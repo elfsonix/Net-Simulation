@@ -5,6 +5,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/main.cpp" "C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/main.cpp.obj"
+  "C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Package.cpp" "C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/src/Package.cpp.obj"
+  "C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageQueue.cpp" "C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/src/PackageQueue.cpp.obj"
+  "C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageSender.cpp" "C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/src/PackageSender.cpp.obj"
+  "C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/ReceiverPreferences.cpp" "C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.obj"
+  "C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Storehouse.cpp" "C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/src/Storehouse.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

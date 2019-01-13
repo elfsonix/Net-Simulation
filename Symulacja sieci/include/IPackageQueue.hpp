@@ -1,20 +1,19 @@
-//
-// Created by Kasia on 2018-12-31.
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+// Created by Katarzyna Wątorska
 
 #ifndef SYMULACJA_SIECI_IPACKAGEQUEUE_HPP
 #define SYMULACJA_SIECI_IPACKAGEQUEUE_HPP
 
+#include "QueueType.hpp"
 #include "IPackageStockpile.hpp"
 
 
 class IPackageQueue : public IPackageStockpile{
 
 public:
-
-    IPackageQueue() {};    //default constructor
-    virtual Package popPackage()= 0;
+    virtual Package popPackage() = 0;
     virtual QueueType returnQueueType() const = 0;
-
 };
-#endif //NETSIM_IPACKAGEQUEUE_H
+
+#endif
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

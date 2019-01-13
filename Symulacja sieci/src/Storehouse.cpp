@@ -1,7 +1,7 @@
 //
 // Created by Sonia on 2019-01-09.
 //
-/*#include "Storehouse.hpp"
+#include "Storehouse.hpp"
 
 void Storehouse::receivePackage(const Package &package) {
 
@@ -19,10 +19,11 @@ dequeCit Storehouse::cend() const {
     return dequeCit();
 }
 
-dequeIt Storehouse::begin() const {
+dequeIt Storehouse::begin() {
     return dequeIt();
 }
 
-dequeIt Storehouse::end() const {
+dequeIt Storehouse::end() {
     return dequeIt();
-} */
+}
+void Storehouse::putPackageInQueue(Package package) {}

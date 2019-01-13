@@ -1,7 +1,8 @@
-//
-// Created by Kasia on 2019-01-05.
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+// Created by Katarzyna Wątorska
 
+
+/*
 #ifndef SYMULACJA_SIECI_SIMULATION_HPP
 #define SYMULACJA_SIECI_SIMULATION_HPP
 
@@ -13,4 +14,6 @@ int simulate(IReportNotifier* reportNotifier, Factory factory, int numberOfRound
         int numberOfRoundsAfterWhichGenerateReport);
 
 
-#endif //NETSIM_SIMULATION_H
+#endif
+*/
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
