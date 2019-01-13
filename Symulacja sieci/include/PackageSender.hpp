@@ -1,6 +1,5 @@
-//
-// Created by Kasia on 2018-12-31.
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+// Created by Katarzyna Wątorska
 
 #ifndef SYMULACJA_SIECI_PACKAGESENDER_HPP
 #define SYMULACJA_SIECI_PACKAGESENDER_HPP
@@ -8,8 +7,9 @@
 #include "ReceiverPreferences.hpp"
 
 class PackageSender{
-private:
+protected:
     void passPackageToReceiver();
+private:
     std::optional<Package> bufferOfPackagesReady;
 
 public:
@@ -19,4 +19,5 @@ public:
     void putPackageInBuffer(Package package);
 
 };
-#endif //SYMULACJA_SIECI_PACKAGESENDER_H
+#endif
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

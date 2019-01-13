@@ -6,7 +6,6 @@
 #define SYMULACJA_SIECI_PACKAGE_HPP
 
 using ElementID = int;
-
 class Package {
 private:
     static ElementID maxID;
