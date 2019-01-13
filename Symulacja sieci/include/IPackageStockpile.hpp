@@ -5,7 +5,7 @@
 #ifndef SYMULACJA_SIECI_IPACKAGESTOCKPILE_HPP
 #define SYMULACJA_SIECI_IPACKAGESTOCKPILE_HPP
 
-#include "QueueType.hpp"
+
 #include "Package.hpp"
 #include <deque>
 
@@ -21,10 +21,10 @@ public:
     //metody tylko do odczytu
     virtual dequeCit cbegin() const = 0;
     virtual dequeCit cend() const = 0;
-    virtual dequeIt begin() const = 0;
-    virtual dequeIt end() const = 0;
+    virtual dequeIt begin() = 0;
+    virtual dequeIt end() = 0;
 
 };
 
 
-#endif //NETSIM_IPACKAGESTOCKPILE_H
+#endif //SYMULACJA_SIECI_IPACKAGESTOCKPILE_H

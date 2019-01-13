@@ -19,6 +19,7 @@ private:
 public:
     Storehouse(std::unique_ptr<Package> packageStockpile, ElementID nodeId){
         _nodeId = nodeId;
+        _packageQueue = std::move(packageStockpile);
 
     }
     ElementID getId() {

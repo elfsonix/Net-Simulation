@@ -4,16 +4,15 @@
 
 #ifndef SYMULACJA_SIECI_IPACKAGEQUEUE_HPP
 #define SYMULACJA_SIECI_IPACKAGEQUEUE_HPP
-
+#include "QueueType.hpp"
 #include "IPackageStockpile.hpp"
 
 class IPackageQueue : public IPackageStockpile{
 
 public:
 
-    IPackageQueue() {};    //default constructor
     virtual Package popPackage()= 0;
-    virtual QueueType returnQueueType() const = 0;
+    virtual QueueType returnQueueType() const =0;
 
 };
-#endif //NETSIM_IPACKAGEQUEUE_H
+#endif //SYMULACJA_SIECI_IPACKAGEQUEUE_H

@@ -195,19 +195,6 @@ konfig_test/fast:
 .PHONY : konfig_test/fast
 
 #=============================================================================
-# Target rules for targets named NetSim
-
-# Build rule for target.
-NetSim: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 NetSim
-.PHONY : NetSim
-
-# fast build rule for target.
-NetSim/fast:
-	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/build
-.PHONY : NetSim/fast
-
-#=============================================================================
 # Target rules for targets named gmock_main
 
 # Build rule for target.
@@ -267,7 +254,6 @@ main.obj: main.cpp.obj
 main.cpp.obj:
 	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/main.cpp.obj
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/main.cpp.obj
-	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -278,7 +264,6 @@ main.i: main.cpp.i
 main.cpp.i:
 	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/main.cpp.i
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/main.cpp.i
-	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -289,7 +274,6 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/main.cpp.s
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/main.cpp.s
-	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 src/Factory.obj: src/Factory.cpp.obj
@@ -325,6 +309,7 @@ src/Package.obj: src/Package.cpp.obj
 
 # target to build an object file
 src/Package.cpp.obj:
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.obj
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Package.cpp.obj
 .PHONY : src/Package.cpp.obj
 
@@ -334,6 +319,7 @@ src/Package.i: src/Package.cpp.i
 
 # target to preprocess a source file
 src/Package.cpp.i:
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.i
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Package.cpp.i
 .PHONY : src/Package.cpp.i
 
@@ -343,8 +329,63 @@ src/Package.s: src/Package.cpp.s
 
 # target to generate assembly for a file
 src/Package.cpp.s:
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.s
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Package.cpp.s
 .PHONY : src/Package.cpp.s
+
+src/PackageQueue.obj: src/PackageQueue.cpp.obj
+
+.PHONY : src/PackageQueue.obj
+
+# target to build an object file
+src/PackageQueue.cpp.obj:
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/PackageQueue.cpp.obj
+.PHONY : src/PackageQueue.cpp.obj
+
+src/PackageQueue.i: src/PackageQueue.cpp.i
+
+.PHONY : src/PackageQueue.i
+
+# target to preprocess a source file
+src/PackageQueue.cpp.i:
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/PackageQueue.cpp.i
+.PHONY : src/PackageQueue.cpp.i
+
+src/PackageQueue.s: src/PackageQueue.cpp.s
+
+.PHONY : src/PackageQueue.s
+
+# target to generate assembly for a file
+src/PackageQueue.cpp.s:
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/PackageQueue.cpp.s
+.PHONY : src/PackageQueue.cpp.s
+
+src/PackageSender.obj: src/PackageSender.cpp.obj
+
+.PHONY : src/PackageSender.obj
+
+# target to build an object file
+src/PackageSender.cpp.obj:
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/PackageSender.cpp.obj
+.PHONY : src/PackageSender.cpp.obj
+
+src/PackageSender.i: src/PackageSender.cpp.i
+
+.PHONY : src/PackageSender.i
+
+# target to preprocess a source file
+src/PackageSender.cpp.i:
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/PackageSender.cpp.i
+.PHONY : src/PackageSender.cpp.i
+
+src/PackageSender.s: src/PackageSender.cpp.s
+
+.PHONY : src/PackageSender.s
+
+# target to generate assembly for a file
+src/PackageSender.cpp.s:
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/PackageSender.cpp.s
+.PHONY : src/PackageSender.cpp.s
 
 src/Ramp.obj: src/Ramp.cpp.obj
 
@@ -535,6 +576,33 @@ test/test_package.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package.cpp.s
 .PHONY : test/test_package.cpp.s
 
+test/test_package_queue.obj: test/test_package_queue.cpp.obj
+
+.PHONY : test/test_package_queue.obj
+
+# target to build an object file
+test/test_package_queue.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.obj
+.PHONY : test/test_package_queue.cpp.obj
+
+test/test_package_queue.i: test/test_package_queue.cpp.i
+
+.PHONY : test/test_package_queue.i
+
+# target to preprocess a source file
+test/test_package_queue.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.i
+.PHONY : test/test_package_queue.cpp.i
+
+test/test_package_queue.s: test/test_package_queue.cpp.s
+
+.PHONY : test/test_package_queue.s
+
+# target to generate assembly for a file
+test/test_package_queue.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.s
+.PHONY : test/test_package_queue.cpp.s
+
 test/test_ramp.obj: test/test_ramp.cpp.obj
 
 .PHONY : test/test_ramp.obj
@@ -656,7 +724,6 @@ help:
 	@echo ... rebuild_cache
 	@echo ... konfig_run
 	@echo ... konfig_test
-	@echo ... NetSim
 	@echo ... list_install_components
 	@echo ... install/strip
 	@echo ... gmock_main
@@ -672,6 +739,12 @@ help:
 	@echo ... src/Package.obj
 	@echo ... src/Package.i
 	@echo ... src/Package.s
+	@echo ... src/PackageQueue.obj
+	@echo ... src/PackageQueue.i
+	@echo ... src/PackageQueue.s
+	@echo ... src/PackageSender.obj
+	@echo ... src/PackageSender.i
+	@echo ... src/PackageSender.s
 	@echo ... src/Ramp.obj
 	@echo ... src/Ramp.i
 	@echo ... src/Ramp.s
@@ -693,6 +766,9 @@ help:
 	@echo ... test/test_package.obj
 	@echo ... test/test_package.i
 	@echo ... test/test_package.s
+	@echo ... test/test_package_queue.obj
+	@echo ... test/test_package_queue.i
+	@echo ... test/test_package_queue.s
 	@echo ... test/test_ramp.obj
 	@echo ... test/test_ramp.i
 	@echo ... test/test_ramp.s

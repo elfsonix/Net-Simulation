@@ -4,8 +4,11 @@
 
 
 #include "PackageSender.hpp"
+#include <optional>
+
+void PackageSender::passPackageToReceiver(){}
 
 void PackageSender::putPackageInBuffer(Package package){
-    bufferOfProductsReady = std::experimental::make_optional(package);
-    passProductToReceiver();
+    bufferOfPackagesReady = std::make_optional(package);
+    passPackageToReceiver();
 } 

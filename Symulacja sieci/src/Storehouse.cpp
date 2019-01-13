@@ -21,11 +21,11 @@ dequeCit Storehouse::cend() const {
     return dequeCit();
 }
 
-dequeIt Storehouse::begin() const {
+dequeIt Storehouse::begin() {
     return dequeIt();
 }
 
-dequeIt Storehouse::end() const {
+dequeIt Storehouse::end() {
     return dequeIt();
 }
 
