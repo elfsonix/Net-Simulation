@@ -8,4 +8,4 @@
 enum class ReceiverType{
     WORKER, STOREHOUSE,
 };
-#endif //NETSIM_RECEIVERTYPE_H
+#endif //SYMULACJA_SIECI_RECEIVERTYPE_H

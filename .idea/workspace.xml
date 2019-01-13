@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="03465389-f006-49be-ab17-87c5beb560ed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/NetSim.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/src/Factory.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/src/Factory.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/src/Package.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/src/Package.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/src/Ramp.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/src/Ramp.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/src/Worker.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/src/Worker.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/test/test_package.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/test/test_package.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/NetSim.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/NetSim.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/NetSim.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/Symulacja_sieci.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/Symulacja_sieci.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/libgtest_maind.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/libgtest_maind.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/libgtestd.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/libgtestd.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/libgmock_maind.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/libgmock_maind.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/libgmockd.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/libgmockd.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/konfig_run.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/konfig_run.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/konfig_test.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/include/IPackageQueue.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/include/IPackageQueue.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/include/Package.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/include/Package.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/include/PackageQueue.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/include/PackageQueue.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/src/PackageQueue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/src/PackageQueue.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/test/test_package.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/test/test_package.cpp" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-18" />
+    <option name="width" value="1953" />
+    <option name="height" value="1035" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03465389-f006-49be-ab17-87c5beb560ed" name="Default Changelist" comment="" />
+      <created>1547118451518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547118451518</updated>
+      <workItem from="1547118456870" duration="22000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="22000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1228" height="783" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

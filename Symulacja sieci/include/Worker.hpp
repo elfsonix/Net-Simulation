@@ -43,8 +43,8 @@ public:
     std::tuple<ReceiverType, ElementID> identifyReceiver() const override;
     dequeCit cbegin() const override;   //references a constant value of beginning of _packageQueue
     dequeCit cend() const override;
-    dequeIt begin() const override;
-    dequeIt end() const override;
+    dequeIt begin() override;
+    dequeIt end() override;
     Package popPackage() override;
     QueueType returnQueueType() const override;
 
