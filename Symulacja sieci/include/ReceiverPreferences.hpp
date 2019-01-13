@@ -16,8 +16,8 @@
 #include "IPackageReceiver.hpp"
 #include <utility>
 
-using preferences_t = std::map<IPackageReceiver*, double>;
-using vector_p = std::vector<std::pair<IPackageReceiver*, double>>;
+using preferences_t = std::map<IPackageReceiver*, std::pair<double, double>>;
+using vector_p = std::vector<std::pair<IPackageReceiver*, std::pair<double, double>>>;
 using const_iterator = preferences_t::const_iterator;
 using iterator = preferences_t::iterator;
 
@@ -30,7 +30,7 @@ private:
     //zwraca 1 wartość
     std::vector<IPackageReceiver*> _tempPackageReceiversVector;
     //funkcje pomocnicze dla konstruktora - zwraca wektor par (wskaźnik na odbiorcę, prawdopodobieństwa)
-    vector_p convertToVector(std::vector<IPackageReceiver*> packageVector, std::vector<double> doubleVector);
+    std::vector<std::pair<IPackageReceiver*, std::pair<double, double>>> convertToVector(std::vector<IPackageReceiver*> packageVector, std::vector<std::pair<double, double>> doubleVector);
     preferences_t convertToMap(vector_p pairVector);
 
 public:
@@ -38,16 +38,16 @@ public:
                         std::function<double()> drawnProbability): _drawnProbability(
             std::move(drawnProbability)), _tempPackageReceiversVector(packageReceiversVector){
 
-        std::vector<double> doubleVector = distribution();
+        std::vector<std::pair<double, double>> doubleVector = distribution();
         vector_p v = convertToVector(packageReceiversVector, doubleVector);
         _probabilityTable = convertToMap(v);
     }
 
     ReceiverPreferences(const ReceiverPreferences &receiverPreferencesToCopy) : _probabilityTable(receiverPreferencesToCopy._probabilityTable),
-                        _drawnProbability(receiverPreferencesToCopy._drawnProbability)
+                                                                                _drawnProbability(receiverPreferencesToCopy._drawnProbability)
     {}
     //returns values for the map - probability distribution
-    std::vector<double> distribution();
+    std::vector<std::pair<double, double>> distribution();
 
     //generates single random number
     double drawNumber(); //not to use in tests

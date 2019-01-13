@@ -1,6 +1,6 @@
-//
-// Created by Kasia on 2018-12-31.
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+// Created by Katarzyna Wątorska
+
 
 #include "gtest/gtest.h"
 #include "Package.hpp"
@@ -41,3 +41,5 @@ EXPECT_EQ(packageQueueLIFO.popPackage().getPackageID(), pack2.getPackageID());
 EXPECT_EQ(packageQueueLIFO.popPackage().getPackageID(), pack1.getPackageID());
 
 }
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+
