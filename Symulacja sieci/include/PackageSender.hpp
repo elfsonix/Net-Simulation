@@ -10,11 +10,11 @@ class PackageSender{
 protected:
     void passPackageToReceiver();
 private:
-    std::optional<Package> bufferOfPackagesReady;
+    std::optional<Package> _bufferOfPackagesReady;
 
 public:
     ReceiverPreferences receiverPreferences;
-    PackageSender(ReceiverPreferences receiverPreferences1) : receiverPreferences(receiverPreferences1) {}
+    PackageSender(ReceiverPreferences receiverPreferences1);
 
     void putPackageInBuffer(Package package);
 
