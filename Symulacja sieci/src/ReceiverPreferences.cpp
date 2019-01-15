@@ -5,8 +5,8 @@
 #include "ReceiverPreferences.hpp"
 
 
-vector_p ReceiverPreferences::convertToVector(std::vector<IPackageReceiver*> packageVector, std::vector<double> doubleVector){
-    vector_p returned;
+std::vector<std::pair<IPackageReceiver*, std::pair<double, double>>> ReceiverPreferences::convertToVector(std::vector<IPackageReceiver*> packageVector, std::vector<std::pair<double, double>> doubleVector){
+    std::vector<std::pair<IPackageReceiver*, std::pair<double, double>>> returned;
     std::size_t lengthPackage = packageVector.size();
     std::size_t lengthDouble = doubleVector.size();
     try {
@@ -17,8 +17,8 @@ vector_p ReceiverPreferences::convertToVector(std::vector<IPackageReceiver*> pac
         std::cout<< "Invalid argument: " << ia.what() << std::endl;
     }
     for(std::size_t i = 0; i < lengthDouble; i++){
-        auto thing1 = packageVector[i];
-        auto thing2 = doubleVector[i];
+        IPackageReceiver* thing1 = packageVector[i];
+        std::pair<double, double> thing2 = doubleVector[i];
         returned.push_back(std::make_pair(thing1, thing2));
     }
     return returned;
@@ -26,21 +26,25 @@ vector_p ReceiverPreferences::convertToVector(std::vector<IPackageReceiver*> pac
 
 preferences_t ReceiverPreferences::convertToMap(vector_p pairVector){
     preferences_t mapToReturn;
+    for (auto each : pairVector){
+        IPackageReceiver* one = each.first;
+        std::pair<double, double> two = each.second;
+        mapToReturn.insert(std::make_pair(one, two));
 
-    std::copy(pairVector.begin(), pairVector.end(),
-              std::inserter(mapToReturn, mapToReturn.begin()));
+    }
     return mapToReturn;
 }
 
-std::vector<double> ReceiverPreferences::distribution(){
+std::vector<std::pair<double, double>> ReceiverPreferences::distribution(){
     std::size_t n = _tempPackageReceiversVector.size();
     float length;
     length = SUM_OF_PROBABILITIES / (float)n;
 
     // tworzenie dystrybuanty rozkładu dyskretnego
-    std::vector<double> probability;
+    std::vector<std::pair<double, double>> probability;
     for (std::size_t i = 1; i <= n; i++){
-        probability.push_back(0 + i * length);
+        std::pair<double, double> pairToAdd = std::make_pair(0+(i-1)*length, 0 + i * length);
+        probability.push_back(pairToAdd);
     }
     return probability;
 }
@@ -53,44 +57,40 @@ double ReceiverPreferences::drawNumber() {
 }
 
 IPackageReceiver* ReceiverPreferences::drawReceiver(){
-/*    std::vector<double> probabilityDistribution = distribution();
-    std::vector<IPackageReceiver*> newVector;
-    preferences_t::iterator it = _probabilityTable.begin();
-    while (it != _probabilityTable.end())
-    {
-        newVector.push_back(it->first);
-    }
-    vector_p ve = convertToVector(newVector, probabilityDistribution);
-    preferences_t mapka = convertToMap(ve);*/
-
     preferences_t::iterator iter = _probabilityTable.begin();
     double drawn = _drawnProbability();
-    while (iter != _probabilityTable.end())
+    while (iter != _probabilityTable.begin())
     {
-        double value = iter->second;
-        if(drawn <= value){
+        std::pair<double, double> value = iter->second;
+        double lowerBound = value.first;
+        double upperBound = value.second;
+
+        if(drawn >= lowerBound && drawn < upperBound){
             return iter->first;
         }
-        ++iter;
+        iter++;
     }
     return iter->first;
 }
 
 void ReceiverPreferences::addReceiver(IPackageReceiver* receiver){
-    _probabilityTable.insert(std::make_pair(receiver, 0));
-    std::vector<double> newDistribution = distribution();
-    std::vector<IPackageReceiver*> newVector;
-    preferences_t::iterator it = _probabilityTable.begin();
-    while (it != _probabilityTable.end())
-    {
-        newVector.push_back(it->first);
-    }
-    vector_p vectorToConvert = convertToVector(newVector, newDistribution);
-    preferences_t newMap = convertToMap(vectorToConvert);
-    _probabilityTable = newMap;
+    _tempPackageReceiversVector.push_back(receiver);
+    std::vector<std::pair<double, double>> newDistribution = distribution();
 
+
+    std::vector<std::pair<IPackageReceiver*, std::pair<double, double>>> vectorToConvert = convertToVector(_tempPackageReceiversVector, newDistribution);
+    _probabilityTable  = convertToMap(vectorToConvert);
 }
-void ReceiverPreferences::deleteReceiver(IPackageReceiver* receiver){}
+void ReceiverPreferences::deleteReceiver(IPackageReceiver* receiver){
+    _tempPackageReceiversVector.erase(std::find(_tempPackageReceiversVector.begin(),_tempPackageReceiversVector.end(),receiver));
+
+    std::vector<std::pair<double, double>> newDistribution = distribution();
+
+
+    std::vector<std::pair<IPackageReceiver*, std::pair<double, double>>> vectorToConvert = convertToVector(_tempPackageReceiversVector, newDistribution);
+    _probabilityTable  = convertToMap(vectorToConvert);
+}
+
 
 const_iterator ReceiverPreferences::cbegin() const { return _probabilityTable.cbegin(); }
 const_iterator ReceiverPreferences::cend() const { return _probabilityTable.cend(); }
