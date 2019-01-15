@@ -276,13 +276,44 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Factory.obj: src/Factory.cpp.obj
+
+.PHONY : src/Factory.obj
+
+# target to build an object file
+src/Factory.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Factory.cpp.obj
+.PHONY : src/Factory.cpp.obj
+
+src/Factory.i: src/Factory.cpp.i
+
+.PHONY : src/Factory.i
+
+# target to preprocess a source file
+src/Factory.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Factory.cpp.i
+.PHONY : src/Factory.cpp.i
+
+src/Factory.s: src/Factory.cpp.s
+
+.PHONY : src/Factory.s
+
+# target to generate assembly for a file
+src/Factory.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Factory.cpp.s
+.PHONY : src/Factory.cpp.s
+
 src/Package.obj: src/Package.cpp.obj
 
 .PHONY : src/Package.obj
 
 # target to build an object file
 src/Package.cpp.obj:
+<<<<<<< HEAD
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.obj
+=======
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Package.cpp.obj
+>>>>>>> Kasia-develop2
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Package.cpp.obj
 .PHONY : src/Package.cpp.obj
 
@@ -292,7 +323,11 @@ src/Package.i: src/Package.cpp.i
 
 # target to preprocess a source file
 src/Package.cpp.i:
+<<<<<<< HEAD
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.i
+=======
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Package.cpp.i
+>>>>>>> Kasia-develop2
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Package.cpp.i
 .PHONY : src/Package.cpp.i
 
@@ -302,7 +337,11 @@ src/Package.s: src/Package.cpp.s
 
 # target to generate assembly for a file
 src/Package.cpp.s:
+<<<<<<< HEAD
+	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.s
+=======
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Package.cpp.s
+>>>>>>> Kasia-develop2
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Package.cpp.s
 .PHONY : src/Package.cpp.s
 
@@ -366,6 +405,34 @@ src/PackageSender.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/PackageSender.cpp.s
 .PHONY : src/PackageSender.cpp.s
 
+<<<<<<< HEAD
+src/Ramp.obj: src/Ramp.cpp.obj
+
+.PHONY : src/Ramp.obj
+
+# target to build an object file
+src/Ramp.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Ramp.cpp.obj
+.PHONY : src/Ramp.cpp.obj
+
+src/Ramp.i: src/Ramp.cpp.i
+
+.PHONY : src/Ramp.i
+
+# target to preprocess a source file
+src/Ramp.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Ramp.cpp.i
+.PHONY : src/Ramp.cpp.i
+
+src/Ramp.s: src/Ramp.cpp.s
+
+.PHONY : src/Ramp.s
+
+# target to generate assembly for a file
+src/Ramp.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Ramp.cpp.s
+.PHONY : src/Ramp.cpp.s
+=======
 src/ReceiverPreferences.obj: src/ReceiverPreferences.cpp.obj
 
 .PHONY : src/ReceiverPreferences.obj
@@ -395,6 +462,7 @@ src/ReceiverPreferences.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/ReceiverPreferences.cpp.s
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.s
 .PHONY : src/ReceiverPreferences.cpp.s
+>>>>>>> Kasia-develop2
 
 src/Storehouse.obj: src/Storehouse.cpp.obj
 
@@ -402,7 +470,10 @@ src/Storehouse.obj: src/Storehouse.cpp.obj
 
 # target to build an object file
 src/Storehouse.cpp.obj:
+<<<<<<< HEAD
+=======
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Storehouse.cpp.obj
+>>>>>>> Kasia-develop2
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj
 .PHONY : src/Storehouse.cpp.obj
 
@@ -412,7 +483,10 @@ src/Storehouse.i: src/Storehouse.cpp.i
 
 # target to preprocess a source file
 src/Storehouse.cpp.i:
+<<<<<<< HEAD
+=======
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Storehouse.cpp.i
+>>>>>>> Kasia-develop2
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Storehouse.cpp.i
 .PHONY : src/Storehouse.cpp.i
 
@@ -422,10 +496,43 @@ src/Storehouse.s: src/Storehouse.cpp.s
 
 # target to generate assembly for a file
 src/Storehouse.cpp.s:
+<<<<<<< HEAD
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Storehouse.cpp.s
+.PHONY : src/Storehouse.cpp.s
+
+src/Worker.obj: src/Worker.cpp.obj
+
+.PHONY : src/Worker.obj
+
+# target to build an object file
+src/Worker.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Worker.cpp.obj
+.PHONY : src/Worker.cpp.obj
+
+src/Worker.i: src/Worker.cpp.i
+
+.PHONY : src/Worker.i
+
+# target to preprocess a source file
+src/Worker.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Worker.cpp.i
+.PHONY : src/Worker.cpp.i
+
+src/Worker.s: src/Worker.cpp.s
+
+.PHONY : src/Worker.s
+
+# target to generate assembly for a file
+src/Worker.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Worker.cpp.s
+.PHONY : src/Worker.cpp.s
+
+=======
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/src/Storehouse.cpp.s
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/src/Storehouse.cpp.s
 .PHONY : src/Storehouse.cpp.s
 
+>>>>>>> Kasia-develop2
 test/main_test.obj: test/main_test.cpp.obj
 
 .PHONY : test/main_test.obj
@@ -452,6 +559,87 @@ test/main_test.s: test/main_test.cpp.s
 test/main_test.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/main_test.cpp.s
 .PHONY : test/main_test.cpp.s
+
+test/test_factory.obj: test/test_factory.cpp.obj
+
+.PHONY : test/test_factory.obj
+
+# target to build an object file
+test/test_factory.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_factory.cpp.obj
+.PHONY : test/test_factory.cpp.obj
+
+test/test_factory.i: test/test_factory.cpp.i
+
+.PHONY : test/test_factory.i
+
+# target to preprocess a source file
+test/test_factory.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_factory.cpp.i
+.PHONY : test/test_factory.cpp.i
+
+test/test_factory.s: test/test_factory.cpp.s
+
+.PHONY : test/test_factory.s
+
+# target to generate assembly for a file
+test/test_factory.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_factory.cpp.s
+.PHONY : test/test_factory.cpp.s
+
+test/test_node_collection.obj: test/test_node_collection.cpp.obj
+
+.PHONY : test/test_node_collection.obj
+
+# target to build an object file
+test/test_node_collection.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_node_collection.cpp.obj
+.PHONY : test/test_node_collection.cpp.obj
+
+test/test_node_collection.i: test/test_node_collection.cpp.i
+
+.PHONY : test/test_node_collection.i
+
+# target to preprocess a source file
+test/test_node_collection.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_node_collection.cpp.i
+.PHONY : test/test_node_collection.cpp.i
+
+test/test_node_collection.s: test/test_node_collection.cpp.s
+
+.PHONY : test/test_node_collection.s
+
+# target to generate assembly for a file
+test/test_node_collection.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_node_collection.cpp.s
+.PHONY : test/test_node_collection.cpp.s
+
+test/test_package.obj: test/test_package.cpp.obj
+
+.PHONY : test/test_package.obj
+
+# target to build an object file
+test/test_package.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package.cpp.obj
+.PHONY : test/test_package.cpp.obj
+
+test/test_package.i: test/test_package.cpp.i
+
+.PHONY : test/test_package.i
+
+# target to preprocess a source file
+test/test_package.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package.cpp.i
+.PHONY : test/test_package.cpp.i
+
+test/test_package.s: test/test_package.cpp.s
+
+.PHONY : test/test_package.s
+
+# target to generate assembly for a file
+test/test_package.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package.cpp.s
+.PHONY : test/test_package.cpp.s
 
 test/test_package_queue.obj: test/test_package_queue.cpp.obj
 
@@ -480,6 +668,33 @@ test/test_package_queue.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.s
 .PHONY : test/test_package_queue.cpp.s
 
+test/test_ramp.obj: test/test_ramp.cpp.obj
+
+.PHONY : test/test_ramp.obj
+
+# target to build an object file
+test/test_ramp.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_ramp.cpp.obj
+.PHONY : test/test_ramp.cpp.obj
+
+test/test_ramp.i: test/test_ramp.cpp.i
+
+.PHONY : test/test_ramp.i
+
+# target to preprocess a source file
+test/test_ramp.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_ramp.cpp.i
+.PHONY : test/test_ramp.cpp.i
+
+test/test_ramp.s: test/test_ramp.cpp.s
+
+.PHONY : test/test_ramp.s
+
+# target to generate assembly for a file
+test/test_ramp.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_ramp.cpp.s
+.PHONY : test/test_ramp.cpp.s
+
 test/test_receiver.obj: test/test_receiver.cpp.obj
 
 .PHONY : test/test_receiver.obj
@@ -507,6 +722,60 @@ test/test_receiver.cpp.s:
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_receiver.cpp.s
 .PHONY : test/test_receiver.cpp.s
 
+test/test_storehouse.obj: test/test_storehouse.cpp.obj
+
+.PHONY : test/test_storehouse.obj
+
+# target to build an object file
+test/test_storehouse.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_storehouse.cpp.obj
+.PHONY : test/test_storehouse.cpp.obj
+
+test/test_storehouse.i: test/test_storehouse.cpp.i
+
+.PHONY : test/test_storehouse.i
+
+# target to preprocess a source file
+test/test_storehouse.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_storehouse.cpp.i
+.PHONY : test/test_storehouse.cpp.i
+
+test/test_storehouse.s: test/test_storehouse.cpp.s
+
+.PHONY : test/test_storehouse.s
+
+# target to generate assembly for a file
+test/test_storehouse.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_storehouse.cpp.s
+.PHONY : test/test_storehouse.cpp.s
+
+test/test_worker.obj: test/test_worker.cpp.obj
+
+.PHONY : test/test_worker.obj
+
+# target to build an object file
+test/test_worker.cpp.obj:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_worker.cpp.obj
+.PHONY : test/test_worker.cpp.obj
+
+test/test_worker.i: test/test_worker.cpp.i
+
+.PHONY : test/test_worker.i
+
+# target to preprocess a source file
+test/test_worker.cpp.i:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_worker.cpp.i
+.PHONY : test/test_worker.cpp.i
+
+test/test_worker.s: test/test_worker.cpp.s
+
+.PHONY : test/test_worker.s
+
+# target to generate assembly for a file
+test/test_worker.cpp.s:
+	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/test/test_worker.cpp.s
+.PHONY : test/test_worker.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -529,6 +798,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/Factory.obj
+	@echo ... src/Factory.i
+	@echo ... src/Factory.s
 	@echo ... src/Package.obj
 	@echo ... src/Package.i
 	@echo ... src/Package.s
@@ -538,21 +810,51 @@ help:
 	@echo ... src/PackageSender.obj
 	@echo ... src/PackageSender.i
 	@echo ... src/PackageSender.s
+<<<<<<< HEAD
+	@echo ... src/Ramp.obj
+	@echo ... src/Ramp.i
+	@echo ... src/Ramp.s
+	@echo ... src/Storehouse.obj
+	@echo ... src/Storehouse.i
+	@echo ... src/Storehouse.s
+	@echo ... src/Worker.obj
+	@echo ... src/Worker.i
+	@echo ... src/Worker.s
+=======
 	@echo ... src/ReceiverPreferences.obj
 	@echo ... src/ReceiverPreferences.i
 	@echo ... src/ReceiverPreferences.s
 	@echo ... src/Storehouse.obj
 	@echo ... src/Storehouse.i
 	@echo ... src/Storehouse.s
+>>>>>>> Kasia-develop2
 	@echo ... test/main_test.obj
 	@echo ... test/main_test.i
 	@echo ... test/main_test.s
+	@echo ... test/test_factory.obj
+	@echo ... test/test_factory.i
+	@echo ... test/test_factory.s
+	@echo ... test/test_node_collection.obj
+	@echo ... test/test_node_collection.i
+	@echo ... test/test_node_collection.s
+	@echo ... test/test_package.obj
+	@echo ... test/test_package.i
+	@echo ... test/test_package.s
 	@echo ... test/test_package_queue.obj
 	@echo ... test/test_package_queue.i
 	@echo ... test/test_package_queue.s
+	@echo ... test/test_ramp.obj
+	@echo ... test/test_ramp.i
+	@echo ... test/test_ramp.s
 	@echo ... test/test_receiver.obj
 	@echo ... test/test_receiver.i
 	@echo ... test/test_receiver.s
+	@echo ... test/test_storehouse.obj
+	@echo ... test/test_storehouse.i
+	@echo ... test/test_storehouse.s
+	@echo ... test/test_worker.obj
+	@echo ... test/test_worker.i
+	@echo ... test/test_worker.s
 .PHONY : help
 
 

@@ -4,6 +4,7 @@
 
 
 #include "PackageSender.hpp"
+#include <optional>
 
 PackageSender::PackageSender(ReceiverPreferences receiverPreferences1) : receiverPreferences(receiverPreferences1){}
 
