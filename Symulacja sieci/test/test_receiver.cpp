@@ -17,10 +17,10 @@ TEST(TestReceiver, RandomNumbers){
     PackageQueue packageQueueLIFO = PackageQueue(QueueType::LIFO, que);
     std::unique_ptr<PackageQueue> ptr1 = std::make_unique<PackageQueue>(packageQueueLIFO);
     std::unique_ptr<PackageQueue> ptr2 = std::make_unique<PackageQueue>(packageQueueLIFO);
+    std::unique_ptr<PackageQueue> ptr3 = std::make_unique<PackageQueue>(packageQueueLIFO);
     Storehouse storehouse1 = Storehouse(3, std::move(ptr1));
     Storehouse storehouse2 = Storehouse(4, std::move(ptr2));
-    std::unique_ptr<Package> ptr3 = std::make_unique<Package>(pack3);
-    Storehouse storehouse3 = Storehouse(ptr3, 3);
+    Storehouse storehouse3 = Storehouse(3, std::move(ptr3));
     std::vector<IPackageReceiver*> vec;
     vec.push_back(&storehouse1);
     vec.push_back(&storehouse2);
@@ -55,11 +55,11 @@ TEST(ReceiverTest, addReceiver){
     que.push_back(pack2);
 
     PackageQueue packageQueueLIFO = PackageQueue(QueueType::LIFO, que);
-    std::unique_ptr<Package> ptr1 = std::make_unique<Package>(pack1);
-    std::unique_ptr<Package> ptr2 = std::make_unique<Package>(pack2);
+    std::unique_ptr<PackageQueue> ptr1 = std::make_unique<PackageQueue>(packageQueueLIFO);
+    std::unique_ptr<PackageQueue> ptr2 = std::make_unique<PackageQueue>(packageQueueLIFO);
 
-    Storehouse storehouse1 = Storehouse(ptr1, 1);
-    Storehouse storehouse2 = Storehouse(ptr2, 2);
+    Storehouse storehouse1 = Storehouse(1, std::move(ptr1));
+    Storehouse storehouse2 = Storehouse(2, std::move(ptr2));
 
     std::vector<IPackageReceiver*> vec;
     vec.push_back(&storehouse1);
@@ -78,8 +78,8 @@ TEST(ReceiverTest, addReceiver){
 
     Package pack3 = Package();
     que.push_back(pack3);
-    std::unique_ptr<Package> ptr3 = std::make_unique<Package>(pack3);
-    Storehouse storehouse3 = Storehouse(ptr3, 3);
+    std::unique_ptr<PackageQueue> ptr3 = std::make_unique<PackageQueue>(packageQueueLIFO);
+    Storehouse storehouse3 = Storehouse(3, std::move(ptr3));
     receiverPreferences1.addReceiver(&storehouse3);
     IPackageReceiver* drawnReceiver2 = receiverPreferences1.drawReceiver();
 
@@ -96,12 +96,12 @@ TEST(ReceiverTest, deleteReceiver){
     que.push_back(pack2);
     que.push_back(pack3);
     PackageQueue packageQueueLIFO = PackageQueue(QueueType::LIFO, que);
-    std::unique_ptr<Package> ptr1 = std::make_unique<Package>(pack1);
-    std::unique_ptr<Package> ptr2 = std::make_unique<Package>(pack2);
-    std::unique_ptr<Package> ptr3 = std::make_unique<Package>(pack3);
-    Storehouse storehouse1 = Storehouse(ptr1, 1);
-    Storehouse storehouse2 = Storehouse(ptr2, 2);
-    Storehouse storehouse3 = Storehouse(ptr3, 3);
+    std::unique_ptr<PackageQueue> ptr1 = std::make_unique<PackageQueue>(packageQueueLIFO);
+    std::unique_ptr<PackageQueue> ptr2 = std::make_unique<PackageQueue>(packageQueueLIFO);
+    std::unique_ptr<PackageQueue> ptr3 = std::make_unique<PackageQueue>(packageQueueLIFO);
+    Storehouse storehouse1 = Storehouse(1, std::move(ptr1));
+    Storehouse storehouse2 = Storehouse(2, std::move(ptr2));
+    Storehouse storehouse3 = Storehouse(3, std::move(ptr3));
     std::vector<IPackageReceiver*> vec;
     vec.push_back(&storehouse1);
     vec.push_back(&storehouse2);

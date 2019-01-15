@@ -7,19 +7,16 @@ void Factory::addRamp(const Ramp &ramp) {
     _ramps.add(ramp);
 }
 
-void Factory::addWorker(const Worker &worker) {
-    _workers.add(worker);
+/*void Factory::addWorker(const Worker &worker) {
+    //_workers.add(worker);
 }
 
 void Factory::addStorehouse(const Storehouse &storehouse) {
     _storehouses.add(storehouse);
-}
+}*/
 
 bool Factory::isCompatible() const {
-
-
-
-
+    return false;
 }
 
 std::list<Worker>::const_iterator Factory::findWorkerByID(ElementID nodeID) const {

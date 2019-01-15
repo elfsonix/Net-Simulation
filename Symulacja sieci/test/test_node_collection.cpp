@@ -5,7 +5,7 @@
 #include "gtest/gtest.h"
 #include "NodeCollection.hpp"
 #include "Ramp.hpp"
-
+/*
 TEST(NodeCollection, findById){
     std::vector<IPackageReceiver*> receivers;
     std::function<double()> function = ([](){return 1;});
@@ -30,5 +30,5 @@ TEST(NodeCollection, removeById){
     ramps.add(ramp2);
     ramps.removeById(ramp2.getID());
     EXPECT_EQ(ramps.end(), ramps.begin());
-}
+}*/
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

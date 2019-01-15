@@ -61,5 +61,3 @@ target_include_directories(Symulacja_sieci_test PUBLIC
 add_subdirectory(googletest-master)
 target_link_libraries(Symulacja_sieci_test gmock)
 
-
->>>>>>> develop

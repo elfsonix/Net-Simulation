@@ -32,16 +32,19 @@ public:
 
     iterator findById(ElementID nodeID) const {
         auto it = std::find(_nodes.begin(), _nodes.end(), nodeID);
-        return *it;
+        return NodeCollection::iterator();
     }
 
-    constIterator cfindById(ElementID nodeID) const{
-        const auto it = std::find(_nodes.begin(), _nodes.end(), nodeID);
-        return *it;
+    constIterator cfindById(ElementID nodeID) const {
+        nodeID++;
+        return NodeCollection::constIterator();
     }
+    //const auto it = std::find(_nodes.begin(), _nodes.end(), [nodeID](const auto& node){if(nodeID == node.getID()) return true; else return false;});
+        //return it;
 
     void removeById(ElementID nodeID){
-        _nodes.remove_if([nodeID](const auto& id){return (id == nodeID);}); //wszystkie o tym id czy pierwsza?
+        nodeID++;
+        //_nodes.remove_if([nodeID](const auto& id){if(id == nodeID) return true; else return false;}); //wszystkie o tym id czy pierwsza?
     }
 };
 
