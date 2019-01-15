@@ -17,6 +17,7 @@ public:
     PackageSender(ReceiverPreferences receiverPreferences1);
 
     void putPackageInBuffer(Package package);
+    std::optional<Package> returnBufferState(){return _bufferOfPackagesReady.value();}
 
 };
 #endif

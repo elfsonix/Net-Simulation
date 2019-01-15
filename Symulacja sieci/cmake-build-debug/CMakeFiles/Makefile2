@@ -67,8 +67,8 @@ CMAKE_BINARY_DIR = "C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b
 # Target rules for target CMakeFiles/Symulacja_sieci.dir
 
 # All Build rule for target.
-CMakeFiles/Symulacja_sieci.dir/all: googletest-master/googlemock/CMakeFiles/gmock.dir/all
 CMakeFiles/Symulacja_sieci.dir/all: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+CMakeFiles/Symulacja_sieci.dir/all: googletest-master/googlemock/CMakeFiles/gmock.dir/all
 	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/depend
 	$(MAKE) -f CMakeFiles\Symulacja_sieci.dir\build.make CMakeFiles/Symulacja_sieci.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target Symulacja_sieci"
@@ -105,8 +105,8 @@ clean: CMakeFiles/Symulacja_sieci.dir/clean
 # Target rules for target CMakeFiles/konfig_run.dir
 
 # All Build rule for target.
-CMakeFiles/konfig_run.dir/all: googletest-master/googlemock/CMakeFiles/gmock.dir/all
 CMakeFiles/konfig_run.dir/all: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+CMakeFiles/konfig_run.dir/all: googletest-master/googlemock/CMakeFiles/gmock.dir/all
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/depend
 	$(MAKE) -f CMakeFiles\konfig_run.dir\build.make CMakeFiles/konfig_run.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=11,12,13,14,15,16,17 "Built target konfig_run"
@@ -143,8 +143,8 @@ clean: CMakeFiles/konfig_run.dir/clean
 # Target rules for target CMakeFiles/konfig_test.dir
 
 # All Build rule for target.
-CMakeFiles/konfig_test.dir/all: googletest-master/googlemock/CMakeFiles/gmock.dir/all
 CMakeFiles/konfig_test.dir/all: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+CMakeFiles/konfig_test.dir/all: googletest-master/googlemock/CMakeFiles/gmock.dir/all
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/depend
 	$(MAKE) -f CMakeFiles\konfig_test.dir\build.make CMakeFiles/konfig_test.dir/build
 <<<<<<< HEAD
@@ -267,8 +267,8 @@ googletest-master/googlemock/preinstall: googletest-master/googlemock/gtest/prei
 # Target rules for target googletest-master/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-googletest-master/googlemock/CMakeFiles/gmock_main.dir/all: googletest-master/googlemock/CMakeFiles/gmock.dir/all
 googletest-master/googlemock/CMakeFiles/gmock_main.dir/all: googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
+googletest-master/googlemock/CMakeFiles/gmock_main.dir/all: googletest-master/googlemock/CMakeFiles/gmock.dir/all
 	$(MAKE) -f googletest-master\googlemock\CMakeFiles\gmock_main.dir\build.make googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f googletest-master\googlemock\CMakeFiles\gmock_main.dir\build.make googletest-master/googlemock/CMakeFiles/gmock_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Kasia\Documents\GitHub\agh_air_inf2_2018_netsim__4b_4\Symulacja sieci\cmake-build-debug\CMakeFiles" --progress-num=5,6 "Built target gmock_main"

@@ -11,6 +11,7 @@ PackageSender::PackageSender(ReceiverPreferences receiverPreferences1) : receive
 void PackageSender::passPackageToReceiver(){
     IPackageReceiver* drawnReceiver = receiverPreferences.drawReceiver();
     drawnReceiver->receivePackage(*_bufferOfPackagesReady);
+    _bufferOfPackagesReady.reset();
 
 }
 
