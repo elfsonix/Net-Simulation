@@ -67,7 +67,7 @@ double ReceiverPreferences::drawNumber() {
 IPackageReceiver* ReceiverPreferences::drawReceiver(){
     preferences_t::iterator iter = _probabilityTable.begin();
     double drawn = _drawnProbability();
-    while (iter != _probabilityTable.end())
+    while (iter != _probabilityTable.begin())
     {
        double_pair value = iter->second;
         double lowerBound = value.first;

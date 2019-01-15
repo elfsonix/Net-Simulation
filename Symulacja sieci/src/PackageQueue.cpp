@@ -27,8 +27,8 @@ Package PackageQueue::popPackage() {
         }
 }
 
-void PackageQueue::putPackageInQueue(Package package) {
-    _queue.push_back(package);
+void PackageQueue::putPackageInQueue(const Package& package) {
+    _queue.push_back(std::move(package));
 }
 
 QueueType PackageQueue::returnQueueType() const {

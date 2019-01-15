@@ -4,10 +4,12 @@
 
 #ifndef SYMULACJA_SIECI_FACTORY_HPP
 #define SYMULACJA_SIECI_FACTORY_HPP
+
 #include "NodeCollection.hpp"
 #include "Worker.hpp"
 #include "Ramp.hpp"
 #include "Storehouse.hpp"
+#include <list>
 #include <utility>
 
 class Factory {
@@ -33,6 +35,4 @@ public:
 };
 
 #endif //SYMULACJA_SIECI_FACTORY_HPP
-
-
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

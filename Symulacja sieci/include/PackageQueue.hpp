@@ -14,15 +14,17 @@ private:
     QueueType _queueType;
     std::deque<Package> _queue;
 public:
-    PackageQueue(QueueType queueType, std::deque<Package> queue);
+    PackageQueue(QueueType queueType, std::deque<Package> queue) : _queueType(queueType) {
+      _queue = std::move(queue);
+    }
     ~PackageQueue();
     Package popPackage() override;
     void putPackageInQueue(Package package) override;
-    QueueType returnQueueType() const override;
     dequeCit cbegin() const override;
     dequeCit cend() const override;
     dequeIt begin() override;
     dequeIt end() override;
+    QueueType returnQueueType() const override {return _queueType;}
 };
 
 #endif
