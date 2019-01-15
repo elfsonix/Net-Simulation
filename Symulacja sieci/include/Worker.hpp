@@ -25,17 +25,10 @@ private:
 public:
     std::optional<Package> _bufferOfProcessedPackage;   //bufor z aktualnie przetwarzaną paczką
     Worker(ElementID nodeID, int processTime, std::unique_ptr<PackageQueue> packageQueue,
-            const ReceiverPreferences &receiverPreferences)
-    : PackageSender(receiverPreferences) {
-        _nodeID = nodeID;
-        _processTime = processTime;
-        _packageQueue = std::move(packageQueue);
-        _bufferOfProcessedPackage = std::nullopt;
-        _processRound = 0;
-        _queueType = _packageQueue->returnQueueType();
-    }
+            const ReceiverPreferences &receiverPreferences);
 
     //Własne
+    ElementID getID() const;
     void processPackage();
     //Dziedziczone
     void putPackageInQueue(const Package& package) override;

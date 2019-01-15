@@ -79,8 +79,6 @@ Symulacja_sieci_EXTERNAL_OBJECTS =
 
 Symulacja_sieci.exe: CMakeFiles/Symulacja_sieci.dir/main.cpp.obj
 Symulacja_sieci.exe: CMakeFiles/Symulacja_sieci.dir/build.make
-Symulacja_sieci.exe: googletest-master/googlemock/libgmockd.a
-Symulacja_sieci.exe: googletest-master/googlemock/gtest/libgtestd.a
 Symulacja_sieci.exe: CMakeFiles/Symulacja_sieci.dir/linklibs.rsp
 Symulacja_sieci.exe: CMakeFiles/Symulacja_sieci.dir/objects1.rsp
 Symulacja_sieci.exe: CMakeFiles/Symulacja_sieci.dir/link.txt

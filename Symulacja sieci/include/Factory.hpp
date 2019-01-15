@@ -28,10 +28,12 @@ public:
     void addRamp(const Ramp &ramp);
     void addStorehouse(const Storehouse &storehouse);
     bool isCompatible() const;
-    std::list<Worker>::const_iterator findWorkerById(ElementID nodeId) const;
-    std::list<Storehouse>::const_iterator findStorehouseById(ElementID nodeId) const;
-    std::list<Ramp>::const_iterator findRampById(ElementID nodeId) const;
-    void removeById(ElementID nodeID);
+    std::list<Worker>::const_iterator findWorkerByID(ElementID nodeID) const;
+    std::list<Storehouse>::const_iterator findStorehouseByID(ElementID nodeID) const;
+    std::list<Ramp>::const_iterator findRampByID(ElementID nodeID) const;
+    void removeStorehouseByID(ElementID nodeID);
+    void removeWorkerByID(ElementID nodeID);
+    void removeRampByID(ElementID nodeID);
 };
 
 #endif //SYMULACJA_SIECI_FACTORY_HPP

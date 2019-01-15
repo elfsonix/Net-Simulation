@@ -30,9 +30,12 @@ CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj: ../include/ReceiverP
 CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj: ../include/ReceiverType.hpp
 CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj: ../src/ReceiverPreferences.cpp
 
+CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../include/IPackageQueue.hpp
 CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../include/IPackageReceiver.hpp
 CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../include/IPackageStockpile.hpp
 CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../include/Package.hpp
+CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../include/PackageQueue.hpp
+CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../include/QueueType.hpp
 CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../include/ReceiverType.hpp
 CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../include/Storehouse.hpp
 CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj: ../src/Storehouse.cpp
