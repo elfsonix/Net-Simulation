@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="03465389-f006-49be-ab17-87c5beb560ed" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/includes_CXX.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/src/Package.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/src/PackageQueue.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/src/PackageQueue.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/src/PackageSender.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/Symulacja_sieci.dir/src/PackageSender.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/includes_CXX.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/main.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_run.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/includes_CXX.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/test/main_test.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/test/main_test.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/CMakeFiles/konfig_test.dir/test/test_package_queue.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/Symulacja_sieci.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/Symulacja_sieci.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/Symulacja_sieci.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/Symulacja_sieci.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/includes_CXX.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/includes_CXX.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gmock.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gmock.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/includes_CXX.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/includes_CXX.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/includes_CXX.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CTestTestfile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/CTestTestfile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/gtest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/gtest.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/libgtest_maind.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/libgtest_maind.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/libgtestd.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/gtest/libgtestd.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/libgmock_maind.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/libgmock_maind.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/libgmockd.a" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googlemock/libgmockd.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googletest-distribution.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/googletest-master/googletest-distribution.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/konfig_run.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/cmake-build-debug/konfig_run.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/include/IPackageQueue.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/include/IPackageQueue.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/include/Package.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/include/Package.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/include/PackageQueue.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/include/PackageQueue.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/src/ReceiverPreferences.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/src/ReceiverPreferences.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Symulacja sieci/test/test_package_queue.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Symulacja sieci/test/test_package_queue.cpp" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-18" />
+    <option name="width" value="1953" />
+    <option name="height" value="1035" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03465389-f006-49be-ab17-87c5beb560ed" name="Default Changelist" comment="" />
+      <created>1547118451518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547118451518</updated>
+      <workItem from="1547118456870" duration="22000" />
+      <workItem from="1547338418746" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="31000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1228" height="783" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2542662" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
