@@ -31,9 +31,12 @@ CMakeFiles/konfig_test.dir/src/ReceiverPreferences.cpp.obj
  ../include/ReceiverType.hpp
  C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/ReceiverPreferences.cpp
 CMakeFiles/konfig_test.dir/src/Storehouse.cpp.obj
+ ../include/IPackageQueue.hpp
  ../include/IPackageReceiver.hpp
  ../include/IPackageStockpile.hpp
  ../include/Package.hpp
+ ../include/PackageQueue.hpp
+ ../include/QueueType.hpp
  ../include/ReceiverType.hpp
  ../include/Storehouse.hpp
  C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Storehouse.cpp

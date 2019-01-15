@@ -11,10 +11,9 @@ class Ramp : public PackageSender {
 private:
     ElementID _nodeID;
 public:
-    Ramp(ElementID nodeID, const ReceiverPreferences &receiverPreferences) : PackageSender(receiverPreferences) {
-        _nodeID = nodeID;
-    }
-    void generatePackage() const;
+    Ramp(ElementID nodeID, const ReceiverPreferences &receiverPreferences);
+    void generatePackage();
+    ElementID getID() const;
 };
 
 #endif //SYMULACJA_SIECI_RAMP_HPP

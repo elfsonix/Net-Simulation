@@ -1,7 +1,24 @@
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
 // Created by Sonia on 2019-01-09.
 
+#include <Worker.hpp>
+
 #include "Worker.hpp"
+
+Worker::Worker(ElementID nodeID, int processTime, std::unique_ptr<PackageQueue> packageQueue,
+               const ReceiverPreferences &receiverPreferences)
+        : PackageSender(receiverPreferences) {
+    _nodeID = nodeID;
+    _processTime = processTime;
+    _packageQueue = std::move(packageQueue);
+    _bufferOfProcessedPackage = std::nullopt;
+    _processRound = 0;
+    _queueType = _packageQueue->returnQueueType();
+}
+
+ElementID Worker::getID() const{
+    return _nodeID;
+}
 
 void Worker::receivePackage(const Package &package) {
     _packageQueue->putPackageInQueue(package);

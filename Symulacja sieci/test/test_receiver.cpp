@@ -12,10 +12,10 @@ TEST(TestReceiver, RandomNumbers){
     que.push_back(pack1);
     que.push_back(pack2);
     PackageQueue packageQueueLIFO = PackageQueue(QueueType::LIFO, que);
-    std::unique_ptr<Package> ptr1 = std::make_unique<Package>(pack1);
-    std::unique_ptr<Package> ptr2 = std::make_unique<Package>(pack2);
-    Storehouse storehouse1 = Storehouse(std::move(ptr1), 3);
-    Storehouse storehouse2 = Storehouse(std::move(ptr2), 4);
+    std::unique_ptr<PackageQueue> ptr1 = std::make_unique<PackageQueue>(packageQueueLIFO);
+    std::unique_ptr<PackageQueue> ptr2 = std::make_unique<PackageQueue>(packageQueueLIFO);
+    Storehouse storehouse1 = Storehouse(3, std::move(ptr1));
+    Storehouse storehouse2 = Storehouse(4, std::move(ptr2));
     std::vector<IPackageReceiver*> vec;
     vec.push_back(&storehouse1);
     vec.push_back(&storehouse2);

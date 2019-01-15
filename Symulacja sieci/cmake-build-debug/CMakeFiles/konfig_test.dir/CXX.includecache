@@ -343,8 +343,8 @@ utility
 ../include/ReceiverType.hpp
 
 ../include/Storehouse.hpp
-Package.hpp
-../include/Package.hpp
+PackageQueue.hpp
+../include/PackageQueue.hpp
 IPackageReceiver.hpp
 ../include/IPackageReceiver.hpp
 IPackageStockpile.hpp
