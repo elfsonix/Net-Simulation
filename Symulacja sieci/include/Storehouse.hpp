@@ -30,6 +30,8 @@ public:
     dequeIt begin() override;
     dequeIt end() override;
     void putPackageInQueue(Package package) override;
+
+    Package returnQueueState(){return *_packageQueue;}
 };
 
 
