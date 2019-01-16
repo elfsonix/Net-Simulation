@@ -17,7 +17,7 @@ TEST(Worker, receiveProduct){
     EXPECT_EQ(myPackage.getID(), myWorker.begin()->getID());
 }
 
-TEST(Worker, isProductionTimeRight){
+TEST(Worker, isProductionTimeRight){    //Nieteges
     Package myPackage = Package();
     for(int i = 1; i<4; i++){
         std::vector<IPackageReceiver*> receivers;
@@ -33,7 +33,7 @@ TEST(Worker, isProductionTimeRight){
     }
 }
 
-TEST(Worker, isProductPassedForward){
+TEST(Worker, isProductPassedForward){       //Nie teges
     Package myPackage = Package();
 
     std::vector<IPackageReceiver*> receivers1;

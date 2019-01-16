@@ -4,12 +4,34 @@
 
 #include "gtest/gtest.h"
 #include "Ramp.hpp"
+#include "Worker.hpp"
 
-TEST(Ramp, GeneratePackageInTime){
+TEST(Ramp, GeneratePackageInTimeTrue){      //Nie teges
+    std::vector<IPackageReceiver*> receivers;
+    std::function<double()> function = ([](){return 1;});
+    ReceiverPreferences myPref = ReceiverPreferences(receivers, function);
+    std::deque<Package> queue;
+    Worker myWorker = Worker(1,1, std::make_unique<PackageQueue>(QueueType::FIFO, queue), myPref);
 
+    std::vector<IPackageReceiver*> receiversR;
+    receiversR.push_back(&myWorker);
+    std::function<double()> functionR = ([](){return 1;});
+    Ramp myRamp = Ramp(1, 2, ReceiverPreferences(receiversR, functionR));
+    Time time = 4;
+    myRamp.generatePackage(time);
+    EXPECT_TRUE(myRamp.returnBufferState());
 }
 
-TEST(Ramp, isProductSentToBuffer){
+TEST(Ramp, GeneratePackageInTimeFalse){
+    std::vector<IPackageReceiver*> receivers;
+    std::function<double()> function = ([](){return 1;});
+    Ramp myRamp = Ramp(1, 2, ReceiverPreferences(receivers, function));
+    Time time = 3;
+    myRamp.generatePackage(time);
+    EXPECT_FALSE(myRamp.returnBufferState());
+}
+
+TEST(Ramp, isProductSentToBuffer){      //nieteges
     std::vector<IPackageReceiver*> receivers;
     std::function<double()> function = ([](){return 1;});
     ReceiverPreferences myPref = ReceiverPreferences(receivers, function);

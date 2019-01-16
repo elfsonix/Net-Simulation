@@ -26,8 +26,8 @@ public:
     iterator end() { return _nodes.end(); }
     constIterator end() const { return _nodes.cend(); }
 
-    void add(const Node& node){
-        _nodes.push_back(node);
+    void add(Node& node){
+        _nodes.push_back(std::move(node)) ;
     }
 
     iterator findById(ElementID nodeID){
@@ -35,7 +35,7 @@ public:
         return it;
     }
 
-    constIterator cfindById(ElementID nodeID) const {
+    constIterator cfindById(ElementID nodeID) {
         NodeCollection::constIterator it = std::find_if(_nodes.begin(), _nodes.end(), [nodeID](Node& node){return node.getID()==nodeID;});
         return it;
     }
