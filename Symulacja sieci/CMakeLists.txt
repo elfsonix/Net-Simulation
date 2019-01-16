@@ -12,7 +12,7 @@ set(SOURCE_FILES "src/PackageQueue.cpp" "src/Package.cpp" "src/ReceiverPreferenc
 add_subdirectory(googletest-master)
 link_libraries(gmock)
 
-add_executable(Symulacja_sieci main.cpp "include/QueueType.hpp" "include/PackageQueue.hpp" "include/Package.hpp" "include/IPackageStockpile.hpp" "include/IPackageReceiver.hpp" "include/NodeCollection.hpp" "include/Factory.hpp" "include/Worker.hpp" "include/Ramp.hpp" "include/Storehouse.hpp" "include/PackageSender.hpp" "include/ReceiverPreferences.hpp" "include/Simulation.hpp")
+add_executable(Symulacja_sieci main.cpp "include/QueueType.hpp" "include/PackageQueue.hpp" "include/Package.hpp" "include/IPackageStockpile.hpp" "include/IPackageReceiver.hpp" "include/NodeCollection.hpp" "include/Factory.hpp" "include/Worker.hpp" "include/Ramp.hpp" "include/Storehouse.hpp" "include/PackageSender.hpp" "include/ReceiverPreferences.hpp" "include/Simulation.hpp" src/Simulation.cpp)
 
 add_executable(konfig_run ${SOURCE_FILES} main.cpp)
 

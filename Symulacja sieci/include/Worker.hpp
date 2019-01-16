@@ -17,14 +17,14 @@
 
 class Worker : public PackageSender, public IPackageReceiver, public IPackageQueue {
 private:
-    std::unique_ptr <PackageQueue> _packageQueue;    //lista oczekujących paczek
+    std::unique_ptr <IPackageQueue> _packageQueue;    //lista oczekujących paczek
     ElementID _nodeID{};
     int _processTime;   //ile kolejek zajmuje przetworzenie produktu
     int _processRound;  //w którym stadium jest przetwarzany produkt
     QueueType _queueType;
 public:
     std::optional<Package> _bufferOfProcessedPackage;   //bufor z aktualnie przetwarzaną paczką
-    Worker(ElementID nodeID, int processTime, std::unique_ptr<PackageQueue> packageQueue,
+    Worker(ElementID nodeID, int processTime, std::unique_ptr<IPackageQueue> packageQueue,
             const ReceiverPreferences &receiverPreferences)
     : PackageSender(receiverPreferences) {
         _nodeID = nodeID;

@@ -17,5 +17,5 @@ public:
     void generatePackage() const;
 };
 
-#endif //SYMULACJA_SIECI_RAMP_HPP
+#endif
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

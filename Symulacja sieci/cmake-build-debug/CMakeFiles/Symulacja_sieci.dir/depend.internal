@@ -3,3 +3,20 @@
 
 CMakeFiles/Symulacja_sieci.dir/main.cpp.obj
  C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/main.cpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj
+ ../include/Factory.hpp
+ ../include/IPackageQueue.hpp
+ ../include/IPackageReceiver.hpp
+ ../include/IPackageStockpile.hpp
+ ../include/NodeCollection.hpp
+ ../include/Package.hpp
+ ../include/PackageQueue.hpp
+ ../include/PackageSender.hpp
+ ../include/QueueType.hpp
+ ../include/Ramp.hpp
+ ../include/ReceiverPreferences.hpp
+ ../include/ReceiverType.hpp
+ ../include/Simulation.hpp
+ ../include/Storehouse.hpp
+ ../include/Worker.hpp
+ C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Simulation.cpp

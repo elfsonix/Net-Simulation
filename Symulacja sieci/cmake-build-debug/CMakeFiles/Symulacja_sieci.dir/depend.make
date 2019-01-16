@@ -3,3 +3,20 @@
 
 CMakeFiles/Symulacja_sieci.dir/main.cpp.obj: ../main.cpp
 
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/Factory.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/IPackageQueue.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/IPackageReceiver.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/IPackageStockpile.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/NodeCollection.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/Package.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/PackageQueue.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/PackageSender.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/QueueType.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/Ramp.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/ReceiverPreferences.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/ReceiverType.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/Simulation.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/Storehouse.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../include/Worker.hpp
+CMakeFiles/Symulacja_sieci.dir/src/Simulation.cpp.obj: ../src/Simulation.cpp
+
