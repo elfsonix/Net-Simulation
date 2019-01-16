@@ -1,6 +1,5 @@
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
-// Created by Katarzyna Wątorska
-
+// Created by Kasia on 2019-01-01.
 #include <PackageQueue.hpp>
 #include <Storehouse.hpp>
 #include "gtest/gtest.h"
@@ -13,14 +12,15 @@ TEST(TestReceiver, RandomNumbers){
     std::deque<Package> que;
     que.push_back(pack1);
     que.push_back(pack2);
-    que.push_back(pack3);
+    std::deque<Package> que2;
+    que2.push_back(pack1);
+    que2.push_back(pack2);
     PackageQueue packageQueueLIFO = PackageQueue(QueueType::LIFO, que);
-    std::unique_ptr<Package> ptr1 = std::make_unique<Package>(pack1);
-    std::unique_ptr<Package> ptr2 = std::make_unique<Package>(pack2);
-    std::unique_ptr<Package> ptr3 = std::make_unique<Package>(pack3);
-    Storehouse storehouse1 = Storehouse(ptr1, 1);
-    Storehouse storehouse2 = Storehouse(ptr2, 2);
-    Storehouse storehouse3 = Storehouse(ptr3, 3);
+    PackageQueue packageQueueFIFO = PackageQueue(QueueType::FIFO, que2);
+    std::unique_ptr<PackageQueue> ptr1 = std::make_unique<PackageQueue>(packageQueueLIFO);
+    std::unique_ptr<PackageQueue> ptr2 = std::make_unique<PackageQueue>(packageQueueFIFO);
+    Storehouse storehouse1 = Storehouse(3, std::move(ptr1));
+    Storehouse storehouse2 = Storehouse(4, std::move(ptr2));
     std::vector<IPackageReceiver*> vec;
     vec.push_back(&storehouse1);
     vec.push_back(&storehouse2);
@@ -116,4 +116,3 @@ TEST(ReceiverTest, deleteReceiver){
 
 }
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
-

@@ -7,6 +7,7 @@
 #IncludeRegexTransform: 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/main.cpp
 iostream
 -
@@ -66,29 +67,15 @@ stdexcept
 -
 random
 -
+=======
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/main.cpp
+>>>>>>> Kasia-develop2
 iostream
 -
-IPackageQueue.hpp
-../include/IPackageQueue.hpp
-IPackageReceiver.hpp
-../include/IPackageReceiver.hpp
 
-../include/ReceiverType.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Package.cpp
-Package.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/Package.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageQueue.cpp
-PackageQueue.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageQueue.hpp
-
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageSender.cpp
-PackageSender.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/src/PackageSender.hpp
-optional
--
-
+<<<<<<< HEAD
 =======
 >>>>>>> Kasia-develop2
+>>>>>>> Kasia-develop2
+=======
 >>>>>>> Kasia-develop2

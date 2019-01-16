@@ -1,4 +1,4 @@
-// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+    // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
 // Created by Sonia on 2018-12-30.
 //
 
@@ -8,16 +8,17 @@
 #include "Package.hpp"
 #include "IPackageReceiver.hpp"
 #include "IPackageStockpile.hpp"
+#include "PackageQueue.hpp"
 #include <memory>
 #include <deque>
 #include <tuple>
 
 class Storehouse : public IPackageReceiver, public IPackageStockpile {
 private:
-    std::unique_ptr<Package> _packageQueue;
+    std::unique_ptr<PackageQueue> _packageQueue;
     ElementID _nodeId;
 public:
-    Storehouse(std::unique_ptr<Package> packageStockpile, ElementID nodeId){
+    Storehouse(ElementID nodeId, std::unique_ptr<PackageQueue> packageStockpile){
         _nodeId = nodeId;
         _packageQueue = std::move(packageStockpile);
 
@@ -32,9 +33,6 @@ public:
     dequeCit cend() const override;
     dequeIt begin() override;
     dequeIt end() override;
-    void putPackageInQueue(Package package) override;
-
-    Package returnQueueState(){return *_packageQueue;}
 };
 
 #endif //SYMULACJA_SIECI_STOREHOUSE_HPP

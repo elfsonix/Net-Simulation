@@ -28,16 +28,11 @@ public:
 
     }
 
-    iterator findById(ElementID nodeId) const {
-        return 1;
-    }
-    constIterator cfindById(ElementID nodeId) const {
-        return 1;
-    }
-    void removeById(ElementID nodeID) {
-
-    }
+    iterator findById(ElementID nodeId) const;
+    constIterator cfindById(ElementID nodeId) const;
+    void removeById(ElementID nodeID);
 };
+
 
 #endif //SYMULACJA_SIECI_NODECOLLECTION_HPP
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

@@ -1,6 +1,6 @@
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
 // Created by Sonia on 2019-01-09.
-//
+
 //
 #include "Factory.hpp"
 
@@ -35,3 +35,4 @@ std::list<Ramp>::const_iterator Factory::findRampById(ElementID nodeId) const {
 void Factory::removeById(ElementID nodeID) {
 
 }
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

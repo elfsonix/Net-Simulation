@@ -36,7 +36,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/JetBrains/CLion 2018.3.2/bin/cmake/win/share/cmake-3.13/Modules/Platform/Windows.cmake"
   "C:/Program Files/JetBrains/CLion 2018.3.2/bin/cmake/win/share/cmake-3.13/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files/JetBrains/CLion 2018.3.2/bin/cmake/win/share/cmake-3.13/Modules/ProcessorCount.cmake"
->>>>>>> Kasia-develop2
   "../CMakeLists.txt"
   "CMakeFiles/3.13.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeCXXCompiler.cmake"
