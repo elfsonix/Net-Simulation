@@ -19,6 +19,17 @@ void PackageSender::putPackageInBuffer(Package package){
     _bufferOfPackagesReady = std::make_optional(package);
     passPackageToReceiver();
 }
+
+bool PackageSender::returnBufferState() {
+    try{
+        _bufferOfPackagesReady.value();
+    }
+    catch (std::bad_optional_access&){
+        return false;
+    }
+    return true;
+}
+
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
 
 
