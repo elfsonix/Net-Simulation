@@ -540,6 +540,7 @@ cxxabi.h
 acxx_demangle.h
 -
 
+<<<<<<< HEAD
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/googletest-master/googlemock/src/gmock-all.cc
 gmock/gmock.h
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/googletest-master/googlemock/src/gmock/gmock.h
@@ -553,4 +554,19 @@ src/gmock-spec-builders.cc
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/googletest-master/googlemock/src/src/gmock-spec-builders.cc
 src/gmock.cc
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/googletest-master/googlemock/src/src/gmock.cc
+=======
+C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/googletest-master/googlemock/src/gmock-all.cc
+gmock/gmock.h
+C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/googletest-master/googlemock/src/gmock/gmock.h
+src/gmock-cardinalities.cc
+C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/googletest-master/googlemock/src/src/gmock-cardinalities.cc
+src/gmock-internal-utils.cc
+C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/googletest-master/googlemock/src/src/gmock-internal-utils.cc
+src/gmock-matchers.cc
+C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/googletest-master/googlemock/src/src/gmock-matchers.cc
+src/gmock-spec-builders.cc
+C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/googletest-master/googlemock/src/src/gmock-spec-builders.cc
+src/gmock.cc
+C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/googletest-master/googlemock/src/src/gmock.cc
+>>>>>>> Sonia-develop
 

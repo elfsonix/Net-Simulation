@@ -6,6 +6,7 @@
 #define SYMULACJA_SIECI_NODECOLLECTION_HPP
 
 #include <list>
+#include <algorithm>
 #include "Package.hpp"
 
 
@@ -24,15 +25,22 @@ public:
     constIterator begin() const { return _nodes.cbegin(); }
     iterator end() { return _nodes.end(); }
     constIterator end() const { return _nodes.cend(); }
-    void add(const Node& node) {
 
+    void add(const Node& node){
+        _nodes.push_back(node);
     }
 
-    iterator findById(ElementID nodeId) const;
-    constIterator cfindById(ElementID nodeId) const;
-    void removeById(ElementID nodeID);
-};
+    iterator findById(ElementID nodeID) const;
+        //auto it = std::find(_nodes.begin(), _nodes.end(), nodeID);
 
+    constIterator cfindById(ElementID nodeID) const;
+        //const auto it = std::find(_nodes.begin(), _nodes.end(), nodeID);
+
+    void removeById(ElementID nodeID){
+        nodeID++;
+        //_nodes.remove_if([nodeID](const auto& id){return (id == nodeID);}); //wszystkie o tym id czy pierwsza?
+    }
+};
 
 #endif //SYMULACJA_SIECI_NODECOLLECTION_HPP
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

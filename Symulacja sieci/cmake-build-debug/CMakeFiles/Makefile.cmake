@@ -144,8 +144,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Symulacja_sieci.dir/DependInfo.cmake"
-  "CMakeFiles/konfig_run.dir/DependInfo.cmake"
-  "CMakeFiles/konfig_test.dir/DependInfo.cmake"
+  "CMakeFiles/Symulacja_sieci_debug.dir/DependInfo.cmake"
+  "CMakeFiles/Symulacja_sieci_test.dir/DependInfo.cmake"
   "googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
   "googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
