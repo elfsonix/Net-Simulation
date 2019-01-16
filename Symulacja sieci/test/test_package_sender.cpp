@@ -1,4 +1,3 @@
-/*
 
 //
 // Created by Kasia on 2019-01-15.
@@ -10,11 +9,10 @@
 #include "gmock/gmock.h"
 #include "PackageQueue.hpp"
 #include "PackageSender.hpp"
-*/
 /*using ::testing::Return;
 class MockReceiver : public IPackageReceiver{
     MOCK_METHOD1(receivePackage, void(const Package&));
-};*//*
+};*/
 
 
 TEST(PackageSender, isBufferClear){
@@ -27,21 +25,26 @@ TEST(PackageSender, isBufferClear){
     que.push_back(pack1);
     que.push_back(pack2);
     que.push_back(pack3);
+    que.push_back(pack4);
+    std::deque<Package> que2;
+    que2.push_back(pack1);
+    que2.push_back(pack2);
+    que2.push_back(pack3);
+    que2.push_back(pack4);
     PackageQueue packageQueueLIFO = PackageQueue(QueueType::LIFO, que);
-    std::unique_ptr<Package> ptr1 = std::make_unique<Package>(pack1);
-    std::unique_ptr<Package> ptr2 = std::make_unique<Package>(pack2);
-    std::unique_ptr<Package> ptr3 = std::make_unique<Package>(pack3);
+    PackageQueue packageQueueFIFO = PackageQueue(QueueType::FIFO, que2);
+    std::unique_ptr<PackageQueue> ptr1 = std::make_unique<PackageQueue>(packageQueueLIFO);
+    std::unique_ptr<PackageQueue> ptr2 = std::make_unique<PackageQueue>(packageQueueFIFO);
+    Storehouse storehouse1 = Storehouse(3, std::move(ptr1));
+    Storehouse storehouse2 = Storehouse(4, std::move(ptr2));
     //MockReceiver mockReceiver;
 
     // EXPECT_CALL(mockReceiver, receivePackage(pack4).Times(1));
-    Storehouse storehouse1 = Storehouse(ptr1, 1);
-    Storehouse storehouse2 = Storehouse(ptr2, 2);
-    Storehouse storehouse3 = Storehouse(ptr3, 3);
+
 
     std::vector<IPackageReceiver*> vec;
     vec.push_back(&storehouse1);
     vec.push_back(&storehouse2);
-    vec.push_back(&storehouse3);
 
     std::function<double()> function2 = ([](){return 0.54;});
 
@@ -50,8 +53,6 @@ TEST(PackageSender, isBufferClear){
     PackageSender packageSender = PackageSender(receiverPreferences2);
     packageSender.putPackageInBuffer(pack4);
 
-    EXPECT_EQ(packageSender.returnBufferState(), std::nullopt);
+    EXPECT_EQ(packageSender.returnBufferState(), 0);
     //EXPECT_EQ(storehouse2.returnQueueState(), pack4);
 }
-
-*/

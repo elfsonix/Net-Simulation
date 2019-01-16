@@ -51,7 +51,7 @@ pair_double_vector ReceiverPreferences::distribution(){
     // tworzenie dystrybuanty rozkładu dyskretnego
     pair_double_vector probability;
     for (std::size_t i = 1; i <= n; i++){
-        double_pair pairToAdd = std::make_pair(0+(i-1)*length, 0 + i * length);
+        double_pair pairToAdd = std::make_pair((i-1)*length, i * length);
         probability.push_back(pairToAdd);
     }
     return probability;
@@ -65,9 +65,9 @@ double ReceiverPreferences::drawNumber() {
 }
 
 IPackageReceiver* ReceiverPreferences::drawReceiver(){
-    preferences_t::iterator iter = _probabilityTable.begin();
+    iterator iter = _probabilityTable.begin();
     double drawn = _drawnProbability();
-    while (iter != _probabilityTable.begin())
+    while (iter != _probabilityTable.end())
     {
        double_pair value = iter->second;
         double lowerBound = value.first;

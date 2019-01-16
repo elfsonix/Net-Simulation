@@ -23,21 +23,20 @@ TEST(TestReceiver, RandomNumbers) {
     std::vector<IPackageReceiver *> vec;
     vec.push_back(&storehouse1);
     vec.push_back(&storehouse2);
-    std::function<double()> function2 = ([]() { return 0.65; });
+
     std::function<double()> function1 = ([]() { return 0.35; });
-/*    std::function<std::vector<double>()> probabilities =
-            std::function<std::vector<double>()>([](){return std::vector<double>{0.45, 0.55};});*/
-    ReceiverPreferences receiverPreferences2 = ReceiverPreferences(vec, function1);
-    ReceiverPreferences receiverPreferences1 = ReceiverPreferences(vec, function2);
+    std::function<double()> function2 = ([]() { return 0.65; });
 
+    ReceiverPreferences receiverPreferences1 = ReceiverPreferences(vec, function1);
+    ReceiverPreferences receiverPreferences2 = ReceiverPreferences(vec, function2);
 
-    IPackageReceiver *drawnReceiver2 = receiverPreferences2.drawReceiver();
 
     IPackageReceiver *drawnReceiver1 = receiverPreferences1.drawReceiver();
+    IPackageReceiver *drawnReceiver2 = receiverPreferences2.drawReceiver();
 
-
+    EXPECT_EQ(drawnReceiver1, &storehouse1);
     EXPECT_EQ(drawnReceiver2, &storehouse2);
-    EXPECT_EQ(drawnReceiver1, &storehouse2);
+
 }
 
 
@@ -77,7 +76,7 @@ TEST(TestReceiver, RandomNumbers) {
 
         Package pack3 = Package();
         que.push_back(pack3);
-    std::unique_ptr<PackageQueue> ptr3 = std::make_unique<PackageQueue>(packageQueueLIFO);
+        std::unique_ptr<PackageQueue> ptr3 = std::make_unique<PackageQueue>(packageQueueLIFO);
         Storehouse storehouse3 = Storehouse (5, std::move(ptr3));
         receiverPreferences1.addReceiver(&storehouse3);
         IPackageReceiver* drawnReceiver2 = receiverPreferences1.drawReceiver();

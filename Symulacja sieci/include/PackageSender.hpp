@@ -6,19 +6,22 @@
 #include <optional>
 #include "ReceiverPreferences.hpp"
 
-class PackageSender{
+class PackageSender {
 protected:
     void passPackageToReceiver();
+
 private:
     std::optional<Package> _bufferOfPackagesReady;
 
 public:
     ReceiverPreferences receiverPreferences;
+
     PackageSender(ReceiverPreferences receiverPreferences1);
 
     void putPackageInBuffer(Package package);
-    std::optional<Package> returnBufferState(){return _bufferOfPackagesReady.value();}
 
+    bool returnBufferState();
 };
+
 #endif
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
