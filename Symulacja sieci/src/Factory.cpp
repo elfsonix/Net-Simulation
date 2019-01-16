@@ -6,7 +6,7 @@
 void Factory::addRamp(const Ramp &ramp) {
     _ramps.add(ramp);
 }
-
+/*
 void Factory::addWorker(const Worker &worker) {
     _workers.add(worker);
 }
@@ -16,14 +16,12 @@ void Factory::addStorehouse(const Storehouse &storehouse) {
 }
 
 bool Factory::isCompatible() const {
-
-
-
-
+    return true;
 }
 
 std::list<Worker>::const_iterator Factory::findWorkerByID(ElementID nodeID) const {
-    return _workers.cfindById(nodeID);
+    return _workers.cfindById(nodeID);  //undefined ref?
+
 }
 
 std::list<Storehouse>::const_iterator Factory::findStorehouseByID(ElementID nodeID) const {
@@ -32,7 +30,7 @@ std::list<Storehouse>::const_iterator Factory::findStorehouseByID(ElementID node
 
 std::list<Ramp>::const_iterator Factory::findRampByID(ElementID nodeID) const {
     return _ramps.cfindById(nodeID);
-}
+}*/
 
 void Factory::removeStorehouseByID(ElementID nodeID) {
     _storehouses.removeById(nodeID);

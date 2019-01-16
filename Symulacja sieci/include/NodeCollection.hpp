@@ -30,18 +30,15 @@ public:
         _nodes.push_back(node);
     }
 
-    iterator findById(ElementID nodeID) const {
-        auto it = std::find(_nodes.begin(), _nodes.end(), nodeID);
-        return *it;
-    }
+    iterator findById(ElementID nodeID) const;
+        //auto it = std::find(_nodes.begin(), _nodes.end(), nodeID);
 
-    constIterator cfindById(ElementID nodeID) const{
-        const auto it = std::find(_nodes.begin(), _nodes.end(), nodeID);
-        return *it;
-    }
+    constIterator cfindById(ElementID nodeID) const;
+        //const auto it = std::find(_nodes.begin(), _nodes.end(), nodeID);
 
     void removeById(ElementID nodeID){
-        _nodes.remove_if([nodeID](const auto& id){return (id == nodeID);}); //wszystkie o tym id czy pierwsza?
+        nodeID++;
+        //_nodes.remove_if([nodeID](const auto& id){return (id == nodeID);}); //wszystkie o tym id czy pierwsza?
     }
 };
 

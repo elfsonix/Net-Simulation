@@ -47,7 +47,6 @@ set(SOURCES_FILES_TESTS
         test/test_package.cpp
         test/test_package_queue.cpp
         test/test_ramp.cpp
-        test/test_receiver.cpp
         test/test_storehouse.cpp
         test/test_worker.cpp )
 
@@ -60,6 +59,3 @@ target_include_directories(Symulacja_sieci_test PUBLIC
 
 add_subdirectory(googletest-master)
 target_link_libraries(Symulacja_sieci_test gmock)
-
-
->>>>>>> develop
