@@ -10,14 +10,13 @@ class PackageSender{
 protected:
     void passPackageToReceiver();
 private:
-    std::optional<Package> _bufferOfPackagesReady;
+    std::optional<Package> bufferOfPackagesReady;
 
 public:
     ReceiverPreferences receiverPreferences;
-    PackageSender(ReceiverPreferences receiverPreferences1);
+    PackageSender(ReceiverPreferences receiverPreferences1) : receiverPreferences(receiverPreferences1) {}
 
     void putPackageInBuffer(Package package);
-    std::optional<Package> returnBufferState(){return _bufferOfPackagesReady.value();}
 
 };
 #endif

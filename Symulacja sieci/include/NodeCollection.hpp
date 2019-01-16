@@ -6,6 +6,7 @@
 #define SYMULACJA_SIECI_NODECOLLECTION_HPP
 
 #include <list>
+#include <algorithm>
 #include "Package.hpp"
 
 
@@ -24,8 +25,9 @@ public:
     constIterator begin() const { return _nodes.cbegin(); }
     iterator end() { return _nodes.end(); }
     constIterator end() const { return _nodes.cend(); }
-    void add(const Node& node) {
 
+    void add(const Node& node){
+        _nodes.push_back(node);
     }
 
     iterator findById(ElementID nodeID) const;
