@@ -6,7 +6,6 @@
 #define SYMULACJA_SIECI_NODECOLLECTION_HPP
 
 #include <list>
-#include <algorithm>
 #include "Package.hpp"
 
 
@@ -25,26 +24,18 @@ public:
     constIterator begin() const { return _nodes.cbegin(); }
     iterator end() { return _nodes.end(); }
     constIterator end() const { return _nodes.cend(); }
+    void add(const Node& node) {
 
-    void add(const Node& node){
-        _nodes.push_back(node);
     }
 
-    iterator findById(ElementID nodeID) const {
-        auto it = std::find(_nodes.begin(), _nodes.end(), nodeID);
-        return NodeCollection::iterator();
+    iterator findById(ElementID nodeId) const {
+        return 1;
     }
-
-    constIterator cfindById(ElementID nodeID) const {
-        nodeID++;
-        return NodeCollection::constIterator();
+    constIterator cfindById(ElementID nodeId) const {
+        return 1;
     }
-    //const auto it = std::find(_nodes.begin(), _nodes.end(), [nodeID](const auto& node){if(nodeID == node.getID()) return true; else return false;});
-        //return it;
+    void removeById(ElementID nodeID) {
 
-    void removeById(ElementID nodeID){
-        nodeID++;
-        //_nodes.remove_if([nodeID](const auto& id){if(id == nodeID) return true; else return false;}); //wszystkie o tym id czy pierwsza?
     }
 };
 

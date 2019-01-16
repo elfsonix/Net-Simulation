@@ -5,7 +5,7 @@
 #ifndef SYMULACJA_SIECI_STOREHOUSE_HPP
 #define SYMULACJA_SIECI_STOREHOUSE_HPP
 
-#include "PackageQueue.hpp"
+#include "Package.hpp"
 #include "IPackageReceiver.hpp"
 #include "IPackageStockpile.hpp"
 #include <memory>
@@ -14,11 +14,17 @@
 
 class Storehouse : public IPackageReceiver, public IPackageStockpile {
 private:
-    std::unique_ptr<PackageQueue> _packageQueue;
+    std::unique_ptr<Package> _packageQueue;
     ElementID _nodeId;
 public:
-    Storehouse(ElementID nodeId, std::unique_ptr<PackageQueue> packageStockpile);
-    ElementID getId() const;
+    Storehouse(std::unique_ptr<Package> packageStockpile, ElementID nodeId){
+        _nodeId = nodeId;
+        _packageQueue = std::move(packageStockpile);
+
+    }
+    ElementID getId() {
+        return _nodeId;
+    }
     void putPackageInQueue(const Package& package) override;
     void receivePackage(const Package& package) override;
     std::tuple<ReceiverType, ElementID> identifyReceiver() const override;
@@ -26,6 +32,9 @@ public:
     dequeCit cend() const override;
     dequeIt begin() override;
     dequeIt end() override;
+    void putPackageInQueue(Package package) override;
+
+    Package returnQueueState(){return *_packageQueue;}
 };
 
 #endif //SYMULACJA_SIECI_STOREHOUSE_HPP

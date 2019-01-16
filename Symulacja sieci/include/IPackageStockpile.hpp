@@ -13,7 +13,7 @@ using dequeIt = std::deque<Package>::iterator;
 class IPackageStockpile{
 
 public:
-    //IPackageStockpile(){};        //default constructor
+    IPackageStockpile(){};        //default constructor
     virtual void putPackageInQueue(const Package& package) = 0;      //metoda do umieszczenia produktu na składowisku
 
     //metody tylko do odczytu

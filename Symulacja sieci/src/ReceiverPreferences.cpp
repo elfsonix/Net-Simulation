@@ -4,9 +4,17 @@
 
 #include "ReceiverPreferences.hpp"
 
+ReceiverPreferences::ReceiverPreferences(std::vector<IPackageReceiver*> packageReceiversVector,
+        std::function<double()> drawnProbability): _drawnProbability(
+        std::move(drawnProbability)), _tempPackageReceiversVector(packageReceiversVector){
 
-std::vector<std::pair<IPackageReceiver*, std::pair<double, double>>> ReceiverPreferences::convertToVector(std::vector<IPackageReceiver*> packageVector, std::vector<std::pair<double, double>> doubleVector){
-    std::vector<std::pair<IPackageReceiver*, std::pair<double, double>>> returned;
+    pair_double_vector doubleVector = distribution();
+    vector_p v = convertToVector(packageReceiversVector, doubleVector);
+    _probabilityTable = convertToMap(v);
+}
+
+vector_p ReceiverPreferences::convertToVector(std::vector<IPackageReceiver*> packageVector, pair_double_vector doubleVector){
+    vector_p returned;
     std::size_t lengthPackage = packageVector.size();
     std::size_t lengthDouble = doubleVector.size();
     try {
@@ -18,7 +26,7 @@ std::vector<std::pair<IPackageReceiver*, std::pair<double, double>>> ReceiverPre
     }
     for(std::size_t i = 0; i < lengthDouble; i++){
         IPackageReceiver* thing1 = packageVector[i];
-        std::pair<double, double> thing2 = doubleVector[i];
+        double_pair thing2 = doubleVector[i];
         returned.push_back(std::make_pair(thing1, thing2));
     }
     return returned;
@@ -28,22 +36,22 @@ preferences_t ReceiverPreferences::convertToMap(vector_p pairVector){
     preferences_t mapToReturn;
     for (auto each : pairVector){
         IPackageReceiver* one = each.first;
-        std::pair<double, double> two = each.second;
+        double_pair two = each.second;
         mapToReturn.insert(std::make_pair(one, two));
 
     }
     return mapToReturn;
 }
 
-std::vector<std::pair<double, double>> ReceiverPreferences::distribution(){
+pair_double_vector ReceiverPreferences::distribution(){
     std::size_t n = _tempPackageReceiversVector.size();
     float length;
     length = SUM_OF_PROBABILITIES / (float)n;
 
     // tworzenie dystrybuanty rozkładu dyskretnego
-    std::vector<std::pair<double, double>> probability;
+    pair_double_vector probability;
     for (std::size_t i = 1; i <= n; i++){
-        std::pair<double, double> pairToAdd = std::make_pair(0+(i-1)*length, 0 + i * length);
+        double_pair pairToAdd = std::make_pair(0+(i-1)*length, 0 + i * length);
         probability.push_back(pairToAdd);
     }
     return probability;
@@ -61,7 +69,7 @@ IPackageReceiver* ReceiverPreferences::drawReceiver(){
     double drawn = _drawnProbability();
     while (iter != _probabilityTable.begin())
     {
-        std::pair<double, double> value = iter->second;
+       double_pair value = iter->second;
         double lowerBound = value.first;
         double upperBound = value.second;
 
@@ -75,19 +83,19 @@ IPackageReceiver* ReceiverPreferences::drawReceiver(){
 
 void ReceiverPreferences::addReceiver(IPackageReceiver* receiver){
     _tempPackageReceiversVector.push_back(receiver);
-    std::vector<std::pair<double, double>> newDistribution = distribution();
+    pair_double_vector newDistribution = distribution();
 
 
-    std::vector<std::pair<IPackageReceiver*, std::pair<double, double>>> vectorToConvert = convertToVector(_tempPackageReceiversVector, newDistribution);
+    vector_p vectorToConvert = convertToVector(_tempPackageReceiversVector, newDistribution);
     _probabilityTable  = convertToMap(vectorToConvert);
 }
 void ReceiverPreferences::deleteReceiver(IPackageReceiver* receiver){
     _tempPackageReceiversVector.erase(std::find(_tempPackageReceiversVector.begin(),_tempPackageReceiversVector.end(),receiver));
 
-    std::vector<std::pair<double, double>> newDistribution = distribution();
+    pair_double_vector newDistribution = distribution();
 
 
-    std::vector<std::pair<IPackageReceiver*, std::pair<double, double>>> vectorToConvert = convertToVector(_tempPackageReceiversVector, newDistribution);
+    vector_p vectorToConvert = convertToVector(_tempPackageReceiversVector, newDistribution);
     _probabilityTable  = convertToMap(vectorToConvert);
 }
 

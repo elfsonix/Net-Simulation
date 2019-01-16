@@ -35,10 +35,10 @@ packageQueueFIFO.putPackageInQueue(pack2);
 packageQueueLIFO.putPackageInQueue(pack1);
 packageQueueLIFO.putPackageInQueue(pack2);
 
-EXPECT_EQ(packageQueueFIFO.popPackage().getID(), pack1.getID());
-EXPECT_EQ(packageQueueFIFO.popPackage().getID(), pack2.getID());
-EXPECT_EQ(packageQueueLIFO.popPackage().getID(), pack2.getID());
-EXPECT_EQ(packageQueueLIFO.popPackage().getID(), pack1.getID());
+EXPECT_EQ(packageQueueFIFO.popPackage().getPackageID(), pack1.getPackageID());
+EXPECT_EQ(packageQueueFIFO.popPackage().getPackageID(), pack2.getPackageID());
+EXPECT_EQ(packageQueueLIFO.popPackage().getPackageID(), pack2.getPackageID());
+EXPECT_EQ(packageQueueLIFO.popPackage().getPackageID(), pack1.getPackageID());
 
 }
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
