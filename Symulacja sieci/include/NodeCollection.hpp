@@ -28,14 +28,15 @@ public:
 
     }
 
-    iterator findById(ElementID nodeId) const {
-        return 1;
-    }
-    constIterator cfindById(ElementID nodeId) const {
-        return 1;
-    }
-    void removeById(ElementID nodeID) {
+    iterator findById(ElementID nodeID) const;
+        //auto it = std::find(_nodes.begin(), _nodes.end(), nodeID);
 
+    constIterator cfindById(ElementID nodeID) const;
+        //const auto it = std::find(_nodes.begin(), _nodes.end(), nodeID);
+
+    void removeById(ElementID nodeID){
+        nodeID++;
+        //_nodes.remove_if([nodeID](const auto& id){return (id == nodeID);}); //wszystkie o tym id czy pierwsza?
     }
 };
 

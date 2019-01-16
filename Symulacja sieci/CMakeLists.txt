@@ -14,9 +14,16 @@ link_libraries(gmock)
 
 add_executable(Symulacja_sieci main.cpp "include/QueueType.hpp" "include/PackageQueue.hpp" "include/Package.hpp" "include/IPackageStockpile.hpp" "include/IPackageReceiver.hpp" "include/NodeCollection.hpp" "include/Factory.hpp" "include/Worker.hpp" "include/Ramp.hpp" "include/Storehouse.hpp" "include/PackageSender.hpp" "include/ReceiverPreferences.hpp" "include/Simulation.hpp")
 
-add_executable(konfig_run ${SOURCE_FILES} main.cpp)
+set(SOURCES_FILES_TESTS
+        test/main_test.cpp
+        test/test_factory.cpp
+        test/test_node_collection.cpp
+        test/test_package.cpp
+        test/test_package_queue.cpp
+        test/test_ramp.cpp
+        test/test_storehouse.cpp
+        test/test_worker.cpp )
 
 add_executable(konfig_test ${SOURCE_FILES} ${TEST_SOURCES})
-
 
 
