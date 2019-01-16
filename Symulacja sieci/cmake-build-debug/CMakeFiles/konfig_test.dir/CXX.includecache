@@ -349,6 +349,8 @@ IPackageReceiver.hpp
 ../include/IPackageReceiver.hpp
 IPackageStockpile.hpp
 ../include/IPackageStockpile.hpp
+PackageQueue.hpp
+../include/PackageQueue.hpp
 memory
 -
 deque
@@ -356,13 +358,13 @@ deque
 tuple
 -
 
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_receiver.cpp
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/test_receiver.cpp
 PackageQueue.hpp
 -
 Storehouse.hpp
 -
 gtest/gtest.h
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/gtest/gtest.h
 ReceiverPreferences.hpp
-C:/Users/Sonia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/ReceiverPreferences.hpp
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/test/ReceiverPreferences.hpp
 

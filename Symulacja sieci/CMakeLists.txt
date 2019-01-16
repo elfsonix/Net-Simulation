@@ -5,7 +5,7 @@ include_directories(include
         googletest-master/googletest/include)
 set(CMAKE_CXX_STANDARD 17)
 set(TEST_SOURCES
-        test/test_package_queue.cpp test/test_receiver.cpp test/main_test.cpp)
+        test/test_package_queue.cpp test/test_receiver.cpp test/main_test.cpp test/test_package_sender.cpp)
 set(SOURCE_FILES "src/PackageQueue.cpp" "src/Package.cpp" "src/ReceiverPreferences.cpp" "src/PackageSender.cpp" "src/Storehouse.cpp" )
 
 
