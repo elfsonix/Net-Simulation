@@ -13,14 +13,13 @@
 #include <deque>
 #include <tuple>
 
-class Storehouse : public IPackageReceiver, public IPackageStockpile {
+class Storehouse : public IPackageReceiver{
 private:
-    std::unique_ptr<PackageQueue> _packageQueue;
+    std::unique_ptr<IPackageStockpile> _packageQueue;
     ElementID _nodeId;
 public:
-    Storehouse(ElementID nodeId, std::unique_ptr<PackageQueue> packageStockpile);
-    ElementID getId() const;
-    void putPackageInQueue(const Package& package) override;
+    Storehouse(ElementID nodeId, std::unique_ptr<IPackageStockpile> packageStockpile);
+    ElementID getID() const;
     void receivePackage(const Package& package) override;
     std::tuple<ReceiverType, ElementID> identifyReceiver() const override;
     dequeCit cbegin() const override;

@@ -12,7 +12,7 @@ private:
     ElementID _packageID;
 public:
     Package();
-    ~Package();
+    ~Package() = default;
     ElementID getID() const;
 };
 #endif //SYMULACJA_SIECI_PACKAGE_HPP

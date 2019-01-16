@@ -14,7 +14,7 @@ TEST(Worker, receiveProduct){
     Worker myWorker = Worker(1,1, std::make_unique<PackageQueue>(QueueType::FIFO, queue), myPref);
     //Test
     myWorker.receivePackage(myPackage);
-    EXPECT_EQ(myPackage.getID(), myWorker.popPackage().getID());
+    EXPECT_EQ(myPackage.getID(), myWorker.begin()->getID());
 }
 
 TEST(Worker, isProductionTimeRight){
@@ -51,6 +51,6 @@ TEST(Worker, isProductPassedForward){
 
     worker2.receivePackage(myPackage);
     worker2.processPackage();
-    EXPECT_EQ(myPackage.getID(), worker1.popPackage().getID());
+    EXPECT_EQ(myPackage.getID(), worker1.begin()->getID());
 }
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

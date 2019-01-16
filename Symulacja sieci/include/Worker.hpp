@@ -15,7 +15,7 @@
 #include <optional>
 #include "QueueType.hpp"
 
-class Worker : public PackageSender, public IPackageReceiver, public IPackageQueue {
+class Worker : public PackageSender, public IPackageReceiver {
 private:
     std::unique_ptr <PackageQueue> _packageQueue;    //lista oczekujących paczek
     ElementID _nodeID{};
@@ -31,15 +31,13 @@ public:
     ElementID getID() const;
     void processPackage();
     //Dziedziczone
-    void putPackageInQueue(const Package& package) override;
     void receivePackage(const Package& package) override;
     std::tuple<ReceiverType, ElementID> identifyReceiver() const override;
     dequeCit cbegin() const override;   //references a constant value of beginning of _packageQueue
     dequeCit cend() const override;
     dequeIt begin() override;
     dequeIt end() override;
-    Package popPackage() override;
-    QueueType returnQueueType() const override;
+    QueueType returnQueueType() const;
 
 
 };

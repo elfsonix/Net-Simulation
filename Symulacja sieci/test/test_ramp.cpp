@@ -13,8 +13,8 @@ TEST(Ramp, isProductSentToBuffer){
     std::vector<IPackageReceiver*> receivers;
     std::function<double()> function = ([](){return 1;});
     ReceiverPreferences myPref = ReceiverPreferences(receivers, function);
-    Ramp myRamp = Ramp(1, myPref);
-    myRamp.generatePackage();
-    //EXPECT_TRUE(bufferOfPackagesReady.has_value)
+    Ramp myRamp = Ramp(1, 3, myPref);
+    myRamp.generatePackage(3);
+    EXPECT_TRUE(myRamp.returnBufferState());
 }
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
