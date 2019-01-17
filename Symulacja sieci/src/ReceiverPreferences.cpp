@@ -13,9 +13,9 @@ ReceiverPreferences::ReceiverPreferences(std::vector<IPackageReceiver*> packageR
     _probabilityTable = convertToMap(v);
 }
 
-vector_p ReceiverPreferences::convertToVector(std::vector<IPackageReceiver*> packageVector, double_vector doubleVector){
+vector_p ReceiverPreferences::convertToVector(std::vector<IPackageReceiver*> packageReceiversVector, double_vector doubleVector){
     vector_p returned;
-    std::size_t lengthPackage = packageVector.size();
+    std::size_t lengthPackage = packageReceiversVector.size();
     std::size_t lengthDouble = doubleVector.size();
     try {
         if(lengthDouble != lengthPackage)
@@ -25,21 +25,34 @@ vector_p ReceiverPreferences::convertToVector(std::vector<IPackageReceiver*> pac
         std::cout<< "Invalid argument: " << ia.what() << std::endl;
     }
     for(std::size_t i = 0; i < lengthDouble; i++){
-        IPackageReceiver* thing1 = packageVector[i];
+        IPackageReceiver* thing1 = packageReceiversVector[i];
         double thing2 = doubleVector[i];
         returned.push_back(std::make_pair(thing1, thing2));
-    }
+        }
     return returned;
 }
 
 preferences_t ReceiverPreferences::convertToMap(vector_p pairVector){
     preferences_t mapToReturn;
-    for (auto each : pairVector){
-        IPackageReceiver* one = each.first;
-        double two = each.second;
+    std::size_t n = pairVector.size();
+
+    for(vector_p::reverse_iterator i = pairVector.rbegin(); i != pairVector.rend(); ++i)
+    {
+        IPackageReceiver* one = i->first;
+        double two = i->second;
         mapToReturn.insert(std::make_pair(one, two));
 
     }
+
+/*    for(std::size_t i = (pairVector.size() -1); i >=0; i--){
+    //for(std::size_t  i = 0; i <n; i++){
+    //for (auto each : reversepairVector){
+        IPackageReceiver* one = pairVector[i].first;
+        double two = pairVector[i].second;
+        //mapToReturn.insert(std::make_pair(one, two));
+        mapToReturn[one] = two;
+
+    }*/
     return mapToReturn;
 }
 
@@ -48,7 +61,7 @@ double_vector ReceiverPreferences::distribution(){
     double length;
     length = SUM_OF_PROBABILITIES / (double)n;
     double_vector probability;
-    for(int i = 0; i <n; i++)
+    for(std::size_t i = 0; i <n; i++)
         probability.push_back(length);
     return probability;
 }
@@ -68,32 +81,31 @@ IPackageReceiver* ReceiverPreferences::drawReceiver(){
     pair_double_vector probabilityDistribution;
 
     double_vector mapKeys;
+    std::vector<std::pair<IPackageReceiver*, double_pair>> tableToDrawReceiver;
+    iterator iteratorProb = _probabilityTable.begin();
     for(auto elem : _probabilityTable)
         mapKeys.push_back(elem.second);
     double current = 0;
-    for (std::size_t i = 1; i <= n; i++){
-        double_pair pairToAdd = std::make_pair(current, mapKeys[i]);
-        probabilityDistribution.push_back(pairToAdd);
+    for (std::size_t i = 0; i < n; i++){
+        double_pair pairToAdd = std::make_pair(current, current+mapKeys[i]);
+        std::pair<IPackageReceiver*, double_pair> pairToDistribution = std::make_pair(iteratorProb->first, pairToAdd);
+        tableToDrawReceiver.push_back(pairToDistribution);
+        //probabilityDistribution.push_back(pairToAdd);
         current += mapKeys[i];
+        ++iteratorProb;
     }
-    pair_double_vector::const_iterator iter = probabilityDistribution.cbegin();
+    std::vector<std::pair<IPackageReceiver*, double_pair>>::iterator iter = tableToDrawReceiver.begin();
 
-    while (iter != probabilityDistribution.end())
+    while (iter != tableToDrawReceiver.end())
     {
-        double_pair value = *iter;
-        double lowerBound = value.first;
-        double upperBound = value.second;
+        std::pair<IPackageReceiver*, double_pair> value = *iter;
+        double lowerBound = value.second.first;
+        double upperBound = value.second.second;
 
         if(drawn >= lowerBound && drawn < upperBound){
-            auto result = std::find_if(_probabilityTable.begin(), _probabilityTable.end(), [this](double_pair value){
-                const_iterator iterator1 = _probabilityTable.cbegin();
-                if(iterator1->second >= value.first && iterator1->second < value.second){
-                    return iterator1->first;
-                }
-            });
-            return result->first;
+            return iter->first;
         }
-        iter++;
+        ++iter;
     }
     return iter->first;
 }

@@ -1,3 +1,5 @@
+/*
+
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
 // Created by Sonia on 2019-01-11.
 //
@@ -54,3 +56,4 @@ TEST(Worker, isProductPassedForward){
     EXPECT_EQ(myPackage.getID(), worker1.popPackage().getID());
 }
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+*/
