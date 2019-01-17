@@ -34,7 +34,7 @@ vector_p ReceiverPreferences::convertToVector(std::vector<IPackageReceiver*> pac
 
 preferences_t ReceiverPreferences::convertToMap(vector_p pairVector){
     preferences_t mapToReturn;
-    std::size_t n = pairVector.size();
+    //std::size_t n = pairVector.size();
 
     for(vector_p::reverse_iterator i = pairVector.rbegin(); i != pairVector.rend(); ++i)
     {
