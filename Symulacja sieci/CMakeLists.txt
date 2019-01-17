@@ -4,6 +4,8 @@ project(Symulacja_sieci)
 
 set(CMAKE_CXX_STANDARD 17)
 
+add_compile_options(-Wall -Wextra -Werror -Wpedantic -pedantic-errors)
+
 include_directories(include
         googletest-master/googlemock/include
         googletest-master/googletest/include)
@@ -44,9 +46,7 @@ set(SOURCES_FILES_TESTS
         test/test_node_collection.cpp
         test/test_package.cpp
         test/test_package_queue.cpp
-        test/test_package_sender.cpp
         test/test_ramp.cpp
-        test/test_receiver.cpp
         test/test_storehouse.cpp
         test/test_worker.cpp )
 
@@ -59,4 +59,3 @@ target_include_directories(Symulacja_sieci_test PUBLIC
 
 add_subdirectory(googletest-master)
 target_link_libraries(Symulacja_sieci_test gmock)
-

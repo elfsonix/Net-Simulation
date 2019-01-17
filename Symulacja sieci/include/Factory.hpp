@@ -24,14 +24,16 @@ public:
         _ramps = std::move(ramps);
     }
 
-    void addWorker(const Worker &worker);
-    void addRamp(const Ramp &ramp);
-    void addStorehouse(const Storehouse &storehouse);
+    void addWorker(Worker worker);
+    void addRamp(Ramp ramp);
+    void addStorehouse(Storehouse storehouse);
     bool isCompatible() const;
-    std::list<Worker>::const_iterator findWorkerById(ElementID nodeId) const;
-    std::list<Storehouse>::const_iterator findStorehouseById(ElementID nodeId) const;
-    std::list<Ramp>::const_iterator findRampById(ElementID nodeId) const;
-    void removeById(ElementID nodeID);
+    std::list<Worker>::const_iterator findWorkerByID(ElementID nodeID);
+    std::list<Storehouse>::const_iterator findStorehouseByID(ElementID nodeID);
+    std::list<Ramp>::const_iterator findRampByID(ElementID nodeID);
+    void removeStorehouseByID(ElementID nodeID);
+    void removeWorkerByID(ElementID nodeID);
+    void removeRampByID(ElementID nodeID);
 };
 
 #endif //SYMULACJA_SIECI_FACTORY_HPP

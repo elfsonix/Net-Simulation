@@ -5,8 +5,14 @@
 
 #include "Storehouse.hpp"
 
-void Storehouse::receivePackage(const Package &package) {
+Storehouse::Storehouse(ElementID nodeId, std::unique_ptr<IPackageStockpile> packageStockpile) {
+    _nodeId = nodeId;
+    _packageQueue = std::move(packageStockpile);
 
+}
+
+void Storehouse::receivePackage(const Package &package) {
+    _packageQueue->putPackageInQueue(package);
 }
 
 std::tuple<ReceiverType, ElementID> Storehouse::identifyReceiver() const {
@@ -14,22 +20,22 @@ std::tuple<ReceiverType, ElementID> Storehouse::identifyReceiver() const {
 }
 
 dequeCit Storehouse::cbegin() const {
-    return dequeCit();
+    return _packageQueue->cbegin();
 }
 
 dequeCit Storehouse::cend() const {
-    return dequeCit();
+    return _packageQueue->cend();
 }
 
 dequeIt Storehouse::begin() {
-    return dequeIt();
+    return _packageQueue->begin();
 }
 
 dequeIt Storehouse::end() {
-    return dequeIt();
+    return _packageQueue->end();
 }
 
-void Storehouse::putPackageInQueue(const Package &package) {
-
+ElementID Storehouse::getID() const{
+    return _nodeId;
 }
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

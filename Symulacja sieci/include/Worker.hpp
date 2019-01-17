@@ -15,7 +15,7 @@
 #include <optional>
 #include "QueueType.hpp"
 
-class Worker : public PackageSender, public IPackageReceiver, public IPackageQueue {
+class Worker : public PackageSender, public IPackageReceiver {
 private:
     std::unique_ptr <IPackageQueue> _packageQueue;    //lista oczekujących paczek
     ElementID _nodeID{};
@@ -24,29 +24,20 @@ private:
     QueueType _queueType;
 public:
     std::optional<Package> _bufferOfProcessedPackage;   //bufor z aktualnie przetwarzaną paczką
-    Worker(ElementID nodeID, int processTime, std::unique_ptr<IPackageQueue> packageQueue,
-            const ReceiverPreferences &receiverPreferences)
-    : PackageSender(receiverPreferences) {
-        _nodeID = nodeID;
-        _processTime = processTime;
-        _packageQueue = std::move(packageQueue);
-        _bufferOfProcessedPackage = std::nullopt;
-        _processRound = 0;
-        _queueType = _packageQueue->returnQueueType();
-    }
+    Worker(ElementID nodeID, int processTime, std::unique_ptr<PackageQueue> packageQueue,
+            const ReceiverPreferences &receiverPreferences);
 
     //Własne
+    ElementID getID() const;
     void processPackage();
     //Dziedziczone
-    void putPackageInQueue(const Package& package) override;
     void receivePackage(const Package& package) override;
     std::tuple<ReceiverType, ElementID> identifyReceiver() const override;
     dequeCit cbegin() const override;   //references a constant value of beginning of _packageQueue
     dequeCit cend() const override;
     dequeIt begin() override;
     dequeIt end() override;
-    Package popPackage() override;
-    QueueType returnQueueType() const override;
+    QueueType returnQueueType() const;
 
 
 };

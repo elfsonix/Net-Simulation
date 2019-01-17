@@ -1,7 +1,24 @@
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
 // Created by Sonia on 2019-01-09.
 
+#include <Worker.hpp>
+
 #include "Worker.hpp"
+
+Worker::Worker(ElementID nodeID, int processTime, std::unique_ptr<PackageQueue> packageQueue,
+               const ReceiverPreferences &receiverPreferences)
+        : PackageSender(receiverPreferences) {
+    _nodeID = nodeID;
+    _processTime = processTime;
+    _packageQueue = std::move(packageQueue);
+    _bufferOfProcessedPackage = std::nullopt;
+    _processRound = 0;
+    _queueType = _packageQueue->returnQueueType();
+}
+
+ElementID Worker::getID() const{
+    return _nodeID;
+}
 
 void Worker::receivePackage(const Package &package) {
     _packageQueue->putPackageInQueue(package);
@@ -27,10 +44,6 @@ dequeIt Worker::end() {
     return _packageQueue->end();
 }
 
-Package Worker::popPackage() {
-    return _packageQueue->popPackage();
-}
-
 QueueType Worker::returnQueueType() const {
     return _queueType;
 }
@@ -47,14 +60,10 @@ void Worker::processPackage() {
             }
         }
         else {
-            _bufferOfProcessedPackage = popPackage();
+            _bufferOfProcessedPackage = _packageQueue->popPackage();
             _processRound = 1;
         }
     }
-    else putPackageInBuffer(popPackage());  //Przetwarza i od razu wysyła
-}
-
-void Worker::putPackageInQueue(const Package &package) {
-    _packageQueue->putPackageInQueue(package);
+    else putPackageInBuffer(_packageQueue->popPackage());  //Przetwarza i od razu wysyła
 }
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
