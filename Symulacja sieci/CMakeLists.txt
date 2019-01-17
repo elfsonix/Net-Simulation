@@ -46,7 +46,9 @@ set(SOURCES_FILES_TESTS
         test/test_node_collection.cpp
         test/test_package.cpp
         test/test_package_queue.cpp
+        test/test_package_sender.cpp
         test/test_ramp.cpp
+        test/test_receiver.cpp
         test/test_storehouse.cpp
         test/test_worker.cpp )
 

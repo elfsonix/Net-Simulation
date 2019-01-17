@@ -17,7 +17,7 @@
 
 class Worker : public PackageSender, public IPackageReceiver {
 private:
-    std::unique_ptr <PackageQueue> _packageQueue;    //lista oczekujących paczek
+    std::unique_ptr <IPackageQueue> _packageQueue;    //lista oczekujących paczek
     ElementID _nodeID{};
     int _processTime;   //ile kolejek zajmuje przetworzenie produktu
     int _processRound;  //w którym stadium jest przetwarzany produkt
