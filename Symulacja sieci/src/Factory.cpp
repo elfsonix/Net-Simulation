@@ -3,15 +3,15 @@
 //
 #include "Factory.hpp"
 
-void Factory::addRamp(Ramp ramp) {
+void Factory::addRamp(Ramp& ramp) {
     _ramps.add(ramp);
 }
 
-void Factory::addWorker(Worker worker) {
+void Factory::addWorker(Worker& worker) {
     _workers.add(worker);
 }
 
-void Factory::addStorehouse(Storehouse storehouse) {
+void Factory::addStorehouse(Storehouse& storehouse) {
     _storehouses.add(storehouse);
 }
 

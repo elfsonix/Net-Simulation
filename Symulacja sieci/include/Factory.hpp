@@ -18,15 +18,15 @@ private:
     NodeCollection <Ramp> _ramps;
     NodeCollection <Storehouse> _storehouses;
 public:
-    Factory(NodeCollection<Worker> workers, NodeCollection <Ramp> ramps, NodeCollection <Storehouse> storehouses) {
+    Factory(NodeCollection<Worker>& workers, NodeCollection <Ramp>& ramps, NodeCollection <Storehouse>& storehouses) {
         _workers = std::move(workers);
         _storehouses = std::move(storehouses);
         _ramps = std::move(ramps);
     }
 
-    void addWorker(Worker worker);
-    void addRamp(Ramp ramp);
-    void addStorehouse(Storehouse storehouse);
+    void addWorker(Worker& worker);
+    void addRamp(Ramp& ramp);
+    void addStorehouse(Storehouse& storehouse);
     bool isCompatible() const;
     std::list<Worker>::const_iterator findWorkerByID(ElementID nodeID);
     std::list<Storehouse>::const_iterator findStorehouseByID(ElementID nodeID);

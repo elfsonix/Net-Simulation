@@ -4,8 +4,11 @@
 
 #include "gtest/gtest.h"
 #include "Factory.hpp"
-/*
-TEST(Factory, netCompatibilityControl){
+
+TEST(Factory, netCompatibilityControlTrue){
+
+}
+TEST(Factory, netCompatibilityControlFalse){
 
 }
 
@@ -26,5 +29,5 @@ TEST(Factory, deleteReceiver){
     Worker myWorker = Worker(1,1, std::make_unique<PackageQueue>(QueueType::FIFO, queue), myPrefW);
 
     Factory myFactory = Factory(workers, ramps, storehouses);
-}*/
+}
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
