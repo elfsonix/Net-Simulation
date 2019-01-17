@@ -1,4 +1,3 @@
-/*
 //
 // Created by Kasia on 2019-01-15.
 //
@@ -26,4 +25,3 @@ int simulate(IReportNotifier* reportNotifier, Factory factory, int numberOfRound
 
 
 }
-*/

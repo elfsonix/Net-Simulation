@@ -2,7 +2,7 @@
 
 int main(){
 
-    /*try{
+    try{
         Factory factory = load_factory_structure(std::istream& stream);
 
     }
@@ -14,10 +14,22 @@ int main(){
     generate_structure_report();
 
     //menu dla użytkownika
-    std::cout<< "Do you want to modify the structure of the network? \n If no, press 'n'. If yes: \n press"
-                "'a' if you want to add a node, \n press 'd' if you want to delete a node."<<std::endl;
+    std::cout<< "Do you want to modify the structure of the network? \n If no, press 'n'. If yes, press 'y'."<<std::endl;
+    switch(std::cin.get()){
+        case 'y':
 
-    modifyNetwork();
+            factory.addRamp(Ramp(enteredID, receiverPreferences));
+
+            std::cout << "Network structure has been modified." <<std::endl;
+            break;
+        default:
+            std::cout << "Network structure was not modified." <<std::endl;
+            break;
+    }
+
+
+
+
     if(factory.isCompatible()){
         std::cout<< " Network is coherent, you can process to simulation."<<endl;
     }
@@ -30,41 +42,5 @@ int main(){
     return 0;
 }
 
-void modifyNetwork(char addOrDelete){
-    switch(addOrDelete){
-        case 'a':
-            std::cout<<"If you want to add a ramp, press 'r' \n if you  want to add a ramp, \n press 'w' "
-                       "if you want to add a worker, \n press 's' if yuo want to add a storehouse." <<std::endl;
-            char choice = std::cin.get();
-            switch(choice){
-                case 'r':
-                    std::cout<<"Enter the ID of the ramp: ";
-                    while(1){
-                        ElementID enteredID = std::cin.get();
-                        if(factory.findRampById(enteredID) == nullptr)
-                        {
-                            ReceiverPreferences receiverPreferences = ReceiverPreferences(...);
-                            factory.addRamp(Ramp(enteredID, receiverPreferences));
-                        }
-                        else {
-                            std::cout<< "Such an ID already exists. Enter another value: "<<std::endl;
-                        }
-                        break;
-                    }
-                case 'w':
 
-
-
-
-            }
-
-
-        case 'd':
-
-
-
-    }
-
-
-*/
 }

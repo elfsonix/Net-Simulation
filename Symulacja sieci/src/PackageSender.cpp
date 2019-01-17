@@ -17,7 +17,7 @@ void PackageSender::passPackageToReceiver(){
 
 void PackageSender::putPackageInBuffer(Package package){
     _bufferOfPackagesReady = std::make_optional(package);
-    passPackageToReceiver();
+//    passPackageToReceiver();
 }
 
 bool PackageSender::returnBufferState() {
