@@ -44,10 +44,6 @@ dequeIt Worker::end() {
     return _packageQueue->end();
 }
 
-Package Worker::popPackage() {
-    return _packageQueue->popPackage();
-}
-
 QueueType Worker::returnQueueType() const {
     return _queueType;
 }
@@ -63,14 +59,10 @@ void Worker::processPackage() {
             }
         }
         else {
-            _bufferOfProcessedPackage = popPackage();
+            _bufferOfProcessedPackage = _packageQueue->popPackage();
             _processRound = 1;
         }
     }
-    else putPackageInBuffer(popPackage());  //Przetwarza i od razu wysyła
-}
-
-void Worker::putPackageInQueue(const Package &package) {
-    _packageQueue->putPackageInQueue(package);
+    else putPackageInBuffer(_packageQueue->popPackage());  //Przetwarza i od razu wysyła
 }
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

@@ -18,19 +18,19 @@ private:
     NodeCollection <Ramp> _ramps;
     NodeCollection <Storehouse> _storehouses;
 public:
-    Factory(NodeCollection<Worker> workers, NodeCollection <Ramp> ramps, NodeCollection <Storehouse> storehouses) {
+    Factory(NodeCollection<Worker>& workers, NodeCollection <Ramp>& ramps, NodeCollection <Storehouse>& storehouses) {
         _workers = std::move(workers);
         _storehouses = std::move(storehouses);
         _ramps = std::move(ramps);
     }
 
-    void addWorker(const Worker &worker);
-    void addRamp(const Ramp &ramp);
-    void addStorehouse(const Storehouse &storehouse);
+    void addWorker(Worker& worker);
+    void addRamp(Ramp& ramp);
+    void addStorehouse(Storehouse& storehouse);
     bool isCompatible() const;
-    std::list<Worker>::const_iterator findWorkerByID(ElementID nodeID) const;
-    std::list<Storehouse>::const_iterator findStorehouseByID(ElementID nodeID) const;
-    std::list<Ramp>::const_iterator findRampByID(ElementID nodeID) const;
+    std::list<Worker>::const_iterator findWorkerByID(ElementID nodeID);
+    std::list<Storehouse>::const_iterator findStorehouseByID(ElementID nodeID);
+    std::list<Ramp>::const_iterator findRampByID(ElementID nodeID);
     void removeStorehouseByID(ElementID nodeID);
     void removeWorkerByID(ElementID nodeID);
     void removeRampByID(ElementID nodeID);

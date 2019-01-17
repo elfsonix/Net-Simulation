@@ -11,9 +11,6 @@ Package::Package() {
     maxID++;
 }
 
-Package::~Package(){
-}
-
 ElementID Package::getID() const {
     return _packageID;
 }

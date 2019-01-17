@@ -5,13 +5,16 @@
 
 #include "Ramp.hpp"
 
-Ramp::Ramp(ElementID nodeID, const ReceiverPreferences &receiverPreferences) : PackageSender(receiverPreferences) {
+Ramp::Ramp(ElementID nodeID, TimeOffSet timeOffSet, const ReceiverPreferences &receiverPreferences) : PackageSender(receiverPreferences) {
     _nodeID = nodeID;
+    _timeOffSet = timeOffSet;
 }
 
-void Ramp::generatePackage() {
-    Package package = Package();
-    putPackageInBuffer(package);
+void Ramp::generatePackage(Time time) {
+    if(time%_timeOffSet==0){
+        Package package = Package();
+        putPackageInBuffer(package);
+    }
 }
 
 ElementID Ramp::getID() const {

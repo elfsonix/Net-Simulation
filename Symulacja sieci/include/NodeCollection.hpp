@@ -26,19 +26,26 @@ public:
     iterator end() { return _nodes.end(); }
     constIterator end() const { return _nodes.cend(); }
 
-    void add(const Node& node){
-        _nodes.push_back(node);
+    void add(Node& node){
+        _nodes.push_back(std::move(node)) ;
     }
 
-    iterator findById(ElementID nodeID) const;
-        //auto it = std::find(_nodes.begin(), _nodes.end(), nodeID);
+    iterator findById(ElementID nodeID){
+        NodeCollection::iterator it = std::find_if(_nodes.begin(), _nodes.end(), [nodeID](Node& node){return node.getID()==nodeID;});
+        return it;
+    }
 
-    constIterator cfindById(ElementID nodeID) const;
-        //const auto it = std::find(_nodes.begin(), _nodes.end(), nodeID);
+    constIterator cfindById(ElementID nodeID) {
+        NodeCollection::constIterator it = std::find_if(_nodes.begin(), _nodes.end(), [nodeID](Node& node){return node.getID()==nodeID;});
+        return it;
+    }
+
 
     void removeById(ElementID nodeID){
-        nodeID++;
-        //_nodes.remove_if([nodeID](const auto& id){return (id == nodeID);}); //wszystkie o tym id czy pierwsza?
+        NodeCollection::iterator it = findById(nodeID);
+        if(it!=_nodes.end()){
+            _nodes.erase(it);
+        }
     }
 };
 

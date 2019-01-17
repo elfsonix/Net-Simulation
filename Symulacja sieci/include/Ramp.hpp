@@ -6,13 +6,16 @@
 #define SYMULACJA_SIECI_RAMP_HPP
 
 #include "PackageSender.hpp"
+using TimeOffSet = int;
+using Time = int;
 
 class Ramp : public PackageSender {
 private:
     ElementID _nodeID;
+    TimeOffSet _timeOffSet;
 public:
-    Ramp(ElementID nodeID, const ReceiverPreferences &receiverPreferences);
-    void generatePackage();
+    Ramp(ElementID nodeID,TimeOffSet timeOffSet, const ReceiverPreferences &receiverPreferences);
+    void generatePackage(Time time);
     ElementID getID() const;
 };
 
