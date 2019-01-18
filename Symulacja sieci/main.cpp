@@ -6,12 +6,12 @@
 #include "Worker.hpp"
 
 int main(){
-/*
+
     try{
         Factory factory = load_factory_structure(std::istream & stream);
 
     }
-    catch(sommeParseError){
+    catch(someParseError){
         std::cout<< "There was an error in loading structure from the file.";
     }
 
@@ -21,8 +21,8 @@ int main(){
     //menu dla użytkownika
     std::cout<< "Do you want to modify the structure of the network? \n If no, press 'n'. If yes, press 'y'."<<std::endl;
     switch(std::cin.get()){
-        case 'y':
-            std::vector<IPackageReceiver*> packageReceiversVector;
+        case 'y': {
+            std::vector<IPackageReceiver *> packageReceiversVector;
             Package pack1 = Package();
             Package pack2 = Package();
             Package pack3 = Package();
@@ -34,42 +34,61 @@ int main(){
             que2.push_back(pack2);
             PackageQueue packageQueueLIFO = PackageQueue(QueueType::LIFO, que);
             PackageQueue packageQueueFIFO = PackageQueue(QueueType::FIFO, que2);
+            PackageQueue packageQueueFIFO2 = PackageQueue(QueueType::FIFO, que2);
+            PackageQueue packageQueueLIFO2 = PackageQueue(QueueType::LIFO, que);
             std::unique_ptr<IPackageStockpile> ptr1 = std::make_unique<PackageQueue>(packageQueueLIFO);
             std::unique_ptr<IPackageStockpile> ptr2 = std::make_unique<PackageQueue>(packageQueueFIFO);
+            std::unique_ptr<IPackageStockpile> ptr3 = std::make_unique<PackageQueue>(packageQueueFIFO2);
+            std::unique_ptr<IPackageStockpile> ptr4 = std::make_unique<PackageQueue>(packageQueueLIFO2);
+
             Storehouse storehouse1 = Storehouse(10, std::move(ptr1));
             Storehouse storehouse2 = Storehouse(11, std::move(ptr2));
             packageReceiversVector.push_back(&storehouse1);
             packageReceiversVector.push_back(&storehouse2);
-            std::function<double()> function1 = ([](){return 0.45;});
-            ReceiverPreferences receiverPreferences1 = ReceiverPreferences(packageReceiversVector, ReceiverPreferences::drawNumber();
-            Worker worker1 = Worker(20, 2, )
+
+            const ReceiverPreferences receiverPreferences1 = ReceiverPreferences(packageReceiversVector,
+                                                                           ReceiverPreferences::drawNumber);
+            Worker worker1 = Worker(20, 2, std::move(ptr3), &receiverPreferences1);
 
             packageReceiversVector.push_back(&worker1);
-            std::function<double()> drawnProbability)
-            const ReceiverPreferences &receiverPreferences =
-            factory.addRamp(Ramp(enteredID, receiverPreferences));
+            const ReceiverPreferences receiverPreferences2  = ReceiverPreferences(packageReceiversVector,
+                                                                           ReceiverPreferences::drawNumber);
 
-            std::cout << "Network structure has been modified." <<std::endl;
+            Worker worker2 = Worker(21, 1, std::move(ptr4), receiverPreferences2);
+
+            factory.addWorker(worker1);
+            factory.addWorker(worker2);
+            factory.addStorehouse(storehouse1);
+            factory.addStorehouse(storehouse2);
+
+            factory.addRamp(Ramp(30, 1, receiverPreferences1));
+            factory.addRamp(Ramp(31, 1, receiverPreferences2));
+
+            std::cout << "Network structure has been modified." << std::endl;
             break;
-        default:
-            std::cout << "Network structure was not modified." <<std::endl;
+        }
+        default: {
+            std::cout << "Network structure was not modified." << std::endl;
             break;
+        }
     }
 
 
-
-
-    if(factory.isCompatible()){
-        std::cout<< " Network is coherent, you can process to simulation."<<endl;
+    try{
+        factory.isCompatible();
     }
-    else{
-        std::cout<<"Network is not coherent :( You have to modify it." <<std::endl;
-        modifyNetwork();
+    catch(notCompatibleError){
+        std::cout<<"Network is not coherent :( You cannot process to simulation." <<std::endl;
     }
+
+    std::cout<< " Network is coherent, you can process to simulation."<<std::endl;
+
+    std::cout <<"Enter the number fo rounds of simulation: ";
+    int numberOfRounds = std::cin.get();
+    simulate(IRepoertNotifier, factory, numberOfRounds);
+    std::cout<< "Simulation has ended! :)"<<std::endl;
 
 
     return 0;
 }
 
-*/
-}
