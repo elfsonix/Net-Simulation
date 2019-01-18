@@ -20,7 +20,7 @@ TEST(Ramp, GeneratePackageInTimeTrue){      //Nie teges
     Ramp myRamp = Ramp(1, 2, ReceiverPreferences(receiversR, functionR));
     Time time = 4;
     myRamp.generatePackage(time);
-    EXPECT_EQ(myWorker.begin()->getID(), 1);
+    EXPECT_TRUE(myRamp.returnBufferState());
 }
 
 TEST(Ramp, GeneratePackageInTimeFalse){

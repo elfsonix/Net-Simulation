@@ -17,7 +17,7 @@ void PackageSender::passPackageToReceiver(){
 
 void PackageSender::putPackageInBuffer(Package package){
     _bufferOfPackagesReady = std::make_optional(package);
-    passPackageToReceiver();
+//    passPackageToReceiver();
 }
 
 bool PackageSender::returnBufferState() {
@@ -31,7 +31,3 @@ bool PackageSender::returnBufferState() {
 }
 
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
-
-
-// inicjalizacja bufora w konstruktorze
-// bufor Package czy *Package

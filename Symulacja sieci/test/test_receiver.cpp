@@ -18,11 +18,14 @@ TEST(TestReceiver, RandomNumbers) {
     PackageQueue packageQueueFIFO = PackageQueue(QueueType::FIFO, que2);
     std::unique_ptr<PackageQueue> ptr1 = std::make_unique<PackageQueue>(packageQueueLIFO);
     std::unique_ptr<PackageQueue> ptr2 = std::make_unique<PackageQueue>(packageQueueFIFO);
+   //std::unique_ptr<PackageQueue> ptr3 = std::make_unique<PackageQueue>(packageQueueFIFO);
     Storehouse storehouse1 = Storehouse(3, std::move(ptr1));
     Storehouse storehouse2 = Storehouse(4, std::move(ptr2));
+    //Storehouse storehouse3 = Storehouse(5, std::move(ptr3));
     std::vector<IPackageReceiver *> vec;
     vec.push_back(&storehouse1);
     vec.push_back(&storehouse2);
+    //vec.push_back(&storehouse3);
 
     std::function<double()> function1 = ([]() { return 0.35; });
     std::function<double()> function2 = ([]() { return 0.65; });

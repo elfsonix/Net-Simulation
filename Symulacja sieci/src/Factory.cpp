@@ -17,10 +17,14 @@ void Factory::addStorehouse(Storehouse& storehouse) {
 
 bool Factory::isCompatible() const {
     /*auto searchForExit = [](const Ramp ramp){
-        int array[1];
-        std::for_each(ramp.receiverPreferences.cbegin(), ramp.receiverPreferences.cend(), [](){if()})
+        auto begin = ramp.receiverPreferences.cbegin();
+        auto end = ramp.receiverPreferences.cend();
+        while(begin!=end){
+            if(begin->first->identifyReceiver()==ReceiverType::STOREHOUSE) return true;
+            else{
 
-
+            }
+        }
         return true;
     };
 

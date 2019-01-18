@@ -55,6 +55,7 @@ void Worker::processPackage() {
             if((_processRound = _processTime)){   //jeśli to ostatnie przetworzenie - wyślij dalej
                 _processRound = 0;
                 putPackageInBuffer(_bufferOfProcessedPackage.value());
+                passPackageToReceiver();
                 _bufferOfProcessedPackage.reset();
             }
         }
