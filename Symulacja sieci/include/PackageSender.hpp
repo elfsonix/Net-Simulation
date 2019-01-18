@@ -9,6 +9,7 @@
 class PackageSender {
 protected:
     void passPackageToReceiver();
+    std::vector<IPackageReceiver*> getVectorOfReceivers();
 
 private:
     std::optional<Package> _bufferOfPackagesReady;
