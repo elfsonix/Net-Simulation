@@ -41,7 +41,8 @@ private:
     std::vector<double> distribution();
 
 
-
+    //generates single random number
+    double drawNumber(); //not to use in tests
 
 public:
     ReceiverPreferences(std::vector<IPackageReceiver*> packageReceiversVector,
@@ -53,11 +54,9 @@ public:
 
     //returns drawn receiver
     IPackageReceiver* drawReceiver();
-    std::vector<IPackageReceiver*> getVectorOfReceiver();
+
     void addReceiver(IPackageReceiver* receiver);
     void deleteReceiver(IPackageReceiver* receiver);
-//generates single random number
-    static double drawNumber(); //not to use in tests
 
     //metody tylko do odczytu
     const_iterator cbegin() const;

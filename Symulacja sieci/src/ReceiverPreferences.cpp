@@ -65,11 +65,13 @@ double_vector ReceiverPreferences::distribution(){
         probability.push_back(length);
     return probability;
 }
-std::vector<IPackageReceiver*> ReceiverPreferences::getVectorOfReceiver(){
-    return _tempPackageReceiversVector;
+
+double ReceiverPreferences::drawNumber() {
+    std::random_device rd;  //Will be used to obtain a seed for the random number engine
+    std::mt19937 gen(rd()); //Standard mersenne_twister_engine seeded with rd()
+    std::uniform_real_distribution<> dis(0.0, 1.0);
+    return dis(gen);
 }
-
-
 
 IPackageReceiver* ReceiverPreferences::drawReceiver(){
     double drawn = _drawnProbability();
@@ -126,12 +128,6 @@ void ReceiverPreferences::deleteReceiver(IPackageReceiver* receiver){
     _probabilityTable  = convertToMap(vectorToConvert);
 }
 
-double ReceiverPreferences::drawNumber() {
-    std::random_device rd;  //Will be used to obtain a seed for the random number engine
-    std::mt19937 gen(rd()); //Standard mersenne_twister_engine seeded with rd()
-    std::uniform_real_distribution<> dis(0.0, 1.0);
-    return dis(gen);
-}
 
 const_iterator ReceiverPreferences::cbegin() const { return _probabilityTable.cbegin(); }
 const_iterator ReceiverPreferences::cend() const { return _probabilityTable.cend(); }
