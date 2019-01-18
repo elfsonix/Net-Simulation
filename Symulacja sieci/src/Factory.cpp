@@ -3,24 +3,28 @@
 //
 #include "Factory.hpp"
 
-void Factory::addRamp(Ramp ramp) {
+void Factory::addRamp(Ramp& ramp) {
     _ramps.add(ramp);
 }
 
-void Factory::addWorker(Worker worker) {
+void Factory::addWorker(Worker& worker) {
     _workers.add(worker);
 }
 
-void Factory::addStorehouse(Storehouse storehouse) {
+void Factory::addStorehouse(Storehouse& storehouse) {
     _storehouses.add(storehouse);
 }
 
 bool Factory::isCompatible() const {
     /*auto searchForExit = [](const Ramp ramp){
-        int array[1];
-        std::for_each(ramp.receiverPreferences.cbegin(), ramp.receiverPreferences.cend(), [](){if()})
+        auto begin = ramp.receiverPreferences.cbegin();
+        auto end = ramp.receiverPreferences.cend();
+        while(begin!=end){
+            if(begin->first->identifyReceiver()==ReceiverType::STOREHOUSE) return true;
+            else{
 
-
+            }
+        }
         return true;
     };
 
@@ -52,5 +56,17 @@ void Factory::removeWorkerByID(ElementID nodeID) {
 
 void Factory::removeRampByID(ElementID nodeID) {
     _ramps.removeById(nodeID);
+}
+
+std::unique_ptr<NodeCollection<Worker>> Factory::getWorkers() {
+    return std::make_unique<NodeCollection<Worker>>(_workers);
+}
+
+std::unique_ptr<NodeCollection<Ramp>> Factory::getRamps() {
+    return std::make_unique<NodeCollection<Ramp>>(_ramps);
+}
+
+std::unique_ptr<NodeCollection<Storehouse>> Factory::getStorehouses() {
+    return std::make_unique<NodeCollection<Storehouse>>(_storehouses);
 }
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

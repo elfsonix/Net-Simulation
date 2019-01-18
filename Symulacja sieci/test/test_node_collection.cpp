@@ -5,7 +5,7 @@
 #include "gtest/gtest.h"
 #include "NodeCollection.hpp"
 #include "Ramp.hpp"
-/*
+
 TEST(NodeCollection, findById){
     std::vector<IPackageReceiver*> receivers;
     std::function<double()> function = ([](){return 1;});
@@ -16,8 +16,8 @@ TEST(NodeCollection, findById){
     ramps.add(ramp1);
     ramps.add(ramp2);
     auto it = ramps.findById(ramp2.getID());
-    EXPECT_EQ(it, ramp2.getID());
-}*/
+    EXPECT_EQ(it->getID(), ramp2.getID());
+}
 
 TEST(NodeCollection, removeById){
     std::vector<IPackageReceiver*> receivers;
