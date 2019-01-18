@@ -57,4 +57,16 @@ void Factory::removeWorkerByID(ElementID nodeID) {
 void Factory::removeRampByID(ElementID nodeID) {
     _ramps.removeById(nodeID);
 }
+
+std::unique_ptr<NodeCollection<Worker>> Factory::getWorkers() {
+    return std::make_unique<NodeCollection<Worker>>(_workers);
+}
+
+std::unique_ptr<NodeCollection<Ramp>> Factory::getRamps() {
+    return std::make_unique<NodeCollection<Ramp>>(_ramps);
+}
+
+std::unique_ptr<NodeCollection<Storehouse>> Factory::getStorehouses() {
+    return std::make_unique<NodeCollection<Storehouse>>(_storehouses);
+}
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
