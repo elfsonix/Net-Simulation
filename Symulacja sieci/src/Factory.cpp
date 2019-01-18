@@ -3,24 +3,28 @@
 //
 #include "Factory.hpp"
 
-void Factory::addRamp(Ramp ramp) {
+void Factory::addRamp(Ramp& ramp) {
     _ramps.add(ramp);
 }
 
-void Factory::addWorker(Worker worker) {
+void Factory::addWorker(Worker& worker) {
     _workers.add(worker);
 }
 
-void Factory::addStorehouse(Storehouse storehouse) {
+void Factory::addStorehouse(Storehouse& storehouse) {
     _storehouses.add(storehouse);
 }
 
 bool Factory::isCompatible() const {
     /*auto searchForExit = [](const Ramp ramp){
-        int array[1];
-        std::for_each(ramp.receiverPreferences.cbegin(), ramp.receiverPreferences.cend(), [](){if()})
+        auto begin = ramp.receiverPreferences.cbegin();
+        auto end = ramp.receiverPreferences.cend();
+        while(begin!=end){
+            if(begin->first->identifyReceiver()==ReceiverType::STOREHOUSE) return true;
+            else{
 
-
+            }
+        }
         return true;
     };
 
