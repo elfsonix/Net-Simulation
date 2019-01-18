@@ -7,7 +7,7 @@
 #include "Worker.hpp"
 #include "Storehouse.hpp"
 
-TEST(Ramp, GeneratePackageInTimeTrue){      //Nie teges
+TEST(Ramp, GeneratePackageInTimeTrue){
     std::vector<IPackageReceiver*> receivers;
     std::function<double()> function = ([](){return 0.8;});
     ReceiverPreferences myPref = ReceiverPreferences(receivers, function);
@@ -32,7 +32,7 @@ TEST(Ramp, GeneratePackageInTimeFalse){
     EXPECT_FALSE(myRamp.returnBufferState());
 }
 
-TEST(Ramp, isProductSentToBuffer){      //nieteges
+TEST(Ramp, isProductSentToBuffer){
     std::vector<IPackageReceiver*> receivers;
     std::function<double()> function = ([](){return 0.8;});
     std::deque<Package> queue1;
