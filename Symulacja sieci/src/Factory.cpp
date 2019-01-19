@@ -16,21 +16,26 @@ void Factory::addStorehouse(Storehouse& storehouse) {
 }
 
 bool Factory::isCompatible() const {
-    /*auto searchForExit = [](const Ramp ramp){
+    /*int searchForExitWorker(const Worker& worker){
+
+    }
+
+    auto searchForExit = [](const Ramp ramp){
         auto begin = ramp.receiverPreferences.cbegin();
         auto end = ramp.receiverPreferences.cend();
         while(begin!=end){
-            if(begin->first->identifyReceiver()==ReceiverType::STOREHOUSE) return true;
+            if(std::get<0>(begin->first->identifyReceiver())==ReceiverType::STOREHOUSE) return 0;
             else{
 
             }
+            begin++;
         }
-        return true;
+        return 0;
     };
 
-    bool compatibility = std::for_each(_ramps.begin(), _ramps.end(), searchForExit);
-    return compatibility;*/
-    return true;
+    bool uncompatibleRamps = std::for_each(_ramps.begin(), _ramps.end(), searchForExit);
+    if(uncompatibleRamps>0) return false;
+    else */return true;
 }
 
 std::list<Worker>::const_iterator Factory::findWorkerByID(ElementID nodeID) {
@@ -56,5 +61,17 @@ void Factory::removeWorkerByID(ElementID nodeID) {
 
 void Factory::removeRampByID(ElementID nodeID) {
     _ramps.removeById(nodeID);
+}
+
+std::list<Worker>::iterator Factory::getWorkers() {
+    return _workers.begin();
+}
+
+std::list<Ramp>::iterator Factory::getRamps() {
+    return _ramps.begin();
+}
+
+std::list<Storehouse>::iterator Factory::getStorehouses() {
+    return _storehouses.begin();
 }
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

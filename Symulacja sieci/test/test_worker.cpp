@@ -1,5 +1,3 @@
-/*
-
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
 // Created by Sonia on 2019-01-11.
 //
@@ -44,7 +42,7 @@ TEST(Worker, isProductionTimeRight1){
     EXPECT_TRUE(myWorker._bufferOfProcessedPackage.has_value());
 }
 
-TEST(Worker, isProductionTimeRight2){
+TEST(Worker, isProductionTimeRight2){       //coś nie działa
     std::vector<IPackageReceiver*> receivers;
     std::deque<Package> queue1;
     std::deque<Package> queue2;
@@ -69,7 +67,7 @@ TEST(Worker, isProductionTimeRight2){
     EXPECT_FALSE(myWorker._bufferOfProcessedPackage.has_value());
 }
 
-TEST(Worker, isProductPassedForward){
+TEST(Worker, isProductPassedForward){   //dziwne id paczki zwraca
     Package myPackage = Package();
 
     std::vector<IPackageReceiver*> receivers1;
@@ -98,4 +96,3 @@ TEST(Worker, isProductPassedForward){
     EXPECT_EQ(myPackage.getID(), myWorker1.begin()->getID());
 }
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
-*/
