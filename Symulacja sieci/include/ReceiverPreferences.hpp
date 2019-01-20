@@ -35,9 +35,9 @@ private:
 
     //funkcje pomocnicze dla konstruktora - zwraca wektor par (wskaźnik na odbiorcę, prawdopodobieństwa)
     vector_p convertToVector(std::vector<IPackageReceiver*> packageVector, double_vector doubleVector);
-    preferences_t convertToMap(vector_p pairVector);
+    preferences_t convertToMap();
 
-    //returns values for the map - probability distribution
+    //returns values for the map - probability distribution   vector_p pairVector
     std::vector<double> distribution();
 
 
@@ -54,8 +54,8 @@ public:
     //returns drawn receiver
     IPackageReceiver* drawReceiver();
     std::vector<IPackageReceiver*> getVectorOfReceiver();
-    void addReceiver(IPackageReceiver* receiver);
-    void deleteReceiver(IPackageReceiver* receiver);
+    //void addReceiver(IPackageReceiver* receiver);
+    //void deleteReceiver(IPackageReceiver* receiver);
 //generates single random number
     static double drawNumber(); //not to use in tests
 

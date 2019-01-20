@@ -10,7 +10,7 @@ ReceiverPreferences::ReceiverPreferences(std::vector<IPackageReceiver*> packageR
 
     double_vector doubleVector = distribution();
     vector_p v = convertToVector(packageReceiversVector, doubleVector);
-    _probabilityTable = convertToMap(v);
+    _probabilityTable = convertToMap();
 }
 
 vector_p ReceiverPreferences::convertToVector(std::vector<IPackageReceiver*> packageReceiversVector, double_vector doubleVector){
@@ -32,19 +32,24 @@ vector_p ReceiverPreferences::convertToVector(std::vector<IPackageReceiver*> pac
     return returned;
 }
 
-preferences_t ReceiverPreferences::convertToMap(vector_p pairVector){
+preferences_t ReceiverPreferences::convertToMap(){
     preferences_t mapToReturn;
     //std::size_t n = pairVector.size();
+    double_vector doubleVector = distribution();
 
+    for(std::size_t i = 0;i<doubleVector.size(); i++){
+        mapToReturn[_tempPackageReceiversVector[i]]=doubleVector[i];
+    }
+/*
     for(vector_p::reverse_iterator i = pairVector.rbegin(); i != pairVector.rend(); ++i)
     {
         IPackageReceiver* one = i->first;
-        double two = i->second;
+        double two = i->second;vector_p pairVector
         mapToReturn.insert(std::make_pair(one, two));
 
     }
 
-/*    for(std::size_t i = (pairVector.size() -1); i >=0; i--){
+    for(std::size_t i = (pairVector.size() -1); i >=0; i--){
     //for(std::size_t  i = 0; i <n; i++){
     //for (auto each : reversepairVector){
         IPackageReceiver* one = pairVector[i].first;
@@ -108,7 +113,7 @@ IPackageReceiver* ReceiverPreferences::drawReceiver(){
     return iter->first;
 }
 
-void ReceiverPreferences::addReceiver(IPackageReceiver* receiver){
+/*void ReceiverPreferences::addReceiver(IPackageReceiver* receiver){
     _tempPackageReceiversVector.push_back(receiver);
     double_vector newDistribution = distribution();
 
@@ -124,7 +129,7 @@ void ReceiverPreferences::deleteReceiver(IPackageReceiver* receiver){
 
     vector_p vectorToConvert = convertToVector(_tempPackageReceiversVector, newDistribution);
     _probabilityTable  = convertToMap(vectorToConvert);
-}
+}*/
 
 double ReceiverPreferences::drawNumber() {
     std::random_device rd;  //Will be used to obtain a seed for the random number engine

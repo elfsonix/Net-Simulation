@@ -23,9 +23,13 @@ public:
         _storehouses = std::move(storehouses);
         _ramps = std::move(ramps);
     }
-    std::list<Worker>::iterator getWorkers();
-    std::list<Ramp>::iterator getRamps();
+    NodeCollection <Worker> getWorkers();
+    NodeCollection <Ramp> getRamps();
     std::list<Storehouse>::iterator getStorehouses();
+
+    std::list<Worker>::iterator getWorkerB();
+    std::list<Worker>::iterator getWorkerE();
+
 
     void addWorker(Worker& worker);
     void addRamp(Ramp& ramp);

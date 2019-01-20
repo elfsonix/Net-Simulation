@@ -1,4 +1,4 @@
-/*
+
 //
 // Created by Kasia on 2019-01-15.
 //
@@ -10,22 +10,20 @@ int simulate(IReportNotifier* reportNotifier, Factory factory, int numberOfRound
  for(int i = 1; i <= numberOfRounds; i++){
 
    //dostawa półproduktów do ramp
-   for(auto ramp : getRampsList()){
+   for(auto ramp: factory.getRamps()){
       ramp.generatePackage(1); //częstotliwość generowania paczki zawsze 1... :/
    }
-   // std::for_each(factory._ramps.begin(), factory._ramps.end(), generatePackage(2));
 
    //przekazanie do odbiorcy
-    for(auto ramp : getRampsList()){
+    for(auto ramp : factory.getRamps()){
        ramp.passPackageToReceiver();
     }
-    //std::for_each(factory._ramps.begin(), factory._ramps.end(), passPackageToReceiver());
 
-    //przetworzenie półproduktów przez robotników
-    for(auto worker : getWorkersList()){
-       worker.putPacakgeInQueue(????);
+    //przetworzenie półproduktów przez robotników i ewentualne przekazanie paczki
+    for(auto it = factory.getWorkerB(); it != factory.getWorkerE(); it++){
+       it->processPackage();
     }
-    //std::for_each(factory._workers.begin(), factory._workers.end(), putPackageInQueue(*_packageQueue));
+
 
     if(reportNotifier.should_generate_report()){
          generate_simulation_turn_report()
@@ -33,7 +31,4 @@ int simulate(IReportNotifier* reportNotifier, Factory factory, int numberOfRound
     generate_structure_raport();
 }
 
-
-
 }
-*/

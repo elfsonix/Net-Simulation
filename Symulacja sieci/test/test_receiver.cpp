@@ -43,6 +43,7 @@ TEST(TestReceiver, RandomNumbers) {
 }
 
 
+/*
 
 
     TEST(ReceiverTest, addReceiver){
@@ -120,4 +121,5 @@ TEST(TestReceiver, RandomNumbers) {
 
     }
 
+*/
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

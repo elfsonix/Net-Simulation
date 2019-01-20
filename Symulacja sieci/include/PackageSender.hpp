@@ -8,7 +8,7 @@
 
 class PackageSender {
 protected:
-    void passPackageToReceiver();
+
     std::vector<IPackageReceiver*> getVectorOfReceivers();
 
 private:
@@ -16,7 +16,7 @@ private:
 
 public:
     ReceiverPreferences receiverPreferences;
-
+    void passPackageToReceiver();
     PackageSender(ReceiverPreferences receiverPreferences1);
 
     void putPackageInBuffer(Package package);
