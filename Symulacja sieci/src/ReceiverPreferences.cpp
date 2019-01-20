@@ -65,7 +65,7 @@ double_vector ReceiverPreferences::distribution(){
         probability.push_back(length);
     return probability;
 }
-std::vector<IPackageReceiver*> ReceiverPreferences::getVectorOfReceiver(){
+std::vector<IPackageReceiver*> ReceiverPreferences::getVectorOfReceiver() const{
     return _tempPackageReceiversVector;
 }
 

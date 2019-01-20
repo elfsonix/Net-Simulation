@@ -9,7 +9,7 @@
 class PackageSender {
 protected:
     void passPackageToReceiver();
-    std::vector<IPackageReceiver*> getVectorOfReceivers();
+
 
 private:
     std::optional<Package> _bufferOfPackagesReady;
@@ -20,7 +20,7 @@ public:
     PackageSender(ReceiverPreferences receiverPreferences1);
 
     void putPackageInBuffer(Package package);
-
+    std::vector<IPackageReceiver*> getVectorOfReceivers() const;
     bool returnBufferState();
 };
 
