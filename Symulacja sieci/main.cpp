@@ -6,7 +6,7 @@
 #include "Worker.hpp"
 
 int main(){
-
+/*
     try{
         Factory factory = load_factory_structure(std::istream & stream);
 
@@ -108,7 +108,7 @@ int main(){
     simulate(IRepoertNotifier, factory, numberOfRounds);
     std::cout << "Simulation has ended! :)"<<std::endl;
 
-
+*/
     return 0;
 }
 

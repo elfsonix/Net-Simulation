@@ -15,32 +15,45 @@ void Factory::addStorehouse(Storehouse& storehouse) {
     _storehouses.add(storehouse);
 }
 
-bool Factory::isCompatible() const {
-    /*int searchForExitWorker(const Worker& worker){
-
-    }
-
-    auto searchForExit = [](const Ramp ramp){
-        auto begin = ramp.receiverPreferences.cbegin();
-        auto end = ramp.receiverPreferences.cend();
-        while(begin!=end){
-            if(std::get<0>(begin->first->identifyReceiver())==ReceiverType::STOREHOUSE) return 0;
-            else{
-
+bool Factory::isCompatible() {
+    std::list<std::list<Worker>::const_iterator> hasExit;    //przeszukany
+    std::list<std::list<Worker>::const_iterator> checkForExit;   //oczekujący na przeszukanie
+    for(const Ramp& ramp : _ramps){
+        auto receivers = ramp.getVectorOfReceivers();
+        if(receivers.empty()) throw std::runtime_error("Brak połączeń wychodzących z rampy. ID: "+ std::to_string(ramp.getID()));
+        for(auto receiver: receivers){
+            if(std::get<0>(receiver->identifyReceiver())==ReceiverType::WORKER){
+                checkForExit.push_back(findWorkerByID(std::get<1>(receiver->identifyReceiver())));
             }
-            begin++;
+            while(!checkForExit.empty()){
+                auto worker = checkForExit.back();
+                checkForExit.pop_back();
+                bool checkReceivers = true;
+                for(auto it : hasExit){
+                    if(findWorkerByID(std::get<1>(receiver->identifyReceiver()))== it) checkReceivers=false;
+                }
+                if(checkReceivers){
+                    auto receiversW = worker->getVectorOfReceivers();
+                    if(receiversW.empty()) throw std::runtime_error("Brak połączeń wychodzących od pracownika. ID: "+ std::to_string(worker->getID()));
+                    for(auto receiverW : receiversW){
+                        bool addReceivers = true;
+                        for(auto it : hasExit){
+                            if(findWorkerByID(std::get<1>(receiverW->identifyReceiver()))== it) addReceivers = false;
+                        }
+                        if(addReceivers){
+                            checkForExit.push_back(findWorkerByID(std::get<1>(receiverW->identifyReceiver())));
+                        }
+                    }
+                    hasExit.push_back(worker);
+                }
+            }
         }
-        return 0;
-    };
-
-    bool uncompatibleRamps = std::for_each(_ramps.begin(), _ramps.end(), searchForExit);
-    if(uncompatibleRamps>0) return false;
-    else */return true;
+    }
+    return true;
 }
 
 std::list<Worker>::const_iterator Factory::findWorkerByID(ElementID nodeID) {
     return _workers.cfindById(nodeID);
-
 }
 
 std::list<Storehouse>::const_iterator Factory::findStorehouseByID(ElementID nodeID){

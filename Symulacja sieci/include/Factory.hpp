@@ -34,7 +34,7 @@ public:
     void addWorker(Worker& worker);
     void addRamp(Ramp& ramp);
     void addStorehouse(Storehouse& storehouse);
-    bool isCompatible() const;
+    bool isCompatible();
     std::list<Worker>::const_iterator findWorkerByID(ElementID nodeID);
     std::list<Storehouse>::const_iterator findStorehouseByID(ElementID nodeID);
     std::list<Ramp>::const_iterator findRampByID(ElementID nodeID);

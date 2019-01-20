@@ -53,9 +53,9 @@ public:
 
     //returns drawn receiver
     IPackageReceiver* drawReceiver();
-    std::vector<IPackageReceiver*> getVectorOfReceiver();
-    //void addReceiver(IPackageReceiver* receiver);
-    //void deleteReceiver(IPackageReceiver* receiver);
+    std::vector<IPackageReceiver*> getVectorOfReceiver() const;
+    void addReceiver(IPackageReceiver* receiver);
+    void deleteReceiver(IPackageReceiver* receiver);
 //generates single random number
     static double drawNumber(); //not to use in tests
 

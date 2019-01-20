@@ -15,7 +15,7 @@ void PackageSender::passPackageToReceiver(){
 
 }
 
-std::vector<IPackageReceiver*> PackageSender::getVectorOfReceivers(){
+std::vector<IPackageReceiver*> PackageSender::getVectorOfReceivers()const{
     return receiverPreferences.getVectorOfReceiver();
 }
 
