@@ -8,8 +8,7 @@
 
 class PackageSender {
 protected:
-
-    std::vector<IPackageReceiver*> getVectorOfReceivers();
+    void passPackageToReceiver();
 
 
 private:
