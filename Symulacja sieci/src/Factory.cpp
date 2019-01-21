@@ -37,7 +37,11 @@ bool Factory::isCompatible() {
                     if(receiversW.empty()) throw std::runtime_error("Brak połączeń wychodzących od pracownika. ID: "+ std::to_string(worker->getID()));
                     for(auto receiverW : receiversW){
                         bool addReceivers = true;
+                        if(std::get<0>(worker->identifyReceiver())==ReceiverType::STOREHOUSE) addReceivers = false;
                         for(auto it : hasExit){
+                            if(findWorkerByID(std::get<1>(receiverW->identifyReceiver()))== it) addReceivers = false;
+                        }
+                        for(auto it : checkForExit){
                             if(findWorkerByID(std::get<1>(receiverW->identifyReceiver()))== it) addReceivers = false;
                         }
                         if(addReceivers){
@@ -76,15 +80,17 @@ void Factory::removeRampByID(ElementID nodeID) {
     _ramps.removeById(nodeID);
 }
 
-std::list<Worker>::iterator Factory::getWorkers() {
+std::list<Worker>::iterator Factory::getWorkerB() {
     return _workers.begin();
 }
-
-std::list<Ramp>::iterator Factory::getRamps() {
-    return _ramps.begin();
+std::list<Worker>::iterator Factory::getWorkerE() {
+    return _workers.end();
 }
 
-std::list<Storehouse>::iterator Factory::getStorehouses() {
-    return _storehouses.begin();
+std::list<Ramp>::iterator Factory::getRampB() {
+    return _ramps.begin();
+}
+std::list<Ramp>::iterator Factory::getRampE() {
+    return _ramps.end();
 }
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

@@ -1,5 +1,6 @@
+
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
-// Created by Kasia on 2019-01-01.
+// Created by Katarzyna Wątorska
 #include <PackageQueue.hpp>
 #include <Storehouse.hpp>
 #include "gtest/gtest.h"
@@ -41,6 +42,7 @@ TEST(TestReceiver, RandomNumbers) {
     EXPECT_EQ(drawnReceiver2, &storehouse2);
 
 }
+
 
 
 
@@ -120,4 +122,4 @@ TEST(TestReceiver, RandomNumbers) {
 
     }
 
-// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)*/

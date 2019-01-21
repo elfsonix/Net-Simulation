@@ -7,8 +7,6 @@
 #include "ReceiverPreferences.hpp"
 
 class PackageSender {
-protected:
-    void passPackageToReceiver();
 
 
 private:
@@ -16,7 +14,7 @@ private:
 
 public:
     ReceiverPreferences receiverPreferences;
-
+    void passPackageToReceiver();
     PackageSender(ReceiverPreferences receiverPreferences1);
 
     void putPackageInBuffer(Package package);
