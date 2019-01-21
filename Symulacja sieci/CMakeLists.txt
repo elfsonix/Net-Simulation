@@ -18,7 +18,10 @@ set(SOURCE_FILES
         "src/Ramp.cpp"
         "src/ReceiverPreferences.cpp"
         "src/Storehouse.cpp"
-        "src/Worker.cpp")
+        "src/Worker.cpp"
+        "src/factory_IO.cpp"
+        "src/IReportNotifier"
+        "src/reporting.cpp")
 
 add_executable(Symulacja_sieci main.cpp
         "include/Factory.hpp"
@@ -36,6 +39,10 @@ add_executable(Symulacja_sieci main.cpp
         "include/Simulation.hpp"
         "include/Storehouse.hpp"
         "include/Worker.hpp"
+        "include/factory_IO.hpp"
+        "include/IReportNotifier.hpp"
+        "include/reporting.hpp"
+        "include/data_type.hpp"
         )
 
 add_executable(Symulacja_sieci_debug ${SOURCE_FILES} main.cpp)

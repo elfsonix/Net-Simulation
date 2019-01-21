@@ -1,7 +1,5 @@
-
-//
-// Created by Kasia on 2019-01-15.
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+// Created by Katarzyna Wątorska
 
 
 #include "Storehouse.hpp"
@@ -9,10 +7,6 @@
 #include "gmock/gmock.h"
 #include "PackageQueue.hpp"
 #include "PackageSender.hpp"
-/*using ::testing::Return;
-class MockReceiver : public IPackageReceiver{
-    MOCK_METHOD1(receivePackage, void(const Package&));
-};*/
 
 
 TEST(PackageSender, isBufferClear){
@@ -37,10 +31,6 @@ TEST(PackageSender, isBufferClear){
     std::unique_ptr<PackageQueue> ptr2 = std::make_unique<PackageQueue>(packageQueueFIFO);
     Storehouse storehouse1 = Storehouse(3, std::move(ptr1));
     Storehouse storehouse2 = Storehouse(4, std::move(ptr2));
-    //MockReceiver mockReceiver;
-
-    // EXPECT_CALL(mockReceiver, receivePackage(pack4).Times(1));
-
 
     std::vector<IPackageReceiver*> vec;
     vec.push_back(&storehouse1);
@@ -53,6 +43,7 @@ TEST(PackageSender, isBufferClear){
     PackageSender packageSender = PackageSender(receiverPreferences2);
     packageSender.putPackageInBuffer(pack4);
 
-    EXPECT_EQ(packageSender.returnBufferState(), 0);
-    //EXPECT_EQ(storehouse2.returnQueueState(), pack4);
+    EXPECT_EQ(packageSender.returnBufferState(), true);
 }
+
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

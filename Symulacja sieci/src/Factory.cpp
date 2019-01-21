@@ -76,15 +76,17 @@ void Factory::removeRampByID(ElementID nodeID) {
     _ramps.removeById(nodeID);
 }
 
-std::list<Worker>::iterator Factory::getWorkers() {
+std::list<Worker>::iterator Factory::getWorkerB() {
     return _workers.begin();
 }
-
-std::list<Ramp>::iterator Factory::getRamps() {
-    return _ramps.begin();
+std::list<Worker>::iterator Factory::getWorkerE() {
+    return _workers.end();
 }
 
-std::list<Storehouse>::iterator Factory::getStorehouses() {
-    return _storehouses.begin();
+std::list<Ramp>::iterator Factory::getRampB() {
+    return _ramps.begin();
+}
+std::list<Ramp>::iterator Factory::getRampE() {
+    return _ramps.end();
 }
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

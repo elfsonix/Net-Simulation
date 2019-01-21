@@ -83,8 +83,15 @@ TEST(Factory, netCompatibilityControlFalse){
     myFactory.addWorker(myWorker);
     myFactory.addWorker(myWorker2);
     myFactory.addStorehouse(myStorehouse);
+    bool result = true;
+try{
+    myFactory.isCompatible();
+}
+catch(std::runtime_error&){
+    result = false;
+}
 
-    EXPECT_FALSE(myFactory.isCompatible());
+    EXPECT_FALSE(result);
 }
 
 TEST(Factory, deleteReceiver){
