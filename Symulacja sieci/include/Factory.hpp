@@ -23,14 +23,14 @@ public:
         _storehouses = std::move(storehouses);
         _ramps = std::move(ramps);
     }
-    NodeCollection <Worker> getWorkers();
-    NodeCollection <Ramp> getRamps();
-    std::list<Storehouse>::iterator getStorehouses();
 
-    std::list<Worker>::iterator getWorkerB();
+ std::list<Worker>::iterator getWorkerB();
     std::list<Worker>::iterator getWorkerE();
+    std::list<Ramp>::iterator getRampB();
+    std::list<Ramp>::iterator getRampE();
+/*
 
-
+*/
     void addWorker(Worker& worker);
     void addRamp(Ramp& ramp);
     void addStorehouse(Storehouse& storehouse);
@@ -43,5 +43,5 @@ public:
     void removeRampByID(ElementID nodeID);
 };
 
-#endif //SYMULACJA_SIECI_FACTORY_HPP
+#endif
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

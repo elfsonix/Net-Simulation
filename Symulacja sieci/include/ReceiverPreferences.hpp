@@ -16,12 +16,11 @@
 #include "IPackageReceiver.hpp"
 #include <utility>
 
-using preferences_t = std::map<IPackageReceiver*, double>;
-using vector_p = std::vector<std::pair<IPackageReceiver*, double>>;
+using preferences_t = std::map<IPackageReceiver*, std::pair<double, double>>;
+using vector_p = std::vector<std::pair<IPackageReceiver*, std::pair<double, double>>>;
 using const_iterator = preferences_t::const_iterator;
 using iterator = preferences_t::iterator;
 using pair_double_vector =  std::vector<std::pair<double, double>>;
-using double_vector = std::vector<double>;
 using double_pair = std::pair<double, double>;
 
 float const SUM_OF_PROBABILITIES = 1.0;
@@ -34,14 +33,15 @@ private:
     std::vector<IPackageReceiver*> _tempPackageReceiversVector;
 
     //funkcje pomocnicze dla konstruktora - zwraca wektor par (wskaźnik na odbiorcę, prawdopodobieństwa)
-    vector_p convertToVector(std::vector<IPackageReceiver*> packageVector, double_vector doubleVector);
-    preferences_t convertToMap();
+    vector_p convertToVector(std::vector<IPackageReceiver*> packageVector, pair_double_vector doubleVector);
+    preferences_t convertToMap(vector_p pairVector);
 
-    //returns values for the map - probability distribution   vector_p pairVector
-    std::vector<double> distribution();
+    //returns values for the map - probability distribution
+    pair_double_vector distribution();
 
 
-
+    //generates single random number
+    double drawNumber(); //not to use in tests
 
 public:
     ReceiverPreferences(std::vector<IPackageReceiver*> packageReceiversVector,
@@ -50,14 +50,12 @@ public:
     ReceiverPreferences(const ReceiverPreferences &receiverPreferencesToCopy) : _probabilityTable(receiverPreferencesToCopy._probabilityTable),
                                                                                 _drawnProbability(receiverPreferencesToCopy._drawnProbability)
     {}
-
+    std::vector<IPackageReceiver*> getVectorOfReceiver() const;
     //returns drawn receiver
     IPackageReceiver* drawReceiver();
-    std::vector<IPackageReceiver*> getVectorOfReceiver() const;
+
     void addReceiver(IPackageReceiver* receiver);
     void deleteReceiver(IPackageReceiver* receiver);
-//generates single random number
-    static double drawNumber(); //not to use in tests
 
     //metody tylko do odczytu
     const_iterator cbegin() const;

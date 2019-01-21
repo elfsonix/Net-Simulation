@@ -132,6 +132,16 @@ optional
 QueueType.hpp
 ../include/QueueType.hpp
 
+../include/factory_IO.hpp
+Factory.hpp
+../include/Factory.hpp
+iostream
+-
+string
+-
+vector
+-
+
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/main.cpp
 iostream
 -
@@ -145,4 +155,6 @@ Storehouse.hpp
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/Storehouse.hpp
 Worker.hpp
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/Worker.hpp
+factory_IO.hpp
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/factory_IO.hpp
 

@@ -1,3 +1,5 @@
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+// Created by Katarzyna Wątorska
 #include <iostream>
 #include "Factory.hpp"
 #include "PackageQueue.hpp"
@@ -5,18 +7,21 @@
 #include "Storehouse.hpp"
 #include "Worker.hpp"
 
+
+#include "factory_IO.hpp"
 int main(){
+
 /*
     try{
-        Factory factory = load_factory_structure(std::istream & stream);
+        Factory factory = load_factory_structure("struct-input.txt");
 
     }
-    catch(someParseError){
+    catch(std::runtime_error& runtime_error){
         std::cout<< "There was an error in loading structure from the file.";
     }
 
     std::cout<< "Structure of factory has been successfully loaded! A report has been generated. :)" << std::endl;
-    generate_structure_report();
+    void generate_structure_report(const Factory& factory, std::ostream& os);
 
     //menu dla użytkownika
     std::cout<< "Do you want to modify the structure of the network? \n If no, press 'n'. If yes, press 'y'."<<std::endl;
@@ -84,7 +89,9 @@ int main(){
             factory.addRamp(Ramp(30, 1, receiverPreferences1));
             factory.addRamp(Ramp(31, 1, receiverPreferences2));
 
-            std::cout << "Network structure has been modified." << std::endl;
+            std::cout << "Network structure has been modified and saved." << std::endl;
+                    save_factory_structure(&factory);
+
             break;
         }
         default: {
@@ -109,6 +116,8 @@ int main(){
     std::cout << "Simulation has ended! :)"<<std::endl;
 
 */
+
     return 0;
 }
 
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

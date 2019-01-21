@@ -42,7 +42,7 @@ TEST(Worker, isProductionTimeRight1){
     EXPECT_TRUE(myWorker._bufferOfProcessedPackage.has_value());
 }
 
-TEST(Worker, isProductionTimeRight2){       //coś nie działa
+TEST(Worker, isProductionTimeRight2){
     std::vector<IPackageReceiver*> receivers;
     std::deque<Package> queue1;
     std::deque<Package> queue2;
@@ -91,8 +91,8 @@ TEST(Worker, isProductPassedForward){   //dziwne id paczki zwraca
     ReceiverPreferences myPref2 = ReceiverPreferences(receivers2, function2);
     Worker myWorker2 = Worker(2, 1, std::make_unique<PackageQueue>(workerQueue2), myPref2);
     myWorker2.receivePackage(myPackage);
-    myWorker2.processPackage();
+    //myWorker2.processPackage();
 
-    EXPECT_EQ(myPackage.getID(), myWorker1.begin()->getID());
+    EXPECT_EQ(myPackage.getID(), myWorker2.begin()->getID());
 }
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

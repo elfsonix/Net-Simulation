@@ -1,7 +1,5 @@
-
-//
-// Created by Kasia on 2019-01-15.
-//
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
+// Created by Katarzyna Wątorska
 
 
 #include "Storehouse.hpp"
@@ -47,3 +45,5 @@ TEST(PackageSender, isBufferClear){
 
     EXPECT_EQ(packageSender.returnBufferState(), true);
 }
+
+// 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)
