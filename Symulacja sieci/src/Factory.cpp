@@ -37,7 +37,11 @@ bool Factory::isCompatible() {
                     if(receiversW.empty()) throw std::runtime_error("Brak połączeń wychodzących od pracownika. ID: "+ std::to_string(worker->getID()));
                     for(auto receiverW : receiversW){
                         bool addReceivers = true;
+                        if(std::get<0>(worker->identifyReceiver())==ReceiverType::STOREHOUSE) addReceivers = false;
                         for(auto it : hasExit){
+                            if(findWorkerByID(std::get<1>(receiverW->identifyReceiver()))== it) addReceivers = false;
+                        }
+                        for(auto it : checkForExit){
                             if(findWorkerByID(std::get<1>(receiverW->identifyReceiver()))== it) addReceivers = false;
                         }
                         if(addReceivers){
