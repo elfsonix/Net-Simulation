@@ -1,4 +1,3 @@
-/*
 #include "Factory.hpp"
 #include "reporting.hpp"
 #include <iostream>
@@ -24,7 +23,7 @@ void generate_structure_report(const Factory& factory, std::ostream& os){
         os << "\n";
     });
 }
-//do zintegrowania z Factory.hpp
+
 void generate_receiver_report(const receiver_pref preferences, std::ostream& os) {
     bool isPrefs = !(prefs.cbegin() == prefs.cend());
     if (isPrefs) {
@@ -103,4 +102,4 @@ void generate_sim_report_storehouse(const Storehouse& storehouse, std::ostream& 
     os << "  Queue: ";
     generate_queue_report(storehouse.cbegin(), storehouse.cend(), os);
     os << "\n";
-}*/
+}
