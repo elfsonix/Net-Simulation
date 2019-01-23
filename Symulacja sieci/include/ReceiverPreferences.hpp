@@ -48,7 +48,8 @@ public:
                         std::function<double()> drawnProbability);
 
     ReceiverPreferences(const ReceiverPreferences &receiverPreferencesToCopy) : _probabilityTable(receiverPreferencesToCopy._probabilityTable),
-                                                                                _drawnProbability(receiverPreferencesToCopy._drawnProbability)
+                                                                                _drawnProbability(receiverPreferencesToCopy._drawnProbability),
+                                                                                _tempPackageReceiversVector(receiverPreferencesToCopy._tempPackageReceiversVector)
     {}
     std::vector<IPackageReceiver*> getVectorOfReceiver() const;
     //returns drawn receiver

@@ -6,7 +6,7 @@
 #include "PackageSender.hpp"
 #include <optional>
 
-PackageSender::PackageSender(ReceiverPreferences receiverPreferences1) : receiverPreferences(receiverPreferences1){}
+PackageSender::PackageSender(const ReceiverPreferences& receiverPreferences1) : receiverPreferences(receiverPreferences1){}
 
 void PackageSender::passPackageToReceiver(){
     IPackageReceiver* drawnReceiver = receiverPreferences.drawReceiver();
