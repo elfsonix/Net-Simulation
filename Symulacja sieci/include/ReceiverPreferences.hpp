@@ -40,8 +40,7 @@ private:
     pair_double_vector distribution();
 
 
-    //generates single random number
-    double drawNumber(); //not to use in tests
+
 
 public:
     ReceiverPreferences(std::vector<IPackageReceiver*> packageReceiversVector,
@@ -54,7 +53,8 @@ public:
     std::vector<IPackageReceiver*> getVectorOfReceiver() const;
     //returns drawn receiver
     IPackageReceiver* drawReceiver();
-
+    //generates single random number
+    static double drawNumber(); //not to use in tests
     void addReceiver(IPackageReceiver* receiver);
     void deleteReceiver(IPackageReceiver* receiver);
 

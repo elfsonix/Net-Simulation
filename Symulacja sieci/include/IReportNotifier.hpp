@@ -15,7 +15,7 @@ class SpecificTurnsReportNotifier : public IReportNotifier {
 private:
     std::set<Time> _turn;
 public:
-    SpecificTurnsReportNotifier(const std::set<Time>& turns);
+    SpecificTurnsReportNotifier(const std::set<Time>& turns) {_turn = std::move(turns);}
     bool should_generate_report(Time currentTime) override;
 
     ~SpecificTurnsReportNotifier() = default;

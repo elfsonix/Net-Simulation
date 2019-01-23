@@ -11,7 +11,7 @@ void simulate(IReportNotifier* reportNotifier, Factory factory, int numberOfRoun
 
    //dostawa półproduktów do ramp
    for(auto iter = factory.getRampB(); iter != factory.getRampE(); iter++){
-      iter->generatePackage(1); //częstotliwość generowania paczki zawsze 1... :/
+      iter->generatePackage(i);
    }
 
    //przekazanie do odbiorcy

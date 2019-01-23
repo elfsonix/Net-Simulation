@@ -1,4 +1,7 @@
-/*#include "Factory.hpp"
+#include <Ramp.hpp>
+
+/*
+#include "Factory.hpp"
 #include "reporting.hpp"
 #include <iostream>
 #include <algorithm>
@@ -33,14 +36,15 @@ void generate_receiver_report(const receiver_pref preferences, std::ostream& os)
         }
     }
 }
-
-void generate_structure_report_ramp(const Ramp& ramp, std::ostream& os) {
+*/
+void generate_structure_report_ramp(/*const Ramp& ramp, std::ostream& os*/) {
+/*
     os << "LOADING RAMP #" << ramp.getId() << "\n";
     os << "    Delivery interval: " << ramp.getDeliveryInterval() << "\n";
     os << "    Receivers:" << "\n";
-    generate_receiver_report(ramp._receiver_pref, os);
+    generate_receiver_report(ramp._receiver_pref, os);*/
 }
-
+/*
 void generate_structure_report_worker(const Worker& worker, std::ostream& os) {
     os << "WORKER #" << worker.getId() << "\n";
     os << "    Processing time: " << worker.getProcessingDuration() << "\n";
