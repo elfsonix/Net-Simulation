@@ -6,12 +6,15 @@
 #include "ReceiverPreferences.hpp"
 #include "Storehouse.hpp"
 #include "Worker.hpp"
-
+#include "DrawNumber.h"
 
 #include "factory_IO.hpp"
-int main(){
 
+
+
+int main(){
 /*
+
     try{
         Factory factory = load_factory_structure("struct-input.txt");
 
@@ -22,7 +25,6 @@ int main(){
 
     std::cout<< "Structure of factory has been successfully loaded! A report has been generated. :)" << std::endl;
     void generate_structure_report(const Factory& factory, std::ostream& os);
-
     //menu dla użytkownika
     std::cout<< "Do you want to modify the structure of the network? \n If no, press 'n'. If yes, press 'y'."<<std::endl;
     switch(std::cin.get()){
@@ -55,31 +57,32 @@ int main(){
             packageReceiversVector.push_back(&storehouse1);
             packageReceiversVector.push_back(&storehouse2);
 
-            std::unique_ptr<IPackageStockpile> ptr1 = std::make_unique<PackageQueue>(packageQueueLIFO);
-            std::unique_ptr<IPackageStockpile> ptr2 = std::make_unique<PackageQueue>(packageQueueFIFO);
-            Storehouse storehouse1 = Storehouse(10, std::move(ptr1));
-            Storehouse storehouse2 = Storehouse(11, std::move(ptr2));
+            //std::unique_ptr<IPackageStockpile> ptr1 = std::make_unique<PackageQueue>(packageQueueLIFO);
+            //std::unique_ptr<IPackageStockpile> ptr2 = std::make_unique<PackageQueue>(packageQueueFIFO);
+            //Storehouse storehouse1 = Storehouse(10, std::move(ptr1));
+            //Storehouse storehouse2 = Storehouse(11, std::move(ptr2));
             packageReceiversVector.push_back(&storehouse1);
             packageReceiversVector.push_back(&storehouse2);
             std::function<double()> function1 = ([](){return 0.45;});
-            ReceiverPreferences receiverPreferences1 = ReceiverPreferences(packageReceiversVector, ReceiverPreferences::drawNumber();
-            Worker worker1 = Worker(20, 2, )
+            //ReceiverPreferences receiverPreferences1 = ReceiverPreferences(packageReceiversVector, drawNumber());
+            ReceiverPreferences receiverPreferences1 = ReceiverPreferences(packageReceiversVector,
+                                                                                     ReceiverPreferences::drawNumber);
+            Worker worker1 = Worker(23, 1,std::make_unique<PackageQueue>(packageQueueFIFO2), receiverPreferences1);
 
             packageReceiversVector.push_back(&worker1);
-            std::function<double()> drawnProbability)
-            const ReceiverPreferences &receiverPreferences =
-            factory.addRamp(Ramp(enteredID, receiverPreferences));
+            std::function<double()> drawnProbability;
+            //const ReceiverPreferences &receiverPreferences =
+            factory.addRamp(Ramp(103, 3, receiverPreferences1));
 
 
-            const ReceiverPreferences receiverPreferences1 = ReceiverPreferences(packageReceiversVector,
-                                                                           ReceiverPreferences::drawNumber);
-            Worker worker1 = Worker(20, 2, std::move(ptr3), &receiverPreferences1);
+
+            //Worker worker4 = Worker(20, 2, std::make_unique<PackageQueue>(packageQueueFIFO), receiverPreferences1);
 
             packageReceiversVector.push_back(&worker1);
             const ReceiverPreferences receiverPreferences2  = ReceiverPreferences(packageReceiversVector,
                                                                            ReceiverPreferences::drawNumber);
 
-            Worker worker2 = Worker(21, 1, std::move(ptr4), receiverPreferences2);
+            Worker worker2 = Worker(21, 1, std::make_unique<PackageQueue>(packageQueueLIFO2), receiverPreferences2);
 
             factory.addWorker(worker1);
             factory.addWorker(worker2);
@@ -119,5 +122,6 @@ int main(){
 
     return 0;
 }
+
 
 // 4b_4: Wittek (297473), Wątorska (297469), Rabajczyk (286498)

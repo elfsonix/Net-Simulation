@@ -21,7 +21,7 @@ set(SOURCE_FILES
         "src/Worker.cpp"
         "src/factory_IO.cpp"
         "src/IReportNotifier"
-        "src/reporting.cpp")
+        "src/reporting.cpp" include/DrawNumber.h)
 
 add_executable(Symulacja_sieci main.cpp
         "include/Factory.hpp"
@@ -57,7 +57,7 @@ set(SOURCES_FILES_TESTS
         test/test_ramp.cpp
         test/test_receiver.cpp
         test/test_storehouse.cpp
-        test/test_worker.cpp )
+        test/test_worker.cpp test/test_simulate.cpp)
 
 add_executable(Symulacja_sieci_test ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/main_test.cpp)
 

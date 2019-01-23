@@ -15,15 +15,12 @@ void PackageSender::passPackageToReceiver(){
 
 }
 
-
-
 std::vector<IPackageReceiver*> PackageSender::getVectorOfReceivers()const{
     return receiverPreferences.getVectorOfReceiver();
 }
 
 void PackageSender::putPackageInBuffer(Package package){
     _bufferOfPackagesReady = std::make_optional(package);
-//    passPackageToReceiver();
 }
 
 bool PackageSender::returnBufferState() {

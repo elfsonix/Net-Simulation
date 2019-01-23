@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+../include/DrawNumber.h
+functional
+-
+cstdlib
+-
+stdexcept
+-
+random
+-
+iostream
+-
+utility
+-
+
 ../include/Factory.hpp
 NodeCollection.hpp
 ../include/NodeCollection.hpp
@@ -155,6 +169,8 @@ Storehouse.hpp
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/Storehouse.hpp
 Worker.hpp
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/Worker.hpp
+DrawNumber.h
+C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/DrawNumber.h
 factory_IO.hpp
 C:/Users/Kasia/Documents/GitHub/agh_air_inf2_2018_netsim__4b_4/Symulacja sieci/factory_IO.hpp
 
