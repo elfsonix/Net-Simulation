@@ -15,7 +15,7 @@ private:
 public:
     ReceiverPreferences receiverPreferences;
     void passPackageToReceiver();
-    PackageSender(ReceiverPreferences receiverPreferences1);
+    PackageSender(const ReceiverPreferences& receiverPreferences1);
 
     void putPackageInBuffer(Package package);
     std::vector<IPackageReceiver*> getVectorOfReceivers() const;

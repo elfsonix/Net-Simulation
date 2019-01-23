@@ -16,28 +16,27 @@ TEST(Factory, netCompatibilityControlTrue){
     Storehouse myStorehouse = Storehouse(1, std::make_unique<PackageQueue>(queueS));
 
     std::vector<IPackageReceiver*> receiversW2;
+    receiversW2.push_back(&myStorehouse);
     std::function<double()> functionW2 = ([](){return 0.8;});
     ReceiverPreferences myPrefW2 = ReceiverPreferences(receiversW2, functionW2);
     std::deque<Package> q2;
     PackageQueue queue2 = PackageQueue(QueueType::FIFO, q2);
     Worker myWorker2 = Worker(2,1,std::make_unique<PackageQueue>(queue2), myPrefW2);
-    receiversW2.push_back(&myStorehouse);
 
     std::vector<IPackageReceiver*> receiversW;
+    receiversW.push_back(&myWorker2);
+    receiversW.push_back(&myStorehouse);
     std::function<double()> functionW = ([](){return 0.8;});
     ReceiverPreferences myPrefW = ReceiverPreferences(receiversW, functionW);
     std::deque<Package> q;
     PackageQueue queue = PackageQueue(QueueType::FIFO, q);
     Worker myWorker = Worker(1,1,std::make_unique<PackageQueue>(queue), myPrefW);
-    receiversW.push_back(&myWorker2);
-    receiversW.push_back(&myStorehouse);
 
     std::vector<IPackageReceiver*> receiversR;
     receiversR.push_back(&myWorker);
     std::function<double()> functionR = ([](){return 0.8;});
     ReceiverPreferences myPrefR = ReceiverPreferences(receiversR, functionR);
     Ramp myRamp = Ramp(1, 1, myPrefR);
-    //EXPECT_TRUE(myRamp.getVectorOfReceivers().empty());
 
     myFactory.addRamp(myRamp);
     myFactory.addWorker(myWorker);
