@@ -1,3 +1,4 @@
+' 4b_4: Wittek (297473), W¹torska (297469), Rabajczyk (286498)
 @startuml
 ' TODO
 
@@ -13,7 +14,18 @@ hide <<function>> circle
 package "Factory Package" {
 
 	class NodeCollection<Node> << (T,olive) >> {
-		-nodes: std::list<Node>
+		- nodes: std::list<Node>
+		+ getNodes() const : std::list<Node> {query}
+		+ cbegin() const : std::list<Node>::const_iterator {query}
+		+ cendt() const : std::list<Node>::const_iterator {query}
+		+ begin() const :std::list<Node>::iterator {query}
+		+ begin() const : std::list<Node>::const_iterator {query}
+		+ end() const : std::list<Node>::iterator {query}
+		+ end() const : std::list<Node>::const_iterator {query}
+		+ add(const node: Node&) : void
+		+ findById(nodeId: ElementID) const : iterator {query}
+		+ findById(nodeId: ElementID) const : const_iterator {query}
+		+ removeById(nodeID : ElementID) : void
 	}
 
 	Ramps ..|> NodeCollection : <<bind>> <Node->Ramp>
@@ -21,16 +33,18 @@ package "Factory Package" {
 	Storehouses ..|> NodeCollection : <<bind>> <Node->Storehouse>
 
 	class Factory {
-		-ramps : Ramps
-		-workers: Workers
-		-storehouses: Storehouses
-		+Factory()
-		+~Factory()
-		+add(nodeId : ElementID) : void
-		+isCompatible() : bool {query}
-		+findById(nodeId: ElementID) : iterator
-		+findById(nodeId: ElementID) : const_iterator
-		+removeById() : void
+		-_ramps : NodeCollection<Ramp>
+		-_workers: NodeCollection<Worker>
+		-_storehouses: NodeCollection<Storehouse>
+		+ Factory(ramps : NodeCollection<Ramp>,
+			  workers: NodeCollection<Worker>,
+			  storehouses: NodeCollection<Storehouse>)
+		+ add_worker(const worker : Worker&) : void
+		+ add_ramp(const ramp : Ramp&) : void
+		+ add_storehouse(const storehouse : Storehouse&) : void
+		+ isCompatible() const : bool {query}
+		+ findById(nodeId: ElementID) const : const_iterator {query}
+		- removeById(nodeID : ElementID) : void
 	}
 	Factory *-- Ramps
 	Factory *-- Workers
@@ -86,8 +100,10 @@ package "Storage" {
 	PackageQueue .. IPackageQueue
 
 	class Package {
-	+{static}maxID : ElementID
-	+product_id : ElementID
+	- {static}maxID : ElementID
+	- package_id : ElementID
+	+ Package()
+	+ getPackageId() const : ElementID {query}
 	}
 
 }
@@ -114,20 +130,27 @@ package "Nodes" {
 	PackageSender .. ReceiverPreferences
 
 	class Ramp {
- 	+ Ramp()
-	+~Ramp()
-	+ generatePackage() : void
+ 	+ Ramp(nodeId : ElementID)
+	+ generatePackage() const : void
+	- _nodeId : ElementID
 	}
 
 	Ramp .. PackageSender
 
 
 	class Worker {
-	+ Worker()
-	+~Worker()
+	+ Worker(package_queue: std::unique_ptr <Package>, nodeId :ElementID)
 	+ processPackage() : void
-	+ receiveProduct()
-	+ package_queue : std::unique_ptr <Package>
+	+ receivePackage(const package : Package&) : void
+        + identifyReceiver() const : tuple<ReceiverType, ElementID> {query}
+        + cbegin() const : deque<Package>::const_iterator {query}
+        + cend() const : deque<Package>::const_iterator {query}
+        + begin() const : deque<Package>::iterator {query}
+        + end() const : deque<Package>::iterator {query}
+	+ popPackage() : Package
+        + returnQueueType() const : QueueType {query}
+	- _package_queue : std::unique_ptr <Package>
+	- _nodeId : ElementID
 	}
 
 	Worker .. PackageSender
@@ -135,10 +158,15 @@ package "Nodes" {
 	IPackageQueue .. Worker
 
 	class Storehouse {
-	+ Storehouse()
-	+~Storehouse() <Package>
-	+ receiveProduct()
-	+ package_queue : std::unique_ptr
+	+ Storehouse(package_stockpile : std::unique_ptr, nodeId : ElementID)
+	+ receivePackage(const package : Package&) : void
+	+ identifyReceiver() const : tuple<ReceiverType, ElementID> {query}
+        + cbegin() const : deque<Package>::const_iterator {query}
+        + cend() const : deque<Package>::const_iterator {query}
+        + begin() const : deque<Package>::iterator {query}
+        + end() const : deque<Package>::iterator {query}  
+	- _package_stockpile : std::unique_ptr
+	- _nodeId : ElementID
 	}
 
 	Storehouse .. IPackageReceiver
@@ -191,3 +219,4 @@ IReportNotifier -[hidden]> Reporting
 
 ' ==== END of < POSITIONING > ====
 @enduml
+' 4b_4: Wittek (297473), W¹torska (297469), Rabajczyk (286498)
