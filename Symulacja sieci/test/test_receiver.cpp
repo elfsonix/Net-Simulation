@@ -43,10 +43,6 @@ TEST(TestReceiver, RandomNumbers) {
 
 }
 
-
-
-
-
     TEST(ReceiverTest, addReceiver){
         Package pack1 = Package();
         Package pack2 = Package();
@@ -91,7 +87,7 @@ TEST(TestReceiver, RandomNumbers) {
     }
 
     TEST(ReceiverTest, deleteReceiver){
-        Package pack1 = Package();
+        Package pack1;
         Package pack2 = Package();
         Package pack3 = Package();
     std::deque<Package> que;

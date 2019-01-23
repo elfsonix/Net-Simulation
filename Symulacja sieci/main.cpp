@@ -13,7 +13,7 @@
 
 
 int main(){
-/*
+
 
     try{
         Factory factory = load_factory_structure("struct-input.txt");
@@ -83,12 +83,10 @@ int main(){
                                                                            ReceiverPreferences::drawNumber);
 
             Worker worker2 = Worker(21, 1, std::make_unique<PackageQueue>(packageQueueLIFO2), receiverPreferences2);
-
             factory.addWorker(worker1);
             factory.addWorker(worker2);
             factory.addStorehouse(storehouse1);
             factory.addStorehouse(storehouse2);
-
             factory.addRamp(Ramp(30, 1, receiverPreferences1));
             factory.addRamp(Ramp(31, 1, receiverPreferences2));
 
@@ -102,7 +100,6 @@ int main(){
             break;
         }
     }
-
 
     try{
         factory.isCompatible();
@@ -118,7 +115,6 @@ int main(){
     simulate(IRepoertNotifier, factory, numberOfRounds);
     std::cout << "Simulation has ended! :)"<<std::endl;
 
-*/
 
     return 0;
 }
