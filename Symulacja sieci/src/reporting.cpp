@@ -1,4 +1,4 @@
-#include "Factory.hpp"
+/*#include "Factory.hpp"
 #include "reporting.hpp"
 #include <iostream>
 #include <algorithm>
@@ -103,3 +103,4 @@ void generate_sim_report_storehouse(const Storehouse& storehouse, std::ostream& 
     generate_queue_report(storehouse.cbegin(), storehouse.cend(), os);
     os << "\n";
 }
+*/
